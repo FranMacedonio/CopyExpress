@@ -1,0 +1,12 @@
+@mixin cuadros {
+    border-radius: .5rem;
+    box-shadow: 5px 5px 4px #1d1d1d90;
+    background-color: $blanco;
+    padding: 1rem;
+}
+@mixin tituloMobile {
+    color: $negro;
+    font-size: 1.5rem;
+    font-weight: $medium;
+    padding: .5rem;
+}

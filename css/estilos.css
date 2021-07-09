@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+  background-color: inherit;
+}
+
+body.index {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcd380), color-stop(50%, #ff82bd), to(#80ceff));
+  background: linear-gradient(180deg, #fcd380 0%, #ff82bd 50%, #80ceff 100%);
+  background-attachment: fixed;
+}
+
+/*BODY GENERAL*/
+body .tituloMobile {
+  color: #1d1d1d;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: .5rem;
+}
+
+body a {
+  color: inherit;
+}
+
+body a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+body p {
+  margin: 0;
+}
+
+body h1, body h2, body h3, body h4, body h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+body .navbarMobile nav button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #fbfbfb;
+}
+
+body .navbarMobile nav button:focus {
+  outline: none;
+}
+
+body .navbarMobile nav button .logoMenu {
+  padding: .5rem;
+}
+
+body .navbarMobile .bg-negro {
+  background-color: #1d1d1dbf;
+}
+
+body .navbarMobile .bg-negro .botonera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fbfbfb;
+}
+
+body .navbarMobile .bg-negro .botonera span {
+  font-size: 1.1rem;
+  padding: .2rem;
+}
+
+body #footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 15rem;
+  background-color: body #footer negro;
+  color: #fbfbfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #footer .redesFooter {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #footer .redesFooter p {
+  padding: 0 .25rem;
+}
+
+body #footer .redesFooter .botoneraFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contenedor--index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+      grid-template-areas: "principal" "infouno" "infodos" "infotres" "infocuatro" "imagen" "footer";
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  margin: 1rem;
+}
+
+#contenedor--index #principal--index {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: principal;
+  background-color: #fbfbfb;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+  padding: 1rem;
+  background-image: url(../media/mobile/index_principal.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+#contenedor--index #principal--index .principal--index__info {
+  width: 100%;
+  height: 36%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 6%;
+}
+
+#contenedor--index #principal--index .principal--index__info .tagline {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ff82bd;
+}
+
+#contenedor--index #principal--index .principal--index__info .botonPedido {
+  width: 11.25rem;
+  height: 3rem;
+  background-color: #1d1d1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#contenedor--index #principal--index .principal--index__info .botonPedido a {
+  color: #fbfbfb;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: .5rem;
+}
+/*# sourceMappingURL=estilos.css.map */
