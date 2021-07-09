@@ -1,0 +1,68 @@
+.titulo__mobile {
+    @include tituloMobile;
+}
+.titulo__mobile--blanco {
+    @include tituloMobile;
+    color: $blanco;
+}
+.navbar__mobile {
+    .bg-negro {
+        background-color: #1d1d1dbf;
+        .botonera {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            color: $blanco;
+            span {
+                font-size: 1.2rem;
+                padding: .5rem;
+            }
+        }
+    }
+    nav {
+        button {
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            border: none;
+            background-color: $blanco;
+            &:focus {
+                outline: none;
+            }
+            .logoMenu {
+                padding: .5rem;
+            }
+        }
+    }
+}
+.footer {
+    grid-area: footer;
+    position: relative;
+    bottom: 0;
+    height: 15rem;
+    background-color: $negro;
+    color: $blanco;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    .redesFooter {
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            padding: 0 .25rem;
+        }
+        .botoneraFooter {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
