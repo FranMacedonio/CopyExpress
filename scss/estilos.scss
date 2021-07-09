@@ -117,5 +117,11 @@ body {
     }
     .bottom__index--img {
         grid-area: imagen;
+        margin: 1rem 0;
+        height: 20rem;
+        width: 100%;
+        background-image: url(../media/mobile/index_bottom.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }

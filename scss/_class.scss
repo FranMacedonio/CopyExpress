@@ -7,7 +7,7 @@
 }
 .navbar__mobile {
     .bg-negro {
-        background-color: #1d1d1dbf;
+        background-color: #1d1d1dec;
         .botonera {
             display: flex;
             flex-flow: column nowrap;
@@ -39,10 +39,8 @@
     }
 }
 .footer {
-    grid-area: footer;
-    position: relative;
-    bottom: 0;
     height: 15rem;
+    width: 100%;
     background-color: $negro;
     color: $blanco;
     display: flex;

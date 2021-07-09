@@ -15,7 +15,7 @@
 }
 
 .navbar__mobile .bg-negro {
-  background-color: #1d1d1dbf;
+  background-color: #1d1d1dec;
 }
 
 .navbar__mobile .bg-negro .botonera {
@@ -68,12 +68,8 @@
 }
 
 .footer {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  position: relative;
-  bottom: 0;
   height: 15rem;
+  width: 100%;
   background-color: #1d1d1d;
   color: #fbfbfb;
   display: -webkit-box;
@@ -294,5 +290,11 @@ body h1, body h2, body h3, body h4, body h5 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: imagen;
+  margin: 1rem 0;
+  height: 20rem;
+  width: 100%;
+  background-image: url(../media/mobile/index_bottom.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=estilos.css.map */
