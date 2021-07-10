@@ -223,4 +223,37 @@ body {
         align-items: center;
         margin-top: 1rem;
     }
+    .bottom__productos--img {
+        grid-area: productos;
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 7.5rem);
+        grid-template-areas:
+        "uno uno cuatro cuatro"
+        "dos dos cinco cinco"
+        "tres tres seis seis";
+        column-gap: 1rem;
+        row-gap: 1rem;
+        .producto--uno {
+            grid-area: uno;
+        }
+        .producto--dos {
+            grid-area: dos;
+        }
+        .producto--tres {
+            grid-area: tres;
+        }
+        .producto--cuatro {
+            grid-area: cuatro;
+        }
+        .producto--cinco {
+            grid-area: cinco;
+        }
+        .producto--seis {
+            grid-area: seis;
+        }
+    }
 }

@@ -451,4 +451,65 @@ body h1, body h2, body h3, body h4, body h5 {
           align-items: center;
   margin-top: 1rem;
 }
+
+#contenedor__pedido .bottom__productos--img {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: productos;
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (7.5rem)[3];
+      grid-template-rows: repeat(3, 7.5rem);
+      grid-template-areas: "uno uno cuatro cuatro" "dos dos cinco cinco" "tres tres seis seis";
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--uno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: uno;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--dos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: dos;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--tres {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tres;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--cuatro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: cuatro;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--cinco {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: cinco;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--seis {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: seis;
+}
 /*# sourceMappingURL=estilos.css.map */
