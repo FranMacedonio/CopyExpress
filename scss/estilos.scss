@@ -167,4 +167,46 @@ body {
             }
         }
     }
+    .bottom__pedido--form {
+        grid-area: form;
+        .card-ce {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+        }
+        .uno {
+            background-color: $blanco;
+        }
+        .dos {
+            background-color: #f5f5f5;
+        }
+        .tres {
+            background-color: #e8e8e8;
+        }
+        .btn {
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .btn-uno {
+            color: $amarillo;
+            font-size: 1.5rem;
+            font-weight: $medium;
+        }
+        .btn-dos {
+            color: $rosa;
+            font-size: 1.5rem;
+            font-weight: $medium;
+        }
+        .btn-tres {
+            color: $azul;
+            font-size: 1.5rem;
+            font-weight: $medium;
+        }
+    }
 }
