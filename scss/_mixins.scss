@@ -10,3 +10,15 @@
     font-weight: $medium;
     padding: .5rem;
 }
+@mixin botonModal {
+    display: inline-block;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    height: 7.5rem;
+    width: 100%;
+    box-shadow: 5px 5px 4px #1d1d1d90;
+    &:focus {
+        outline: none;
+    }
+}

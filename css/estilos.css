@@ -458,7 +458,7 @@ body h1, body h2, body h3, body h4, body h5 {
   grid-area: productos;
   width: 100%;
   height: auto;
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -478,11 +478,55 @@ body h1, body h2, body h3, body h4, body h5 {
   grid-area: uno;
 }
 
+#contenedor__pedido .bottom__productos--img .producto--uno .btn-ce {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  height: 7.5rem;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
+          box-shadow: 5px 5px 4px #1d1d1d90;
+  background-image: url(../media/utiles/resaltadores.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 7.5rem;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--uno .btn-ce:focus {
+  outline: none;
+}
+
 #contenedor__pedido .bottom__productos--img .producto--dos {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: dos;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--dos .btn-ce {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  height: 7.5rem;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
+          box-shadow: 5px 5px 4px #1d1d1d90;
+  background-image: url(../media/utiles/microfibras.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 7.5rem;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--dos .btn-ce:focus {
+  outline: none;
 }
 
 #contenedor__pedido .bottom__productos--img .producto--tres {
@@ -492,11 +536,55 @@ body h1, body h2, body h3, body h4, body h5 {
   grid-area: tres;
 }
 
+#contenedor__pedido .bottom__productos--img .producto--tres .btn-ce {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  height: 7.5rem;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
+          box-shadow: 5px 5px 4px #1d1d1d90;
+  background-image: url(../media/utiles/lapiceras.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 7.5rem;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--tres .btn-ce:focus {
+  outline: none;
+}
+
 #contenedor__pedido .bottom__productos--img .producto--cuatro {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: cuatro;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  height: 7.5rem;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
+          box-shadow: 5px 5px 4px #1d1d1d90;
+  background-image: url(../media/utiles/lapices.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 7.5rem;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce:focus {
+  outline: none;
 }
 
 #contenedor__pedido .bottom__productos--img .producto--cinco {
@@ -506,10 +594,54 @@ body h1, body h2, body h3, body h4, body h5 {
   grid-area: cinco;
 }
 
+#contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  height: 7.5rem;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
+          box-shadow: 5px 5px 4px #1d1d1d90;
+  background-image: url(../media/utiles/separadores.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 7.5rem;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce:focus {
+  outline: none;
+}
+
 #contenedor__pedido .bottom__productos--img .producto--seis {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: seis;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--seis .btn-ce {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  height: 7.5rem;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
+          box-shadow: 5px 5px 4px #1d1d1d90;
+  background-image: url(../media/utiles/cuadernos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 7.5rem;
+}
+
+#contenedor__pedido .bottom__productos--img .producto--seis .btn-ce:focus {
+  outline: none;
 }
 /*# sourceMappingURL=estilos.css.map */

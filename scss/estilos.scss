@@ -227,7 +227,7 @@ body {
         grid-area: productos;
         width: 100%;
         height: auto;
-        margin: 1rem 0;
+        margin: 2rem 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 7.5rem);
@@ -239,21 +239,63 @@ body {
         row-gap: 1rem;
         .producto--uno {
             grid-area: uno;
+            .btn-ce {
+                @include botonModal;
+                background-image: url(../media/utiles/resaltadores.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto 7.5rem;
+            }
         }
         .producto--dos {
             grid-area: dos;
+            .btn-ce {
+                @include botonModal;
+                background-image: url(../media/utiles/microfibras.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto 7.5rem;
+            }
         }
         .producto--tres {
             grid-area: tres;
+            .btn-ce {
+                @include botonModal;
+                background-image: url(../media/utiles/lapiceras.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto 7.5rem;
+            }
         }
         .producto--cuatro {
             grid-area: cuatro;
+            .btn-ce {
+                @include botonModal;
+                background-image: url(../media/utiles/lapices.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto 7.5rem;
+            }
         }
         .producto--cinco {
             grid-area: cinco;
+            .btn-ce {
+                @include botonModal;
+                background-image: url(../media/utiles/separadores.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto 7.5rem;
+            }
         }
         .producto--seis {
             grid-area: seis;
+            .btn-ce {
+                @include botonModal;
+                background-image: url(../media/utiles/cuadernos.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: auto 7.5rem;
+            }
         }
     }
 }
