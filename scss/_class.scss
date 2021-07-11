@@ -5,11 +5,20 @@
     @include tituloMobile;
     color: $blanco;
 }
-.tagline__pedido {
+.tagline {
     font-size: 1.75rem;
     font-weight: $bold;
     color: $amarillo;
     margin-bottom: 1rem;
+}
+.amarillo {
+    color: $amarillo;
+}
+.rosa {
+    color: $rosa;
+}
+.azul {
+    color: $azul;
 }
 .navbar__mobile {
     .bg-negro {

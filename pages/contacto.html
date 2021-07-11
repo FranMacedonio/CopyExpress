@@ -7,10 +7,107 @@
     <meta name="description" content="Cualquier consulta que tengas completa el formulario de la pagina o tambien podes contactarnos por nuestras redes sociales.">
 	<meta name="keywords" content="imprenta, mar del plata, fotocopias, material de estudio, calma, meditacion">
     <link rel="icon" type="image/png" href="../media/iconos/icono_pestaña.png"/>
-    <title>Consultanos lo que necesites | CopyExpress</title>
+    <title>Siempre estamos para vos | CopyExpress</title>
     <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
+    <div id="contenedor__contacto">
+      <div id="principal__contacto">
+        <!-- Navbar Mobile -->
+        <div class="navbar__mobile">
+            <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-negro">
+                <div class="botonera">
+                <span><a href="../index.html">Inicio</a></span>
+                <span><a href="pedido.html">Hace tu pedido</a></span>
+                <span><a href="contacto.html">Contacto</a></span>
+                <span><a href="zona.html">Zona de Estudio</a></span>
+                </div>
+            </div>
+            </div>
+            <nav class="navbar-ce">
+            <button type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="titulo__mobile">CopyExpress</span>
+                <img class="logoMenu" src="../media/iconos/menu.svg" alt="Logo del menu">
+            </button>
+            </nav>
+        </div>
+        <!-- Navbar Mobile -->
+        <div class="principal__contacto--info">
+            <h2 class="tagline azul">¡Contactanos!</h2>
+            <div>
+                <p>Completá el siguiente formulario para realizar cualquier consulta que necesites. Ni bien podamos nos vamos a poner en contacto con vos.</p>
+                <p>¡Muchas gracias!</p>
+            </div>
+        </div>
+      </div>
+      <div class="bottom__contacto--form">
+        <input type="text" name="Nombre" placeholder="Nombre Completo" autocomplete="off" required>
+        <input type="email" name="email" placeholder="Correo Electronico" autocomplete="off" required>
+        <input type="number" name="Celular" placeholder="Celular" min="0" autocomplete="off" required>
+        <textarea class="textareaContacto" placeholder="Escribi aca tu mensaje"></textarea>
+        <button type="button" class="btn-agregar" data-toggle="modal" data-target="#contacto">
+          Enviar mensaje
+        </button>
+        <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="contactoLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contactoLabel">Gracias por tu consulta</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Ya recibimos tu consulta. Ni bien podamos nos vamos comunicamos con vos.</p>
+                <p>¡Saludos, que tengas un lindo dia!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-cerrar"><a href="contacto.html">Cerrar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom__contacto--info">
+        <div>
+          <img src="../media/iconos/wpp.svg" alt="whatsapp">
+          <p class="tagline">Whatsapp</p>
+        </div>
+        <div>
+          <img src="../media/iconos/ubicacion_dos.svg" alt="ubicacion">
+          <p class="tagline">Ubicacion</p>
+        </div>
+        <div>
+          <img src="../media/iconos/mail.svg" alt="correo electronico">
+          <p class="tagline">Correo Electronico</p>
+        </div>
+        <div>
+          <img src="../media/iconos/redes.svg" alt="redes sociales">
+          <p class="tagline">Redes sociales</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+          <p class="titulo__mobile--blanco">CopyExpress</p>
+      </div>
+      <div class="redesFooter">
+          <div class="botoneraFooter">
+            <p><a href="index.html">Inicio</a></p>
+            <p><a href="pages/pedido.html">Hace tu pedido</a></p>
+            <p><a href="pages/contacto.html">Contacto</a></p>
+            <p><a href="pages/zona.html">Zona de Estudio</a></p>
+          </div>
+          <div>
+            <p><a href="https://www.instagram.com/copyexpress_impresiones/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com/copy.express.impresiones/?ref=page_internal" target="_blank">Facebook</a></p>
+          </div>
+      </div>
+      <div>
+          <p>Copyright © 2021</p>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
