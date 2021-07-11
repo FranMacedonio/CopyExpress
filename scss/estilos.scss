@@ -616,7 +616,9 @@ body {
 }
 
 #contenedor__zona {
-    background: linear-gradient(180deg, rgba(128, 206, 255, 0.9) 0%, rgba(29, 121, 179, 0.9) 100%);
+    background-image: url(../media/mobile/zona_fondo.svg);
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -637,6 +639,7 @@ body {
         background-image: url(../media/mobile/zona_principal.svg);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         margin-bottom: 1rem;
         .principal__zona--info {
             .subtitulo {
@@ -663,6 +666,7 @@ body {
         background-image: url(../media/mobile/zona_canciones.svg);
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         margin: 1rem 0;
         .canciones--info {
             @include fondoNegro;
