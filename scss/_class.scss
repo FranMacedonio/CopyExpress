@@ -8,8 +8,12 @@
 .tagline {
     font-size: 1.75rem;
     font-weight: $bold;
-    color: $amarillo;
     margin-bottom: 1rem;
+}
+.bold {
+    font-size: 1.25rem;
+    font-weight: $bold;
+    margin: .5rem 0;
 }
 .amarillo {
     color: $amarillo;

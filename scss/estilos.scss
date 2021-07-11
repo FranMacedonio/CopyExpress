@@ -565,4 +565,52 @@ body {
             }
         }
     }
+    .bottom__contacto--info {
+        grid-area: info;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 15rem);
+        column-gap: 1rem;
+        row-gap: 1rem;
+        grid-template-areas:
+        "wpp ubicacion"
+        "mail redes";
+        margin: 1rem 0;
+        text-align: center;
+        .wpp {
+            grid-area: wpp;
+            @include cuadros;
+            @include flexCC;
+        }
+        .ubicacion {
+            grid-area: ubicacion;
+            @include cuadros;
+            @include flexCC;
+        }
+        .mail {
+            grid-area: mail;
+            @include cuadros;
+            @include flexCC;
+        }
+        .redes {
+            grid-area: redes;
+            @include cuadros;
+            @include flexCC;
+        }
+    }
+    .bottom__contacto--mapa {
+        grid-area: mapa;
+        margin: 1rem 0;
+        iframe {
+            width: 100%;
+            height: 12rem;
+            border-radius: .5rem;
+            box-shadow: 5px 5px 4px #1d1d1d90;
+        }
+    }
+    .botton__contacto--img {
+        grid-area: imagen;
+        position: relative;
+        top: -3rem;
+    }
 }
