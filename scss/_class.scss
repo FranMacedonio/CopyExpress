@@ -70,3 +70,31 @@
         }
     }
 }
+.modal-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: $negro;
+}
+.subtituloProductos {
+    font-weight: $medium;
+    font-size: 1.25rem;
+    color: $azul;
+    margin: .5rem;
+}
+.precioProductos {
+    font-weight: $bold;
+    color: $rosa;
+    margin: .5rem;
+}
+.btn-cerrar {
+    @include botonModalPedido;
+    background-color: #858585;
+    color: $blanco;
+    font-weight: $medium;
+}
+.btn-agregar {
+    @include botonModalPedido;
+    background-color: $amarillo;
+    color: $negro;
+    font-weight: $medium;
+}

@@ -30,6 +30,10 @@ body {
         font-weight: $regular;
         margin: 0;
     }
+    li {
+        list-style-image: url(../media/iconos/icono_pestaña.png);
+        list-style-position: inside;
+    }
 }
 
 #contenedor__index {
@@ -276,12 +280,10 @@ body {
             }
             select {
                 color: $azul;
+                &:focus {
+                    outline: none;
+                }
             }
-        }
-        .modal-title {
-            font-weight: bold;
-            font-size: 2rem;
-            color: $negro;
         }
         .tituloModalUno {
             font-weight: $medium;
@@ -318,12 +320,6 @@ body {
             color: $azul;
             font-size: 1.1rem;
             font-weight: $bold;
-        }
-        .btn-cerrar {
-            @include botonModalPedido;
-            background-color: #858585;
-            color: $blanco;
-            font-weight: $medium;
         }
         .btn-hacer {
             @include botonModalPedido;
@@ -427,6 +423,34 @@ body {
                 background-position: center;
                 background-size: auto 7.5rem;
             }
+        }
+    }
+    li {
+        margin: .25rem .25rem .25rem .75rem;
+    }
+    .texto {
+        margin: .25rem .25rem .25rem .75rem;
+        text-indent: .5rem;
+    }
+    .listaNormal {
+        li {
+            list-style-image: none;
+            list-style-type: circle;
+        }
+    }
+    textarea.textareaProductos {
+        width: 100%;
+        padding: .5rem;
+        height: 4rem;
+        background-color: $blanco;
+        color: $negro;
+        font-weight: $medium;
+        transition: background 500ms, height 500ms;
+        transition-timing-function: linear;
+        &:focus {
+            background-color: $amarillo;
+            height: 6rem;
+            outline: none;
         }
     }
 }
