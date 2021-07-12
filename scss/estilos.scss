@@ -618,6 +618,9 @@ body {
 #contenedor__zona {
     background-image: url(../media/mobile/zona_fondo.svg);
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     display: grid;
