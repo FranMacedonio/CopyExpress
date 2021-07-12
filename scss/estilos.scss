@@ -12,6 +12,21 @@ body {
     font-family: $fuente;
     font-weight: $regular;
     line-height: 1.2;
+    &.index {
+        background-color: $azul;
+    }
+    &.pedido {
+        background-color: rgb(143, 32, 86);
+    }
+    &.enviar {
+        background-color: #388126;
+    }
+    &.contacto {
+        background-color: rgb(185, 134, 32);
+    }
+    &.zona {
+        background-color: rgb(0, 53, 86);
+    }
 }
 /*BODY GENERAL*/
 body {
@@ -134,7 +149,7 @@ body {
 }
 
 #contenedor__pedido {
-    background: linear-gradient(180deg, rgba(255, 130, 189, 0.9) 0%, rgba(143, 32, 85, 0.9) 100%);
+    background: linear-gradient(180deg, rgb(255, 130, 188) 0%, rgb(143, 32, 86) 100%);
     background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -490,7 +505,7 @@ body {
 }
 
 #contenedor__contacto {
-    background: linear-gradient(180deg, rgba(252, 211, 128, 0.9) 0%, rgba(185, 134, 32, 0.9) 100%);
+    background: linear-gradient(180deg, #FCD380 0%, #B98620 100%);
     background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -528,6 +543,7 @@ body {
     .bottom__contacto--form {
         grid-area: form;
         @include cuadros;
+        margin: 1rem 0;
         background-color: #e8e8e8;
         input {
             width: 100%;
@@ -616,12 +632,7 @@ body {
 }
 
 #contenedor__zona {
-    background-image: url(../media/mobile/zona_fondo.svg);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: linear-gradient(180deg, #80CEFF 0%, #003556 100%);
     background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -630,8 +641,7 @@ body {
     "principal"
     "canciones"
     "podcast"
-    "respira"
-    "meditacion";
+    "respira";
     column-gap: 1rem;
     padding: 1rem;
     #principal__zona{
@@ -673,10 +683,8 @@ body {
         margin: 1rem 0;
         .canciones--info {
             @include fondoNegro;
-            display: flex;
-            flex-flow: column nowrap;
+            @include flexCC;
             justify-content: space-around;
-            align-items: center;
             text-align: center;
             a {
                 margin: .25rem 0;
@@ -686,6 +694,32 @@ body {
                     padding: .25rem 0;
                 }
             }
+        }
+    }
+    .bottom__zona--podcast {
+        grid-area: podcast;
+        width: calc(100vw - 2rem);
+        height: calc(100vh - 2rem);
+        padding: 1rem;
+        background-image: url(../media/mobile/zona_podcast.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin: 1rem 0;
+        .podcast--info {
+            @include fondoNegro;
+            @include flexCC;
+            justify-content: space-around;
+            text-align: center;
+        }
+    }
+    .respira {
+        grid-area: respira;
+        .respira__texto {
+            
+        }
+        .respira__videos {
+            
         }
     }
 }

@@ -58,6 +58,7 @@
   font-weight: 700;
   color: #80ceff;
   text-shadow: 3px 3px 2px #161616;
+  margin-bottom: .25rem;
 }
 
 .navbar__mobile .bg-negro {
@@ -245,6 +246,26 @@ body {
   line-height: 1.2;
 }
 
+body.index {
+  background-color: #80ceff;
+}
+
+body.pedido {
+  background-color: #8f2056;
+}
+
+body.enviar {
+  background-color: #388126;
+}
+
+body.contacto {
+  background-color: #b98620;
+}
+
+body.zona {
+  background-color: #003556;
+}
+
 /*BODY GENERAL*/
 body a {
   color: inherit;
@@ -421,8 +442,8 @@ body input {
 }
 
 #contenedor__pedido {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 130, 189, 0.9)), to(rgba(143, 32, 85, 0.9)));
-  background: linear-gradient(180deg, rgba(255, 130, 189, 0.9) 0%, rgba(143, 32, 85, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff82bc), to(#8f2056));
+  background: linear-gradient(180deg, #ff82bc 0%, #8f2056 100%);
   background-attachment: fixed;
   display: -ms-grid;
   display: grid;
@@ -1035,8 +1056,8 @@ body input {
 }
 
 #contenedor__contacto {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 211, 128, 0.9)), to(rgba(185, 134, 32, 0.9)));
-  background: linear-gradient(180deg, rgba(252, 211, 128, 0.9) 0%, rgba(185, 134, 32, 0.9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FCD380), to(#B98620));
+  background: linear-gradient(180deg, #FCD380 0%, #B98620 100%);
   background-attachment: fixed;
   display: -ms-grid;
   display: grid;
@@ -1094,6 +1115,7 @@ body input {
           box-shadow: 5px 5px 4px #1d1d1d90;
   background-color: #fbfbfb;
   padding: 1rem;
+  margin: 1rem 0;
   background-color: #e8e8e8;
 }
 
@@ -1279,9 +1301,8 @@ body input {
 }
 
 #contenedor__zona {
-  background-image: url(../media/mobile/zona_fondo.svg);
-  background-position: center;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(#80CEFF), to(#003556));
+  background: linear-gradient(180deg, #80CEFF 0%, #003556 100%);
   background-attachment: fixed;
   display: -ms-grid;
   display: grid;
@@ -1289,7 +1310,7 @@ body input {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (auto)[5];
       grid-template-rows: repeat(5, auto);
-      grid-template-areas: "principal" "canciones" "podcast" "respira" "meditacion";
+      grid-template-areas: "principal" "canciones" "podcast" "respira";
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   padding: 1rem;
@@ -1363,11 +1384,14 @@ body input {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
 }
 
@@ -1377,5 +1401,49 @@ body input {
 
 #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
   padding: .25rem 0;
+}
+
+#contenedor__zona .bottom__zona--podcast {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: podcast;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+  padding: 1rem;
+  background-image: url(../media/mobile/zona_podcast.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 1rem 0;
+}
+
+#contenedor__zona .bottom__zona--podcast .podcast--info {
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1.25rem;
+  color: #fbfbfb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+#contenedor__zona .respira {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: respira;
 }
 /*# sourceMappingURL=estilos.css.map */
