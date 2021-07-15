@@ -423,8 +423,7 @@ body {
         margin: .25rem .25rem .25rem .75rem;
     }
     .texto {
-        margin: .25rem .25rem .25rem .75rem;
-        text-indent: .5rem;
+        margin: .5rem;
     }
     .listaNormal {
         li {
@@ -452,10 +451,6 @@ body {
             &:focus {
                 background-color: $rosa;
             }
-        }
-        .texto {
-            text-indent: .25rem;
-            font-weight: $medium;
         }
     }
 }

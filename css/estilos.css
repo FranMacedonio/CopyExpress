@@ -332,6 +332,10 @@ footer .footer__texto .footer__botonera--redes {
   outline: none;
 }
 
+.texto {
+  margin: .5rem;
+}
+
 @-webkit-keyframes facebook {
   0% {
     background-image: url(../media/iconos/fb_white.svg);
@@ -1081,8 +1085,7 @@ body input::placeholder {
 }
 
 #contenedor__pedido .texto {
-  margin: .25rem .25rem .25rem .75rem;
-  text-indent: .5rem;
+  margin: .5rem;
 }
 
 #contenedor__pedido .listaNormal li {
@@ -1134,11 +1137,6 @@ body input::placeholder {
 
 #contenedor__pedido .bottom__productos--mail input:focus {
   background-color: #ff82bd;
-}
-
-#contenedor__pedido .bottom__productos--mail .texto {
-  text-indent: .25rem;
-  font-weight: 600;
 }
 
 #contenedor__enviar {
