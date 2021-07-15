@@ -114,7 +114,7 @@
   padding: .5rem;
 }
 
-.footer {
+footer {
   height: 15rem;
   width: 100%;
   background-color: #1d1d1d;
@@ -126,22 +126,23 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.footer .redesFooter {
-  width: 80%;
+footer .footer__texto {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -150,24 +151,74 @@
           align-items: center;
 }
 
-.footer .redesFooter p {
-  padding: 0 .25rem;
+footer .footer__texto p {
+  padding: .1rem 0;
+  font-weight: 600;
 }
 
-.footer .redesFooter .botoneraFooter {
+footer .footer__texto .footer__botonera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+footer .footer__texto .footer__botonera--redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.instagram {
+  background-image: url(../media/iconos/ig_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+  -webkit-transition: background-image 500ms linear;
+  transition: background-image 500ms linear;
+}
+
+.instagram:hover {
+  background-image: url(../media/iconos/ig_color.svg);
+}
+
+.facebook {
+  background-image: url(../media/iconos/fb_white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+  -webkit-transition: background-image 500ms linear;
+  transition: background-image 500ms linear;
+}
+
+.facebook:hover {
+  background-image: url(../media/iconos/fb_color.svg);
 }
 
 .modal-title {
