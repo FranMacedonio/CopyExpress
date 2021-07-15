@@ -119,11 +119,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1.5rem;
-    transition: background-image 500ms linear;
-    &:hover {
-        background-image: url(../media/iconos/ig_color.svg);
-    }
-
+    animation: instagram 2s infinite alternate linear;
 }
 .facebook {
     background-image: url(../media/iconos/fb_white.svg);
@@ -131,11 +127,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1.5rem;
-    transition: background-image 500ms linear;
-    &:hover {
-        background-image: url(../media/iconos/fb_color.svg);
-    }
-
+    animation: facebook 2s infinite alternate linear;
 }
 
 .modal-title {
@@ -165,4 +157,24 @@ footer {
     background-color: $amarillo;
     color: $negro;
     font-weight: $medium;
+}
+.btn-pedido {
+    @include botonModalPedido;
+    margin-top: 2rem;
+    height: 3rem;
+    width: 11rem;
+    border-radius: .5rem;
+    border: 2px solid $negro;
+    background-color: $blanco;
+    color: $azul;
+    font-size: 1.1rem;
+    font-weight: $bold;
+}
+.btn-hacer {
+    @include botonModalPedido;
+    background-color: $negro;
+    border: 2px solid $blanco;
+    color: $blanco;
+    font-size: 1.25rem;
+    font-weight: $bold;
 }
