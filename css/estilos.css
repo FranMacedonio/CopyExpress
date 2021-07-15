@@ -336,6 +336,271 @@ footer .footer__texto .footer__botonera--redes {
   margin: .5rem;
 }
 
+@media all and (min-width: 768px) {
+  .titulo__mobile {
+    font-size: 2rem;
+  }
+  .titulo__mobile--blanco {
+    color: #1d1d1d;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .5rem;
+  }
+  .tagline {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .resaltador {
+    font-size: 1.5rem;
+  }
+  .bold {
+    font-size: 1.25rem;
+    margin: .5rem 0;
+  }
+  .zona_titulo {
+    font-size: 1.75rem;
+  }
+  .zona_subtitulo {
+    font-size: 1.25rem;
+  }
+  .zona_lofigirl {
+    font-size: 1.1rem;
+    text-shadow: 3px 3px 2px #161616;
+    margin-bottom: .25rem;
+  }
+  .navbar__mobile .bg-negro .botonera span {
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+  .navbar__mobile nav button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    background-color: #fbfbfb;
+  }
+  .navbar__mobile nav button:focus {
+    outline: none;
+  }
+  .navbar__mobile nav button .logoMenu {
+    padding: .5rem;
+  }
+  footer {
+    height: 15rem;
+    width: 100%;
+    background-color: #1d1d1d;
+    color: #fbfbfb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer__texto {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer__texto p {
+    padding: .1rem 0;
+    font-weight: 600;
+  }
+  footer .footer__texto .footer__botonera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  footer .footer__texto .footer__botonera--redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .instagram {
+    background-image: url(../media/iconos/ig_white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    -webkit-animation: instagram 2s infinite alternate linear;
+            animation: instagram 2s infinite alternate linear;
+  }
+  .facebook {
+    background-image: url(../media/iconos/fb_white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    -webkit-animation: facebook 2s infinite alternate linear;
+            animation: facebook 2s infinite alternate linear;
+  }
+  .modal-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #1d1d1d;
+  }
+  .subtituloProductos {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #80ceff;
+    margin: .5rem;
+  }
+  .precioProductos {
+    font-weight: 700;
+    color: #ff82bd;
+    margin: .5rem;
+  }
+  .btn-cerrar {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: #858585;
+    color: #fbfbfb;
+    font-weight: 600;
+  }
+  .btn-cerrar:focus {
+    outline: none;
+  }
+  .btn-agregar {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: #fcd380;
+    color: #1d1d1d;
+    font-weight: 600;
+  }
+  .btn-agregar:focus {
+    outline: none;
+  }
+  .btn-pedido {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin-top: 2rem;
+    height: 3rem;
+    width: 11rem;
+    border-radius: .5rem;
+    border: 2px solid #1d1d1d;
+    background-color: #fbfbfb;
+    color: #80ceff;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .btn-pedido:focus {
+    outline: none;
+  }
+  .btn-hacer {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: #1d1d1d;
+    border: 2px solid #fbfbfb;
+    color: #fbfbfb;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .btn-hacer:focus {
+    outline: none;
+  }
+  .texto {
+    margin: .5rem;
+  }
+}
+
 @-webkit-keyframes facebook {
   0% {
     background-image: url(../media/iconos/fb_white.svg);
@@ -530,10 +795,6 @@ body input::placeholder {
           align-items: center;
   position: relative;
   top: 10%;
-}
-
-#contenedor__index #principal__index .principal__index--info .index {
-  color: #ff82bd;
 }
 
 #contenedor__index #principal__index .principal__index--info .botonPedido {
@@ -1082,10 +1343,6 @@ body input::placeholder {
 
 #contenedor__pedido li {
   margin: .25rem .25rem .25rem .75rem;
-}
-
-#contenedor__pedido .texto {
-  margin: .5rem;
 }
 
 #contenedor__pedido .listaNormal li {
@@ -1652,5 +1909,106 @@ body input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media all and (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-size: 1.25rem;
+  }
+  #contenedor__index {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-area: principal;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "principal principal principal principal principal principal principal principal" "infouno infouno infouno infouno infodos infodos infodos infodos" "infotres infotres infotres infotres infocuatro infocuatro infocuatro infocuatro" ". . imagen imagen imagen imagen . .";
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  #contenedor__index #principal__index {
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
+    padding: 1.5rem;
+    background-size: 28rem;
+    margin-bottom: 1.5rem;
+  }
+  #contenedor__index #principal__index .principal__index--info {
+    top: 10%;
+    width: calc(100% - 2rem);
+  }
+  #contenedor__index #principal__index .principal__index--info .botonPedido {
+    width: 15rem;
+    height: 3.75rem;
+    margin-top: 3rem;
+  }
+  #contenedor__index #principal__index .principal__index--info .botonPedido a {
+    font-size: 1.5rem;
+    padding: .75rem;
+  }
+  #contenedor__index .bottom__index {
+    width: 100%;
+    height: 18rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
+            box-shadow: 5px 5px 4px #1d1d1d90;
+    background-color: #fbfbfb;
+    padding: 1rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contenedor__index .uno {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: infouno;
+  }
+  #contenedor__index .dos {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: infodos;
+  }
+  #contenedor__index .tres {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: infotres;
+  }
+  #contenedor__index .cuatro {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: infocuatro;
+  }
+  #contenedor__index .bottom__index--img {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-area: imagen;
+    margin: 1rem 0;
+    height: 20rem;
+    width: 100%;
+    background-image: url(../media/mobile/index_bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

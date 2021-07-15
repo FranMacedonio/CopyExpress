@@ -100,9 +100,6 @@ body {
             align-items: center;
             position: relative;
             top: 10%;
-            .index {
-                color: $rosa;
-            }
             .botonPedido {
                 width: 11.25rem;
                 height: 3rem;
@@ -422,9 +419,6 @@ body {
     li {
         margin: .25rem .25rem .25rem .75rem;
     }
-    .texto {
-        margin: .5rem;
-    }
     .listaNormal {
         li {
             list-style-image: none;
@@ -731,4 +725,78 @@ body {
             }
         }
     }
+}
+
+@media all and (min-width: 768px) {
+    body {
+        h1, h2, h3, h4, h5 {
+            font-size: 1.25rem;
+        }
+        font-size: 1.25rem;
+    }
+    #contenedor__index {
+        grid-area: principal;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "principal principal principal principal principal principal principal principal"
+        "infouno infouno infouno infouno infodos infodos infodos infodos"
+        "infotres infotres infotres infotres infocuatro infocuatro infocuatro infocuatro"
+        ". . imagen imagen imagen imagen . .";
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        #principal__index {
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-size: 28rem;
+            margin-bottom: 1.5rem;
+            .principal__index--info {
+                top: 10%;
+                width: calc(100% - 2rem);
+                .botonPedido {
+                    width: 15rem;
+                    height: 3.75rem;
+                    margin-top: 3rem;
+                    a {
+                        font-size: 1.5rem;
+                        padding: .75rem;
+                    }
+                }
+            }
+        }
+        .bottom__index {
+            width: 100%;
+            height: 18rem;
+            margin: 1rem 0;
+            @include cuadros;
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .uno {
+            grid-area: infouno;
+        }
+        .dos {
+            grid-area: infodos;
+        }
+        .tres {
+            grid-area: infotres;
+        }
+        .cuatro {
+            grid-area: infocuatro;
+        }
+        .bottom__index--img {
+            grid-area: imagen;
+            margin: 1rem 0;
+            height: 20rem;
+            width: 100%;
+            background-image: url(../media/mobile/index_bottom.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
 }

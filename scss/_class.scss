@@ -181,6 +181,149 @@ footer {
 .texto {
     margin: .5rem;
 }
-.modal-header {
+
+@media all and (min-width: 768px) {
+    .titulo__mobile {
+        font-size: 2rem;
+    }
+    .titulo__mobile--blanco {
+        @include tituloMobile;
+    }
+    .tagline {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .resaltador {
+        font-size: 1.5rem;
+    }
+    .bold {
+        font-size: 1.25rem;
+        margin: .5rem 0;
+    }
+    .zona_titulo {
+        font-size: 1.75rem;
+    }
+    .zona_subtitulo {
+        font-size: 1.25rem;
+    }
+    .zona_lofigirl {
+        font-size: 1.1rem;
+        text-shadow: 3px 3px 2px rgb(22, 22, 22);
+        margin-bottom: .25rem;
+    }
+    .navbar__mobile {
+        .bg-negro {
+            .botonera {
+                span {
+                    font-size: 1.5rem;
+                    padding: .5rem;
+                }
+            }
+        }
+    footer {
+        height: 15rem;
+        width: 100%;
+        background-color: $negro;
+        color: $blanco;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        .footer__texto {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                padding: .1rem 0;
+                font-weight: $medium;
+            }
+            .footer__botonera {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+            }
+            .footer__botonera--redes {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+                width: 50%;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .instagram {
+        background-image: url(../media/iconos/ig_white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1.5rem;
+        animation: instagram 2s infinite alternate linear;
+    }
+    .facebook {
+        background-image: url(../media/iconos/fb_white.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1.5rem;
+        animation: facebook 2s infinite alternate linear;
+    }
     
+    .modal-title {
+        font-weight: bold;
+        font-size: 2rem;
+        color: $negro;
+    }
+    .subtituloProductos {
+        font-weight: $medium;
+        font-size: 1.25rem;
+        color: $azul;
+        margin: .5rem;
+    }
+    .precioProductos {
+        font-weight: $bold;
+        color: $rosa;
+        margin: .5rem;
+    }
+    .btn-cerrar {
+        @include botonModalPedido;
+        background-color: #858585;
+        color: $blanco;
+        font-weight: $medium;
+    }
+    .btn-agregar {
+        @include botonModalPedido;
+        background-color: $amarillo;
+        color: $negro;
+        font-weight: $medium;
+    }
+    .btn-pedido {
+        @include botonModalPedido;
+        margin-top: 2rem;
+        height: 3rem;
+        width: 11rem;
+        border-radius: .5rem;
+        border: 2px solid $negro;
+        background-color: $blanco;
+        color: $azul;
+        font-size: 1.1rem;
+        font-weight: $bold;
+    }
+    .btn-hacer {
+        @include botonModalPedido;
+        background-color: $negro;
+        border: 2px solid $blanco;
+        color: $blanco;
+        font-size: 1.25rem;
+        font-weight: $bold;
+    }
+    .texto {
+        margin: .5rem;
+    }
 }
