@@ -341,10 +341,8 @@ footer .footer__texto .footer__botonera--redes {
     font-size: 2rem;
   }
   .titulo__mobile--blanco {
-    color: #1d1d1d;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: .5rem;
+    font-size: 2rem;
+    color: #fbfbfb;
   }
   .tagline {
     font-size: 3rem;
@@ -372,121 +370,42 @@ footer .footer__texto .footer__botonera--redes {
     font-size: 1.5rem;
     padding: .5rem;
   }
-  .navbar__mobile nav button {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  footer {
+    height: 17rem;
+  }
+  footer .footer__texto {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border: none;
-    background-color: #fbfbfb;
-  }
-  .navbar__mobile nav button:focus {
-    outline: none;
-  }
-  .navbar__mobile nav button .logoMenu {
-    padding: .5rem;
-  }
-  footer {
-    height: 15rem;
-    width: 100%;
-    background-color: #1d1d1d;
-    color: #fbfbfb;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer .footer__texto {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 60%;
   }
   footer .footer__texto p {
-    padding: .1rem 0;
+    padding: .2rem 0;
     font-weight: 600;
   }
   footer .footer__texto .footer__botonera {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    width: 100%;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
   }
   footer .footer__texto .footer__botonera--redes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
     margin-top: 1rem;
   }
   .instagram {
-    background-image: url(../media/iconos/ig_white.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1.5rem;
-    -webkit-animation: instagram 2s infinite alternate linear;
-            animation: instagram 2s infinite alternate linear;
+    padding: 2rem;
   }
   .facebook {
-    background-image: url(../media/iconos/fb_white.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1.5rem;
-    -webkit-animation: facebook 2s infinite alternate linear;
-            animation: facebook 2s infinite alternate linear;
+    padding: 2rem;
+    margin-left: 1rem;
   }
   .modal-title {
     font-weight: bold;
@@ -1938,7 +1857,6 @@ body input::placeholder {
     margin-bottom: 1.5rem;
   }
   #contenedor__index #principal__index .principal__index--info {
-    top: 10%;
     width: calc(100% - 2rem);
   }
   #contenedor__index #principal__index .principal__index--info .botonPedido {
@@ -1951,28 +1869,9 @@ body input::placeholder {
     padding: .75rem;
   }
   #contenedor__index .bottom__index {
-    width: 100%;
-    height: 18rem;
-    margin: 1rem 0;
-    border-radius: .5rem;
-    -webkit-box-shadow: 5px 5px 4px #1d1d1d90;
-            box-shadow: 5px 5px 4px #1d1d1d90;
-    background-color: #fbfbfb;
-    padding: 1rem;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 24rem;
+    margin: 1.5rem 0;
+    padding: 1.5;
   }
   #contenedor__index .uno {
     -ms-grid-row: 2;
@@ -2003,12 +1902,10 @@ body input::placeholder {
     -ms-grid-column: 3;
     -ms-grid-column-span: 4;
     grid-area: imagen;
-    margin: 1rem 0;
-    height: 20rem;
+    margin: 1.5rem 0;
+    height: 22rem;
     width: 100%;
-    background-image: url(../media/mobile/index_bottom.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: 17rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

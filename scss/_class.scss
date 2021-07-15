@@ -187,7 +187,8 @@ footer {
         font-size: 2rem;
     }
     .titulo__mobile--blanco {
-        @include tituloMobile;
+        font-size: 2rem;
+        color: $blanco;
     }
     .tagline {
         font-size: 3rem;
@@ -220,59 +221,33 @@ footer {
                 }
             }
         }
+    }
     footer {
-        height: 15rem;
-        width: 100%;
-        background-color: $negro;
-        color: $blanco;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+        height: 17rem;
         .footer__texto {
-            width: 100%;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-between;
-            align-items: center;
+            flex-flow: row nowrap;
+            justify-content: center;
+            width: 60%;
             p {
-                padding: .1rem 0;
+                padding: .2rem 0;
                 font-weight: $medium;
             }
             .footer__botonera {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-evenly;
-                align-items: center;
-                text-align: center;
-                width: 100%;
+                flex-flow: column nowrap;
             }
             .footer__botonera--redes {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-evenly;
-                align-items: center;
-                text-align: center;
-                width: 50%;
+                justify-content: center;
+                width: 100%;
                 margin-top: 1rem;
             }
         }
     }
     .instagram {
-        background-image: url(../media/iconos/ig_white.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 1.5rem;
-        animation: instagram 2s infinite alternate linear;
+        padding: 2rem;
     }
     .facebook {
-        background-image: url(../media/iconos/fb_white.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 1.5rem;
-        animation: facebook 2s infinite alternate linear;
+        padding: 2rem;
+        margin-left: 1rem;
     }
     
     .modal-title {
