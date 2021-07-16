@@ -176,7 +176,7 @@ footer {
     border: 2px solid $blanco;
     color: $blanco;
     font-size: 1.25rem;
-    font-weight: $bold;
+    font-weight: $medium;
 }
 .texto {
     margin: .5rem;
@@ -198,7 +198,7 @@ footer {
         font-size: 1.5rem;
     }
     .bold {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
         margin: .5rem 0;
     }
     .zona_titulo {
@@ -251,52 +251,30 @@ footer {
     }
     
     .modal-title {
-        font-weight: bold;
-        font-size: 2rem;
-        color: $negro;
+        font-size: 2.5rem;
     }
     .subtituloProductos {
-        font-weight: $medium;
-        font-size: 1.25rem;
-        color: $azul;
-        margin: .5rem;
+        font-size: 2rem;
+        margin: .5rem 1rem;
     }
     .precioProductos {
-        font-weight: $bold;
-        color: $rosa;
-        margin: .5rem;
+        margin: 1rem;
+        font-size: 1.5rem;
     }
     .btn-cerrar {
-        @include botonModalPedido;
-        background-color: #858585;
-        color: $blanco;
-        font-weight: $medium;
+        font-size: 1.25rem
     }
     .btn-agregar {
-        @include botonModalPedido;
-        background-color: $amarillo;
-        color: $negro;
-        font-weight: $medium;
+        font-size: 1.5rem;
     }
     .btn-pedido {
-        @include botonModalPedido;
         margin-top: 2rem;
-        height: 3rem;
-        width: 11rem;
-        border-radius: .5rem;
-        border: 2px solid $negro;
-        background-color: $blanco;
-        color: $azul;
-        font-size: 1.1rem;
-        font-weight: $bold;
+        height: 3.5rem;
+        width: 13rem;
+        font-size: 1.25rem;
     }
     .btn-hacer {
-        @include botonModalPedido;
-        background-color: $negro;
-        border: 2px solid $blanco;
-        color: $blanco;
-        font-size: 1.25rem;
-        font-weight: $bold;
+        font-size: 1.5rem;
     }
     .texto {
         margin: .5rem;

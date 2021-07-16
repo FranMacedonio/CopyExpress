@@ -69,7 +69,7 @@ body {
     background: linear-gradient(180deg, $amarillo 0%, $rosa 50%, $azul 100%);
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 100%;
     grid-template-rows: repeat(6, auto);
     grid-template-areas:
     "principal"
@@ -156,7 +156,7 @@ body {
     background: linear-gradient(180deg, rgb(255, 130, 188) 0%, rgb(143, 32, 86) 100%);
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
     "principal"
@@ -430,8 +430,11 @@ body {
         @include cuadros;
         height: 16rem;
         @include flexCC;
-        align-items: flex-end;
+        align-items: flex-start;
         margin-bottom: 1.5rem;
+        button {
+            align-self: flex-end;
+        }
         input {
             width: 100%;
             height: 2rem;
@@ -482,7 +485,7 @@ body {
     background: linear-gradient(180deg, #FCD380 0%, #B98620 100%);
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
     "principal"
@@ -609,7 +612,7 @@ body {
     background: linear-gradient(180deg, #80CEFF 0%, #003556 100%);
     background-attachment: fixed;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 100%;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
     "principal"
@@ -752,7 +755,7 @@ body {
             background-size: 28rem;
             margin-bottom: 1.5rem;
             .principal__index--info {
-                width: calc(100% - 2rem);
+                padding: 1.5rem;
                 .botonPedido {
                     width: 15rem;
                     height: 3.75rem;
@@ -767,7 +770,7 @@ body {
         .bottom__index {
             height: 24rem;
             margin: 1.5rem 0;
-            padding: 1.5;
+            padding: 1.5rem;
         }
         .uno {
             grid-area: infouno;
@@ -787,6 +790,185 @@ body {
             height: 22rem;
             width: 100%;
             background-size: 17rem;
+        }
+    }
+
+    #contenedor__pedido {
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        #principal__pedido {
+            grid-area: principal;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-size: 36rem;
+            margin-bottom: 1.5rem;
+            .principal__pedido--info {
+                padding: 1.5rem;
+            }
+        }
+        .bottom__pedido--form {
+            grid-area: form;
+            margin-top: 1.5rem;
+            .btn-uno {
+                font-size: 2rem;
+            }
+            .btn-dos {
+                font-size: 2rem;
+            }
+            .btn-tres {
+                font-size: 2rem;
+            }
+            .datosPersonales {
+                text-align: center;
+                input {
+                    width: 80%;
+                    height: 2.75rem;
+                    margin: .5rem 0;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                }
+            }
+            .archivos {
+                text-align: center;
+                input {
+                    width: 80%;
+                }
+                textarea {
+                    width: 80%;
+                    height: 5rem;
+                    margin: .5rem 0;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    &:focus {
+                        height: 10rem;
+                    }
+                }
+            }
+            .datosEntrega {
+                height: 16rem;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                label {
+                    font-size: 1.25rem;
+                }
+            }
+            .tituloModalUno {
+                font-size: 2rem;
+            }
+            .tituloModalDos {
+                font-size: 2rem;
+            }
+            .tituloModalTres {
+                font-size: 2rem;
+            }
+            .textoModal {
+                margin: 1.5rem;
+                p {
+                    font-size: 1.25rem;
+                    padding: .25rem;
+                }
+            }
+        }
+        .bottom__pedido--img {
+            grid-area: imagen;
+            height: 35rem;
+            background-size: 10rem;
+        }
+        .bottom__productos {
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .bottom__productos--img {
+            grid-area: productos;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(3, 10rem);
+            grid-template-areas:
+            ". uno uno uno cuatro cuatro cuatro ."
+            ". dos dos dos cinco cinco cinco ."
+            ". tres tres tres seis seis seis .";
+            column-gap: 1.5rem;
+            row-gap: 1.5rem;
+            margin: 3rem 0;
+            .producto--uno {
+                grid-area: uno;
+                .btn-ce {
+                    padding: 1.5rem;
+                    height: 10rem;
+                    background-size: auto 10rem;
+                }
+            }
+            .producto--dos {
+                grid-area: dos;
+                .btn-ce {
+                    padding: 1.5rem;
+                    height: 10rem;
+                    background-size: auto 10rem;
+                }
+            }
+            .producto--tres {
+                grid-area: tres;
+                .btn-ce {
+                    padding: 1.5rem;
+                    height: 10rem;
+                    background-size: auto 10rem;
+                }
+            }
+            .producto--cuatro {
+                grid-area: cuatro;
+                .btn-ce {
+                    padding: 1.5rem;
+                    height: 10rem;
+                    background-size: auto 10rem;
+                }
+            }
+            .producto--cinco {
+                grid-area: cinco;
+                .btn-ce {
+                    padding: 1.5rem;
+                    height: 10rem;
+                    background-size: auto 10rem;
+                }
+            }
+            .producto--seis {
+                grid-area: seis;
+                .btn-ce {
+                    padding: 1.5rem;
+                    height: 10rem;
+                    background-size: auto 10rem;
+                }
+            }
+        }
+        .bottom__productos--mail {
+            grid-area: mail;
+            padding: 1.5rem;
+            height: 19rem;
+            margin-bottom: 2rem;
+            input {
+                height: 3rem;
+                margin: 1rem 0;
+                padding: .75rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+
+    #contenedor__enviar {
+        padding: 1.5rem;
+        #principal__enviar {
+            grid-area: principal;
+            background-color: $blanco;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-size: 75%;
+            margin-bottom: 1.5rem;
+            .principal__enviar--info {
+                padding: 1.5rem;
+            }
         }
     }
 }
