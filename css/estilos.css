@@ -152,7 +152,7 @@ footer .footer__texto {
 }
 
 footer .footer__texto p {
-  padding: .1rem 0;
+  padding: 0.21 0.75rem 0;
   font-weight: 600;
 }
 
@@ -182,9 +182,9 @@ footer .footer__texto .footer__botonera--redes {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -198,9 +198,7 @@ footer .footer__texto .footer__botonera--redes {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1.5rem;
-  -webkit-animation: instagram 2s infinite alternate linear;
-          animation: instagram 2s infinite alternate linear;
+  padding: 1.25rem;
 }
 
 .facebook {
@@ -208,9 +206,8 @@ footer .footer__texto .footer__botonera--redes {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1.5rem;
-  -webkit-animation: facebook 2s infinite alternate linear;
-          animation: facebook 2s infinite alternate linear;
+  padding: 1.25rem;
+  margin-left: 1rem;
 }
 
 .modal-title {
@@ -374,6 +371,19 @@ footer .footer__texto .footer__botonera--redes {
     height: 17rem;
   }
   footer .footer__texto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  footer .footer__texto p {
+    margin-left: 1.5rem;
+  }
+  footer .footer__texto .footer__botonera {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
@@ -381,17 +391,21 @@ footer .footer__texto .footer__botonera--redes {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 60%;
   }
-  footer .footer__texto p {
-    padding: .2rem 0;
-    font-weight: 600;
-  }
-  footer .footer__texto .footer__botonera {
-    -webkit-box-orient: vertical;
+  footer .footer__texto .footer__botonera .footer__botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   footer .footer__texto .footer__botonera--redes {
     -webkit-box-pack: center;
@@ -401,10 +415,10 @@ footer .footer__texto .footer__botonera--redes {
     margin-top: 1rem;
   }
   .instagram {
-    padding: 2rem;
+    padding: 1.75rem;
   }
   .facebook {
-    padding: 2rem;
+    padding: 1.75rem;
     margin-left: 1rem;
   }
   .modal-title {
@@ -435,54 +449,6 @@ footer .footer__texto .footer__botonera--redes {
   }
   .texto {
     margin: .5rem;
-  }
-}
-
-@-webkit-keyframes facebook {
-  0% {
-    background-image: url(../media/iconos/fb_white.svg);
-  }
-  50% {
-    background-image: url(../media/iconos/fb_color.svg);
-  }
-  100% {
-    background-image: url(../media/iconos/fb_color.svg);
-  }
-}
-
-@keyframes facebook {
-  0% {
-    background-image: url(../media/iconos/fb_white.svg);
-  }
-  50% {
-    background-image: url(../media/iconos/fb_color.svg);
-  }
-  100% {
-    background-image: url(../media/iconos/fb_color.svg);
-  }
-}
-
-@-webkit-keyframes instagram {
-  0% {
-    background-image: url(../media/iconos/ig_white.svg);
-  }
-  50% {
-    background-image: url(../media/iconos/ig_color.svg);
-  }
-  100% {
-    background-image: url(../media/iconos/ig_color.svg);
-  }
-}
-
-@keyframes instagram {
-  0% {
-    background-image: url(../media/iconos/ig_white.svg);
-  }
-  50% {
-    background-image: url(../media/iconos/ig_color.svg);
-  }
-  100% {
-    background-image: url(../media/iconos/ig_color.svg);
   }
 }
 
