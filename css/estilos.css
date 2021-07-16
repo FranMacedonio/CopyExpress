@@ -452,6 +452,24 @@ footer .footer__texto .footer__botonera--redes {
   }
 }
 
+@-webkit-keyframes canciones {
+  0% {
+    color: #fbfbfb;
+  }
+  100% {
+    color: #61c8ff;
+  }
+}
+
+@keyframes canciones {
+  0% {
+    color: #fbfbfb;
+  }
+  100% {
+    color: #61c8ff;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1593,6 +1611,8 @@ body input::placeholder {
 
 #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
   padding: .25rem 0;
+  -webkit-animation: canciones 1.5s infinite alternate linear;
+          animation: canciones 1.5s infinite alternate linear;
 }
 
 #contenedor__zona .bottom__zona--podcast {
