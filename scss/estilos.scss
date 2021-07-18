@@ -699,11 +699,11 @@ body {
 }
 
 #contenedor__zona {
-    background: linear-gradient(180deg, #80CEFF 0%, #003556 100%);
+    background: linear-gradient(180deg, #3f92c5 0%, #003556 100%);
     background-attachment: fixed;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas:
     "principal"
     "canciones"
@@ -1157,6 +1157,84 @@ body {
                 width: 70%;
                 top: -4rem;
                 left: calc(50% - 14rem);
+            }
+        }
+    }
+
+    #contenedor__zona {
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        #principal__zona{
+            grid-area: principal;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_principal.svg);
+            margin-bottom: 1.5rem;
+            .principal__zona--info {
+                .subtitulo {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .bottom__zona--canciones {
+            grid-area: canciones;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_canciones.svg);
+            margin: 1.5rem 0;
+            .canciones--info {
+                padding: 1.5rem;
+                justify-content: space-evenly;
+                a {
+                    margin: .5rem 0;
+                }
+                .canciones {
+                    p {
+                        font-size: 1.5rem;
+                        padding: .5rem 0;
+                        animation: canciones 1.5s infinite alternate linear;
+                    }
+                }
+            }
+        }
+        .bottom__zona--podcast {
+            grid-area: podcast;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_podcast.svg);
+            margin: 1.5rem 0;
+            .podcast--info {
+                padding: 1.5rem;
+                justify-content: space-evenly;
+            }
+        }
+        .respira {
+            grid-area: respira;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_meditacion.svg);
+            margin: 1.5rem 0;
+            color: $blanco;
+            display: block;
+            .respira__texto {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            .respira__videos {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 1.5rem;
+                .videouno {
+                    padding: 3rem;
+                }
+                .videodos {
+                    padding: 1.5rem;
+                }
             }
         }
     }

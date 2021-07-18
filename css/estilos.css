@@ -103,7 +103,7 @@
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  background-color: #fbfbfb;
+  background-color: transparent;
 }
 
 .navbar__mobile nav button:focus {
@@ -353,13 +353,13 @@ footer .footer__texto .footer__botonera--redes {
     margin: .5rem 0;
   }
   .zona_titulo {
-    font-size: 1.75rem;
+    font-size: 3rem;
   }
   .zona_subtitulo {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
   .zona_lofigirl {
-    font-size: 1.1rem;
+    font-size: 2rem;
     text-shadow: 3px 3px 2px #161616;
     margin-bottom: .25rem;
   }
@@ -1521,15 +1521,15 @@ body button:focus {
 }
 
 #contenedor__zona {
-  background: -webkit-gradient(linear, left top, left bottom, from(#80CEFF), to(#003556));
-  background: linear-gradient(180deg, #80CEFF 0%, #003556 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3f92c5), to(#003556));
+  background: linear-gradient(180deg, #3f92c5 0%, #003556 100%);
   background-attachment: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: (auto)[5];
-      grid-template-rows: repeat(5, auto);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
       grid-template-areas: "principal" "canciones" "podcast" "respira";
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
@@ -2145,6 +2145,97 @@ body button:focus {
     width: 70%;
     top: -4rem;
     left: calc(50% - 14rem);
+  }
+  #contenedor__zona {
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  #contenedor__zona #principal__zona {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-area: principal;
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
+    padding: 1.5rem;
+    background-image: url(../media/tablet/zona_principal.svg);
+    margin-bottom: 1.5rem;
+  }
+  #contenedor__zona #principal__zona .principal__zona--info .subtitulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  #contenedor__zona .bottom__zona--canciones {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: canciones;
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
+    padding: 1.5rem;
+    background-image: url(../media/tablet/zona_canciones.svg);
+    margin: 1.5rem 0;
+  }
+  #contenedor__zona .bottom__zona--canciones .canciones--info {
+    padding: 1.5rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #contenedor__zona .bottom__zona--canciones .canciones--info a {
+    margin: .5rem 0;
+  }
+  #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    -webkit-animation: canciones 1.5s infinite alternate linear;
+            animation: canciones 1.5s infinite alternate linear;
+  }
+  #contenedor__zona .bottom__zona--podcast {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: podcast;
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
+    padding: 1.5rem;
+    background-image: url(../media/tablet/zona_podcast.svg);
+    margin: 1.5rem 0;
+  }
+  #contenedor__zona .bottom__zona--podcast .podcast--info {
+    padding: 1.5rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #contenedor__zona .respira {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: respira;
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
+    padding: 1.5rem;
+    background-image: url(../media/tablet/zona_meditacion.svg);
+    margin: 1.5rem 0;
+    color: #fbfbfb;
+    display: block;
+  }
+  #contenedor__zona .respira .respira__texto {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #contenedor__zona .respira .respira__videos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+  #contenedor__zona .respira .respira__videos .videouno {
+    padding: 3rem;
+  }
+  #contenedor__zona .respira .respira__videos .videodos {
+    padding: 1.5rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
