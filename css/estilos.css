@@ -1510,7 +1510,14 @@ body button:focus {
   -ms-grid-column: 1;
   grid-area: imagen;
   position: relative;
+  width: 100%;
+  height: 10rem;
+}
+
+#contenedor__contacto .botton__contacto--img img {
+  position: absolute;
   top: -3rem;
+  left: calc(50% - 10rem);
 }
 
 #contenedor__zona {
@@ -2002,7 +2009,7 @@ body button:focus {
   #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce {
     height: 10rem;
     background-size: 50%;
-    background-position: 24rem center;
+    background-position: 24rem 40%;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce::after {
     font-size: 2.5rem;
@@ -2040,6 +2047,104 @@ body button:focus {
   }
   #contenedor__enviar #principal__enviar .principal__enviar--info {
     padding: 1.5rem;
+  }
+  #contenedor__contacto {
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  #contenedor__contacto #principal__contacto {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-area: principal;
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
+    padding: 1.5rem;
+    background-size: 30rem;
+    margin-bottom: 1.5rem;
+  }
+  #contenedor__contacto .bottom__contacto--form {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: form;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  #contenedor__contacto .bottom__contacto--form input {
+    height: 3rem;
+    padding: .75rem;
+    border-radius: .5rem;
+  }
+  #contenedor__contacto .bottom__contacto--form textarea.textareaContacto {
+    height: 7rem;
+    border-radius: .5rem;
+    padding: .75rem;
+    margin: .25rem 0;
+  }
+  #contenedor__contacto .bottom__contacto--form .btn-agregar {
+    margin-top: 1rem;
+  }
+  #contenedor__contacto .bottom__contacto--form .texto {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  #contenedor__contacto .bottom__contacto--form .precioProductos {
+    margin: .5rem;
+  }
+  #contenedor__contacto .bottom__contacto--info {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: info;
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+    row-gap: 1.5rem;
+        grid-template-areas: "wpp ubicacion" "mail redes";
+    margin: 1.5rem 0;
+  }
+  #contenedor__contacto .bottom__contacto--info .wpp {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: wpp;
+  }
+  #contenedor__contacto .bottom__contacto--info .ubicacion {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: ubicacion;
+  }
+  #contenedor__contacto .bottom__contacto--info .mail {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: mail;
+  }
+  #contenedor__contacto .bottom__contacto--info .redes {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: redes;
+  }
+  #contenedor__contacto .bottom__contacto--mapa {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: mapa;
+    margin: 1.5rem 0;
+  }
+  #contenedor__contacto .bottom__contacto--mapa iframe {
+    height: 14rem;
+    border-radius: .75rem;
+  }
+  #contenedor__contacto .botton__contacto--img {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-area: imagen;
+    height: 14rem;
+  }
+  #contenedor__contacto .botton__contacto--img img {
+    width: 70%;
+    top: -4rem;
+    left: calc(50% - 14rem);
   }
 }
 /*# sourceMappingURL=estilos.css.map */
