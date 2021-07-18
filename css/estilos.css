@@ -953,6 +953,7 @@ body button:focus {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: prod;
+  padding: 1rem;
   width: 100%;
   height: 12rem;
   background-color: #fbfbfb;
@@ -980,7 +981,6 @@ body button:focus {
   -ms-grid-column: 1;
   grid-area: productos;
   width: 100%;
-  height: auto;
   margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1095,7 +1095,7 @@ body button:focus {
   background-color: #fbfbfb;
   background-image: url(../media/utilesescolares/lapices.png);
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 70%;
   background-position: 13rem center;
 }
 
@@ -1151,7 +1151,7 @@ body button:focus {
   background-color: #fbfbfb;
   background-image: url(../media/utilesescolares/cuaderno.png);
   background-repeat: no-repeat;
-  background-size: 45%;
+  background-size: 40%;
   background-position: 15rem center;
 }
 
@@ -1930,83 +1930,84 @@ body button:focus {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: productos;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
-    -ms-grid-rows: (10rem)[3];
-        grid-template-rows: repeat(3, 10rem);
-        grid-template-areas: ". uno uno uno cuatro cuatro cuatro ." ". dos dos dos cinco cinco cinco ." ". tres tres tres seis seis seis .";
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    margin: 3rem 0;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: uno;
+    margin: 1.5rem 0;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce {
-    padding: 1.5rem;
     height: 10rem;
-    background-size: auto 10rem;
+    background-size: 45%;
+    background-position: 2rem center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce::after {
+    font-size: 2.5rem;
+    right: 2.5rem;
+    top: 3.25rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: dos;
+    margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce {
-    padding: 1.5rem;
     height: 10rem;
-    background-size: auto 10rem;
+    background-size: 80%;
+    background-position: 22rem center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce::after {
+    font-size: 2.5rem;
+    left: 2.5rem;
+    top: 3.25rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: tres;
+    margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce {
-    padding: 1.5rem;
     height: 10rem;
-    background-size: auto 10rem;
+    background-size: 70%;
+    background-position: -10rem center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce::after {
+    font-size: 2.5rem;
+    right: 2.5rem;
+    top: 3.25rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: cuatro;
+    margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce {
-    padding: 1.5rem;
     height: 10rem;
-    background-size: auto 10rem;
+    background-size: 45%;
+    background-position: 26rem center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce::after {
+    font-size: 2.5rem;
+    left: 2.5rem;
+    top: 3.25rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco {
-    -ms-grid-row: 2;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: cinco;
+    margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce {
-    padding: 1.5rem;
     height: 10rem;
-    background-size: auto 10rem;
+    background-size: 40%;
+    background-position: -2rem center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce::after {
+    font-size: 2.5rem;
+    right: 2.5rem;
+    top: 3.25rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 3;
-    grid-area: seis;
+    margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce {
-    padding: 1.5rem;
     height: 10rem;
-    background-size: auto 10rem;
+    background-size: 50%;
+    background-position: 24rem center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce::after {
+    font-size: 2.5rem;
+    left: 2.5rem;
+    top: 3.25rem;
   }
   #contenedor__pedido .bottom__productos--mail {
     -ms-grid-row: 2;
