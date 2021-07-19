@@ -1243,6 +1243,9 @@ body {
 }
 
 @media all and (min-width: 992px) {
+    body {
+        font-size: 1rem;
+    }
     header.navbar__mobile {
         display: none;
     }
@@ -1255,24 +1258,20 @@ body {
         grid-template-rows: repeat(3, auto);
         grid-template-areas:
         "principal principal principal principal principal principal principal principal principal principal principal principal"
-        "infouno infouno infouno infouno infodos infodos infodos infodos infotres infotres infotres infotres"
-        ". . imagen imagen imagen . infocuatro infocuatro infocuatro infocuatro . .";
-        column-gap: 1.5rem;
+        "infouno infouno infouno infodos infodos infodos infotres infotres infotres infocuatro infocuatro infocuatro"
+        "imagen imagen imagen imagen imagen imagen imagen imagen imagen imagen imagen imagen";
+        column-gap: 1rem;
         padding: 1.5rem;
         #principal__index {
             width: calc(100vw - 3.75rem);
             height: calc(100vh - 3rem);
             background-size: 26rem;
             background-position: 85% bottom;
-            margin-bottom: 1.5rem;
             .principal__index--info {
                 width: 50%;
                 text-align: left;
-                display: flex;
-                flex-flow: column nowrap;
                 justify-content: flex-start;
                 align-items: flex-start;
-                position: relative;
                 top: 13%;
                 margin-left: 1rem;
                 .botonPedido {
@@ -1282,15 +1281,17 @@ body {
                     text-align: center;
                     a {
                         font-size: 1.25rem;
+                        font-weight: $medium;
                         width: 100%;
                     }
                 }
             }
         }
         .bottom__index {
-            height: 24rem;
+            height: 22rem;
             margin: 1.5rem 0;
-            padding: 1.5rem;
+            padding: 1rem;
+            box-shadow: 3px 3px 4px #1d1d1d90;
         }
         .uno {
             grid-area: infouno;
@@ -1306,10 +1307,11 @@ body {
         }
         .bottom__index--img {
             grid-area: imagen;
-            margin: 1.5rem 0;
-            height: 22rem;
+            background-image: url(../media/desktop/index_bottom.svg);
+            height: 20rem;
             width: 100%;
-            background-size: 17rem;
+            background-size: 24rem;
+            background-position: calc(50% - 5rem) center;
         }
     }
 

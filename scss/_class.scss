@@ -292,7 +292,6 @@ footer {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
-        transition: all 500ms linear;
         .copyexpress {
             flex-grow: 1;
             &:hover {
@@ -312,6 +311,7 @@ footer {
             flex-flow: row nowrap;
             justify-content: center;
             align-items: center;
+            font-size: 1.25rem;
             .pedido {
                 margin: 0 1rem;
                 transition: color 400ms linear;

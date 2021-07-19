@@ -467,8 +467,6 @@ footer .footer__texto .footer__botonera--redes {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: all 500ms linear;
-    transition: all 500ms linear;
   }
   header.navbar__desktop .copyexpress {
     -webkit-box-flex: 1;
@@ -498,6 +496,7 @@ footer .footer__texto .footer__botonera--redes {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 1.25rem;
   }
   header.navbar__desktop .botonera__desktop .pedido {
     margin: 0 1rem;
@@ -2464,6 +2463,9 @@ body button:focus {
 }
 
 @media all and (min-width: 992px) {
+  body {
+    font-size: 1rem;
+  }
   header.navbar__mobile {
     display: none;
   }
@@ -2477,9 +2479,9 @@ body button:focus {
     grid-area: principal;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, auto);
-        grid-template-areas: "principal principal principal principal principal principal principal principal principal principal principal principal" "infouno infouno infouno infouno infodos infodos infodos infodos infotres infotres infotres infotres" ". . imagen imagen imagen . infocuatro infocuatro infocuatro infocuatro . .";
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+        grid-template-areas: "principal principal principal principal principal principal principal principal principal principal principal principal" "infouno infouno infouno infodos infodos infodos infotres infotres infotres infocuatro infocuatro infocuatro" "imagen imagen imagen imagen imagen imagen imagen imagen imagen imagen imagen imagen";
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
     padding: 1.5rem;
   }
   #contenedor__index #principal__index {
@@ -2487,25 +2489,16 @@ body button:focus {
     height: calc(100vh - 3rem);
     background-size: 26rem;
     background-position: 85% bottom;
-    margin-bottom: 1.5rem;
   }
   #contenedor__index #principal__index .principal__index--info {
     width: 50%;
     text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    position: relative;
     top: 13%;
     margin-left: 1rem;
   }
@@ -2517,46 +2510,50 @@ body button:focus {
   }
   #contenedor__index #principal__index .principal__index--info .botonPedido a {
     font-size: 1.25rem;
+    font-weight: 600;
     width: 100%;
   }
   #contenedor__index .bottom__index {
-    height: 24rem;
+    height: 22rem;
     margin: 1.5rem 0;
-    padding: 1.5rem;
+    padding: 1rem;
+    -webkit-box-shadow: 3px 3px 4px #1d1d1d90;
+            box-shadow: 3px 3px 4px #1d1d1d90;
   }
   #contenedor__index .uno {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
+    -ms-grid-column-span: 3;
     grid-area: infouno;
   }
   #contenedor__index .dos {
     -ms-grid-row: 2;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
     grid-area: infodos;
   }
   #contenedor__index .tres {
     -ms-grid-row: 2;
-    -ms-grid-column: 9;
-    -ms-grid-column-span: 4;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
     grid-area: infotres;
   }
   #contenedor__index .cuatro {
-    -ms-grid-row: 3;
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 4;
+    -ms-grid-row: 2;
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
     grid-area: infocuatro;
   }
   #contenedor__index .bottom__index--img {
     -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
     grid-area: imagen;
-    margin: 1.5rem 0;
-    height: 22rem;
+    background-image: url(../media/desktop/index_bottom.svg);
+    height: 20rem;
     width: 100%;
-    background-size: 17rem;
+    background-size: 24rem;
+    background-position: calc(50% - 5rem) center;
   }
   #contenedor__pedido {
     -webkit-column-gap: 1.5rem;
@@ -2655,8 +2652,8 @@ body button:focus {
   }
   #contenedor__pedido .bottom__pedido--img {
     -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
     grid-area: imagen;
     height: 35rem;
     background-size: 10rem;
@@ -2868,8 +2865,8 @@ body button:focus {
   }
   #contenedor__contacto .botton__contacto--img {
     -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
     grid-area: imagen;
     height: 14rem;
   }
