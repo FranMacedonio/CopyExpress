@@ -506,6 +506,11 @@ footer .footer__texto .footer__botonera--redes {
   header.navbar__desktop .botonera__desktop .pedido:hover {
     color: #ff82bd;
   }
+  header.navbar__desktop .botonera__desktop .pedidoActivo {
+    margin: 0 1rem;
+    color: #ff82bd;
+    font-weight: 700;
+  }
   header.navbar__desktop .botonera__desktop .contacto {
     margin-right: 1rem;
     -webkit-transition: color 400ms linear;
@@ -514,6 +519,11 @@ footer .footer__texto .footer__botonera--redes {
   header.navbar__desktop .botonera__desktop .contacto:hover {
     color: #fcd380;
   }
+  header.navbar__desktop .botonera__desktop .contactoActivo {
+    margin-right: 1rem;
+    color: #fcd380;
+    font-weight: 700;
+  }
   header.navbar__desktop .botonera__desktop .zona {
     margin-right: 1.5rem;
     -webkit-transition: color 400ms linear;
@@ -521,6 +531,11 @@ footer .footer__texto .footer__botonera--redes {
   }
   header.navbar__desktop .botonera__desktop .zona:hover {
     color: #80ceff;
+  }
+  header.navbar__desktop .botonera__desktop .zonaActivo {
+    margin-right: 1.5rem;
+    color: #80ceff;
+    font-weight: 700;
   }
   header.navbar__desktop .botonera__desktop--redes {
     display: -webkit-box;
@@ -587,7 +602,14 @@ footer .footer__texto .footer__botonera--redes {
     padding: .5rem;
   }
   footer {
-    height: 17rem;
+    height: 12rem;
+  }
+  footer .instagram {
+    padding: 1rem;
+  }
+  footer .facebook {
+    padding: 1rem;
+    margin-left: 1rem;
   }
   footer .footer__texto {
     -webkit-box-orient: vertical;
@@ -632,13 +654,6 @@ footer .footer__texto .footer__botonera--redes {
             justify-content: center;
     width: 100%;
     margin-top: 1rem;
-  }
-  .instagram {
-    padding: 1.5rem;
-  }
-  .facebook {
-    padding: 1.5rem;
-    margin-left: 1rem;
   }
   .modal-title {
     font-size: 2.5rem;

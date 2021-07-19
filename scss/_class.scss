@@ -319,6 +319,11 @@ footer {
                     color: $rosa;
                 }
             }
+            .pedidoActivo {
+                margin: 0 1rem;
+                color: $rosa;
+                font-weight: $bold;
+            }
             .contacto {
                 margin-right: 1rem;
                 transition: color 400ms linear;
@@ -326,12 +331,22 @@ footer {
                     color: $amarillo;
                 }
             }
+            .contactoActivo {
+                margin-right: 1rem;
+                color: $amarillo;
+                font-weight: $bold;
+            }
             .zona {
                 margin-right: 1.5rem;
                 transition: color 400ms linear;
                 &:hover {
                     color: $azul;
                 }
+            }
+            .zonaActivo {
+                margin-right: 1.5rem;
+                color: $azul;
+                font-weight: $bold;
             }
         }
         .botonera__desktop--redes {
@@ -395,7 +410,14 @@ footer {
         }
     }
     footer {
-        height: 17rem;
+        height: 12rem;
+        .instagram {
+            padding: 1rem;
+        }
+        .facebook {
+            padding: 1rem;
+            margin-left: 1rem;
+        }
         .footer__texto {
             flex-flow: column nowrap;
             justify-content: center;
@@ -420,14 +442,6 @@ footer {
             }
         }
     }
-    .instagram {
-        padding: 1.5rem;
-    }
-    .facebook {
-        padding: 1.5rem;
-        margin-left: 1rem;
-    }
-    
     .modal-title {
         font-size: 2.5rem;
     }
