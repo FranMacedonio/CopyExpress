@@ -42,7 +42,7 @@
     text-shadow: 3px 3px 2px rgb(22, 22, 22);
     margin-bottom: .25rem;
 }
-.navbar__mobile {
+header.navbar__mobile {
     .bg-negro {
         background-color: #1d1d1dec;
         .botonera {
@@ -252,6 +252,179 @@ footer {
     }
     .facebook {
         padding: 1.75rem;
+        margin-left: 1rem;
+    }
+    
+    .modal-title {
+        font-size: 2.5rem;
+    }
+    .subtituloProductos {
+        font-size: 2rem;
+        margin: .5rem 1rem;
+    }
+    .precioProductos {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    .btn-cerrar {
+        font-size: 1.25rem
+    }
+    .btn-agregar {
+        font-size: 1.5rem;
+    }
+    .btn-pedido {
+        margin-top: 2rem;
+        height: 3.5rem;
+        width: 13rem;
+        font-size: 1.25rem;
+    }
+    .btn-hacer {
+        font-size: 1.5rem;
+    }
+    .texto {
+        margin: .5rem;
+    }
+}
+
+@media all and (min-width: 992px) {
+    header.navbar__desktop {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 500ms linear;
+        .copyexpress {
+            flex-grow: 1;
+            &:hover {
+                .express__amarillo {
+                    color: $amarillo;
+                }
+                .express__rosa {
+                    color: $rosa;
+                }
+                .express__azul {
+                    color: $azul;
+                }
+            }
+        }
+        .botonera__desktop {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            .pedido {
+                margin: 0 1rem;
+                transition: color 400ms linear;
+                &:hover {
+                    color: $rosa;
+                }
+            }
+            .contacto {
+                margin-right: 1rem;
+                transition: color 400ms linear;
+                &:hover {
+                    color: $amarillo;
+                }
+            }
+            .zona {
+                margin-right: 1.5rem;
+                transition: color 400ms linear;
+                &:hover {
+                    color: $azul;
+                }
+            }
+        }
+        .botonera__desktop--redes {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            .instagram {
+                background-image: url(../media/iconos/ig_black.svg);
+                transition: background-image 400ms linear;
+                &:hover {
+                    background-image: url(../media/iconos/ig_color.svg);
+                }
+            }
+            .facebook {
+                background-image: url(../media/iconos/fb_black.svg);
+                transition: background-image 400ms linear;
+                &:hover {
+                    background-image: url(../media/iconos/fb_color.svg);
+                }
+            }
+        }
+    }
+    .titulo__mobile {
+        font-size: 1.75rem;
+    }
+    .titulo__mobile--blanco {
+        font-size: 2rem;
+        color: $blanco;
+    }
+    .tagline {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .resaltador {
+        font-size: 1.25rem;
+    }
+    .bold {
+        font-size: 1.75rem;
+        margin: .5rem 0;
+    }
+    .zona_titulo {
+        font-size: 3rem;
+    }
+    .zona_subtitulo {
+        font-size: 2rem;
+    }
+    .zona_lofigirl {
+        font-size: 2rem;
+        text-shadow: 3px 3px 2px rgb(22, 22, 22);
+        margin-bottom: .25rem;
+    }
+    .navbar__mobile {
+        .bg-negro {
+            .botonera {
+                span {
+                    font-size: 1.5rem;
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+    footer {
+        height: 17rem;
+        .footer__texto {
+            flex-flow: column nowrap;
+            justify-content: center;
+            width: 100%;
+            p {
+                margin-left: 1.5rem;
+            }
+            .footer__botonera {
+                flex-flow: row nowrap;
+                justify-content: center;
+                .footer__botones {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            .footer__botonera--redes {
+                justify-content: center;
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .instagram {
+        padding: 1.5rem;
+    }
+    .facebook {
+        padding: 1.5rem;
         margin-left: 1rem;
     }
     

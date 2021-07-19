@@ -74,7 +74,9 @@ body {
         }
     }
 }
-
+.desktop {
+    display: none;
+}
 #contenedor__index {
     background: linear-gradient(180deg, $amarillo 0%, $rosa 50%, $azul 100%);
     background-attachment: fixed;
@@ -854,6 +856,433 @@ body {
                     a {
                         font-size: 1.5rem;
                         padding: .75rem;
+                    }
+                }
+            }
+        }
+        .bottom__index {
+            height: 24rem;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+        }
+        .uno {
+            grid-area: infouno;
+        }
+        .dos {
+            grid-area: infodos;
+        }
+        .tres {
+            grid-area: infotres;
+        }
+        .cuatro {
+            grid-area: infocuatro;
+        }
+        .bottom__index--img {
+            grid-area: imagen;
+            margin: 1.5rem 0;
+            height: 22rem;
+            width: 100%;
+            background-size: 17rem;
+        }
+    }
+
+    #contenedor__pedido {
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        #principal__pedido {
+            grid-area: principal;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-size: 36rem;
+            margin-bottom: 1.5rem;
+            .principal__pedido--info {
+                padding: 1.5rem;
+            }
+        }
+        .bottom__pedido--form {
+            grid-area: form;
+            margin-top: 1.5rem;
+            .btn-uno {
+                font-size: 2rem;
+            }
+            .btn-dos {
+                font-size: 2rem;
+            }
+            .btn-tres {
+                font-size: 2rem;
+            }
+            .datosPersonales {
+                text-align: center;
+                input {
+                    width: 80%;
+                    height: 2.75rem;
+                    margin: .5rem 0;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                }
+            }
+            .archivos {
+                text-align: center;
+                input {
+                    width: 80%;
+                }
+                textarea {
+                    width: 80%;
+                    height: 5rem;
+                    margin: .5rem 0;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    &:focus {
+                        height: 10rem;
+                    }
+                }
+            }
+            .datosEntrega {
+                height: 16rem;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                label {
+                    font-size: 1.25rem;
+                }
+            }
+            .tituloModalUno {
+                font-size: 2rem;
+            }
+            .tituloModalDos {
+                font-size: 2rem;
+            }
+            .tituloModalTres {
+                font-size: 2rem;
+            }
+            .textoModal {
+                margin: 1.5rem;
+                p {
+                    font-size: 1.25rem;
+                    padding: .25rem;
+                }
+            }
+        }
+        .bottom__pedido--img {
+            grid-area: imagen;
+            height: 35rem;
+            background-size: 10rem;
+        }
+        .bottom__productos {
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .bottom__productos--img {
+            grid-area: productos;
+            .producto--uno {
+                margin: 1.5rem 0;
+                .btn-ce {
+                    height: 10rem;
+                    background-size: 45%;
+                    background-position: 2rem center;
+                    &::after {
+                        font-size: 2.5rem;
+                        right: 2.5rem;
+                        top: 3.25rem;
+                    }
+                }
+            }
+            .producto--dos {
+                margin-bottom: 1.5rem;
+                .btn-ce {
+                    height: 10rem;
+                    background-size: 80%;
+                    background-position: 22rem center;
+                    &::after {
+                        font-size: 2.5rem;
+                        left: 2.5rem;
+                        top: 3.25rem;
+                    }
+                }
+            }
+            .producto--tres {
+                margin-bottom: 1.5rem;
+                .btn-ce {
+                    height: 10rem;
+                    background-size: 70%;
+                    background-position: -10rem center;
+                    &::after {
+                        font-size: 2.5rem;
+                        right: 2.5rem;
+                        top: 3.25rem;
+                    }
+                }
+            }
+            .producto--cuatro {
+                margin-bottom: 1.5rem;
+                .btn-ce {
+                    height: 10rem;
+                    background-size: 45%;
+                    background-position: 26rem center;
+                    &::after {
+                        font-size: 2.5rem;
+                        left: 2.5rem;
+                        top: 3.25rem;
+                    }
+                }
+            }
+            .producto--cinco {
+                margin-bottom: 1.5rem;
+                .btn-ce {
+                    height: 10rem;
+                    background-size: 40%;
+                    background-position: -2rem center;
+                    &::after {
+                        font-size: 2.5rem;
+                        right: 2.5rem;
+                        top: 3.25rem;
+                    }
+                }
+            }
+            .producto--seis {
+                margin-bottom: 1.5rem;
+                .btn-ce {
+                    height: 10rem;
+                    background-size: 50%;
+                    background-position: 24rem 40%;
+                    &::after {
+                        font-size: 2.5rem;
+                        left: 2.5rem;
+                        top: 3.25rem;
+                    }
+                }
+            }
+        }
+        .bottom__productos--mail {
+            grid-area: mail;
+            padding: 1.5rem;
+            height: 19rem;
+            margin-bottom: 2rem;
+            input {
+                height: 3rem;
+                margin: 1rem 0;
+                padding: .75rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+
+    #contenedor__enviar {
+        padding: 1.5rem;
+        #principal__enviar {
+            grid-area: principal;
+            background-color: $blanco;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-size: 75%;
+            margin-bottom: 1.5rem;
+            .principal__enviar--info {
+                padding: 1.5rem;
+            }
+        }
+    }
+
+    #contenedor__contacto {
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        #principal__contacto{
+            grid-area: principal;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-size: 30rem;
+            margin-bottom: 1.5rem;
+        }
+        .bottom__contacto--form {
+            grid-area: form;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            input {
+                height: 3rem;
+                padding: .75rem;
+                border-radius: .5rem;
+            }
+            textarea.textareaContacto {
+                height: 7rem;
+                border-radius: .5rem;
+                padding: .75rem;
+                margin: .25rem 0;
+            }
+            .btn-agregar {
+                margin-top: 1rem;
+            }
+            .texto {
+                margin: 1rem;
+                font-size: 1.5rem;
+            }
+            .precioProductos {
+                margin: .5rem;
+            }
+        }
+        .bottom__contacto--info {
+            grid-area: info;
+            display: grid;
+            column-gap: 1.5rem;
+            row-gap: 1.5rem;
+            grid-template-areas:
+            "wpp ubicacion"
+            "mail redes";
+            margin: 1.5rem 0;
+            .wpp {
+                grid-area: wpp;
+            }
+            .ubicacion {
+                grid-area: ubicacion;
+            }
+            .mail {
+                grid-area: mail;
+            }
+            .redes {
+                grid-area: redes;
+            }
+        }
+        .bottom__contacto--mapa {
+            grid-area: mapa;
+            margin: 1.5rem 0;
+            iframe {
+                height: 14rem;
+                border-radius: .75rem;
+            }
+        }
+        .botton__contacto--img {
+            grid-area: imagen;
+            height: 14rem;
+            img {
+                width: 70%;
+                top: -4rem;
+                left: calc(50% - 14rem);
+            }
+        }
+    }
+
+    #contenedor__zona {
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        #principal__zona{
+            grid-area: principal;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_principal.svg);
+            margin-bottom: 1.5rem;
+            .principal__zona--info {
+                .subtitulo {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .bottom__zona--canciones {
+            grid-area: canciones;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_canciones.svg);
+            margin: 1.5rem 0;
+            .canciones--info {
+                padding: 1.5rem;
+                justify-content: space-evenly;
+                a {
+                    margin: .5rem 0;
+                }
+                .canciones {
+                    p {
+                        font-size: 1.5rem;
+                        padding: .5rem 0;
+                        animation: canciones 1.5s infinite alternate linear;
+                    }
+                }
+            }
+        }
+        .bottom__zona--podcast {
+            grid-area: podcast;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_podcast.svg);
+            margin: 1.5rem 0;
+            .podcast--info {
+                padding: 1.5rem;
+                justify-content: space-evenly;
+            }
+        }
+        .respira {
+            grid-area: respira;
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
+            padding: 1.5rem;
+            background-image: url(../media/tablet/zona_meditacion.svg);
+            margin: 1.5rem 0;
+            color: $blanco;
+            display: block;
+            .respira__texto {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            .respira__videos {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 1.5rem;
+                .videouno {
+                    padding: 3rem;
+                }
+                .videodos {
+                    padding: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 992px) {
+    header.navbar__mobile {
+        display: none;
+    }
+    .desktop {
+        display: initial;
+    }
+    #contenedor__index {
+        grid-area: principal;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "principal principal principal principal principal principal principal principal principal principal principal principal"
+        "infouno infouno infouno infouno infodos infodos infodos infodos infotres infotres infotres infotres"
+        ". . imagen imagen imagen . infocuatro infocuatro infocuatro infocuatro . .";
+        column-gap: 1.5rem;
+        padding: 1.5rem;
+        #principal__index {
+            width: calc(100vw - 3.75rem);
+            height: calc(100vh - 3rem);
+            background-size: 26rem;
+            background-position: 85% bottom;
+            margin-bottom: 1.5rem;
+            .principal__index--info {
+                width: 50%;
+                text-align: left;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: relative;
+                top: 13%;
+                margin-left: 1rem;
+                .botonPedido {
+                    width: 13rem;
+                    height: 3rem;
+                    margin-top: 2rem;
+                    text-align: center;
+                    a {
+                        font-size: 1.25rem;
+                        width: 100%;
                     }
                 }
             }
