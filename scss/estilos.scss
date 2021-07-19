@@ -62,6 +62,16 @@ body {
         &::placeholder {
             color: #1d1d1d;
         }
+        &:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+        &:active {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
     }
     button {
         outline: none;
@@ -72,6 +82,16 @@ body {
             border: none;
             box-shadow: none;
         }
+        &:active {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
     }
 }
 .desktop {
@@ -1272,8 +1292,8 @@ body {
                 text-align: left;
                 justify-content: flex-start;
                 align-items: flex-start;
-                top: 13%;
-                margin-left: 1rem;
+                top: 15%;
+                margin-left: 5rem;
                 .botonPedido {
                     width: 13rem;
                     height: 3rem;
@@ -1320,26 +1340,35 @@ body {
         padding: 1.5rem;
         #principal__pedido {
             grid-area: principal;
-            width: calc(100vw - 3rem);
+            width: calc(100vw - 3.75rem);
             height: calc(100vh - 3rem);
             padding: 1.5rem;
-            background-size: 36rem;
+            background-size: 30rem;
+            background-position: 90% 75%;
             margin-bottom: 1.5rem;
             .principal__pedido--info {
-                padding: 1.5rem;
+                width: 50%;
+                height: 36%;
+                text-align: left;
+                justify-content: center;
+                align-items: flex-start;
+                position: relative;
+                top: 20%;
+                margin-left: 4rem;
             }
         }
         .bottom__pedido--form {
             grid-area: form;
-            margin-top: 1.5rem;
+            width: 70%;
+            margin: auto;
             .btn-uno {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             .btn-dos {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             .btn-tres {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             .datosPersonales {
                 text-align: center;

@@ -580,7 +580,7 @@ footer .footer__texto .footer__botonera--redes {
     margin-bottom: 1.5rem;
   }
   .resaltador {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   .bold {
     font-size: 1.75rem;
@@ -801,6 +801,20 @@ body input::placeholder {
   color: #1d1d1d;
 }
 
+body input:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body input:active {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 body button {
   outline: none;
   border: none;
@@ -813,6 +827,19 @@ body button:focus {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+body button:active {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body input[type=number]::-webkit-inner-spin-button,
+body input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .desktop {
@@ -2514,8 +2541,8 @@ body button:focus {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    top: 13%;
-    margin-left: 1rem;
+    top: 15%;
+    margin-left: 5rem;
   }
   #contenedor__index #principal__index .principal__index--info .botonPedido {
     width: 13rem;
@@ -2580,29 +2607,42 @@ body button:focus {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-area: principal;
-    width: calc(100vw - 3rem);
+    width: calc(100vw - 3.75rem);
     height: calc(100vh - 3rem);
     padding: 1.5rem;
-    background-size: 36rem;
+    background-size: 30rem;
+    background-position: 90% 75%;
     margin-bottom: 1.5rem;
   }
   #contenedor__pedido #principal__pedido .principal__pedido--info {
-    padding: 1.5rem;
+    width: 50%;
+    height: 36%;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    top: 20%;
+    margin-left: 4rem;
   }
   #contenedor__pedido .bottom__pedido--form {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: form;
-    margin-top: 1.5rem;
+    width: 70%;
+    margin: auto;
   }
   #contenedor__pedido .bottom__pedido--form .btn-uno {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #contenedor__pedido .bottom__pedido--form .btn-dos {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #contenedor__pedido .bottom__pedido--form .btn-tres {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #contenedor__pedido .bottom__pedido--form .datosPersonales {
     text-align: center;
