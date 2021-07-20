@@ -1641,7 +1641,7 @@ body input[type=number]::-webkit-outer-spin-button {
   transition: background-color 500ms ease-in-out;
 }
 
-#contenedor__contacto .bottom__contacto--form .btn-agregar:focus {
+#contenedor__contacto .bottom__contacto--form .btn-agregar:hover {
   background-color: #80ceff;
 }
 
@@ -3010,8 +3010,9 @@ body input[type=number]::-webkit-outer-spin-button {
     left: 3%;
   }
   #contenedor__pedido .bottom__productos--mail {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
     grid-area: mail;
     padding: 3rem;
     height: 14rem;
@@ -3118,30 +3119,37 @@ body input[type=number]::-webkit-outer-spin-button {
     grid-area: info;
     display: -ms-grid;
     display: grid;
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
-    row-gap: 1.5rem;
-        grid-template-areas: "wpp ubicacion" "mail redes";
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas: "wpp wpp ubicacion ubicacion mail mail redes redes";
     margin: 1.5rem 0;
   }
   #contenedor__contacto .bottom__contacto--info .wpp {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: wpp;
   }
   #contenedor__contacto .bottom__contacto--info .ubicacion {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-area: ubicacion;
   }
   #contenedor__contacto .bottom__contacto--info .mail {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
     grid-area: mail;
   }
   #contenedor__contacto .bottom__contacto--info .redes {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2;
     grid-area: redes;
   }
   #contenedor__contacto .bottom__contacto--mapa {
@@ -3162,9 +3170,9 @@ body input[type=number]::-webkit-outer-spin-button {
     height: 14rem;
   }
   #contenedor__contacto .botton__contacto--img img {
-    width: 40%;
+    height: 120%;
     top: -4rem;
-    left: calc(50% - 14rem);
+    left: 30%;
   }
   #contenedor__zona {
     -webkit-column-gap: 1.5rem;
