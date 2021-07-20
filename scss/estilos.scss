@@ -72,6 +72,11 @@ body {
         outline: none;
         border: none;
         box-shadow: none;
+        &:focus {
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
     }
     input[type=number]::-webkit-inner-spin-button, 
     input[type=number]::-webkit-outer-spin-button { 
@@ -496,7 +501,7 @@ body {
                 background-size: 40%;
                 background-position: 15rem center;
                 &::after {
-                    content: "Cuaderno";
+                    content: "Cuadernos";
                     font-size: 1.5rem;
                     font-weight: $bold;
                     color: $azul;
@@ -1359,6 +1364,7 @@ body {
         .desktop__pedido--form {
             grid-area: formulario;
             @include flexCC;
+            margin-top: 1.5rem;
             .titulo {
                 color: $negro;
                 font-size: 2rem;
@@ -1481,85 +1487,152 @@ body {
         .bottom__productos {
             grid-area: prod;
             padding: 1.5rem;
-            margin-top: 1.5rem;
+            margin-top: 3rem;
+            z-index: 1;
         }
         .bottom__productos--img {
             grid-area: productos;
+            background-image: url(../media/mobile/pedido_bottom.svg);
+            background-repeat: no-repeat;
+            background-position: center -1rem;
+            background-size: 11rem;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas:
+            "uno uno uno uno . . . . dos dos dos dos"
+            "tres tres tres tres . . . . cuatro cuatro cuatro cuatro"
+            "cinco cinco cinco cinco . . . . seis seis seis seis";
+            margin-top: 0;
             .producto--uno {
+                grid-area: uno;
                 margin: 1.5rem 0;
                 .btn-ce {
                     height: 10rem;
                     background-size: 45%;
-                    background-position: 2rem center;
+                    background-position: -5rem center;
+                    transition: background-position 600ms linear;
                     &::after {
-                        font-size: 2.5rem;
-                        right: 2.5rem;
-                        top: 3.25rem;
+                        font-size: 2rem;
+                        right: 10%;
+                        top: 3.75rem;
+                        transition: right 600ms linear;
+                    }
+                    &:hover {
+                        background-position: 5% center;
+                        &::after {
+                            right: 3%;
+                        }
                     }
                 }
             }
             .producto--dos {
-                margin-bottom: 1.5rem;
+                grid-area: dos;
+                margin: 1.5rem 0;
                 .btn-ce {
                     height: 10rem;
                     background-size: 80%;
-                    background-position: 22rem center;
+                    background-position: 350% center;
+                    transition: background-position 600ms linear;
                     &::after {
-                        font-size: 2.5rem;
-                        left: 2.5rem;
-                        top: 3.25rem;
+                        font-size: 2rem;
+                        left: 10%;
+                        top: 3.75rem;
+                        transition: left 600ms linear;
+                    }
+                    &:hover {
+                        background-position: 225% center;
+                        &::after {
+                            left: 3%;
+                        }
                     }
                 }
             }
             .producto--tres {
+                grid-area: tres;
                 margin-bottom: 1.5rem;
                 .btn-ce {
                     height: 10rem;
                     background-size: 70%;
                     background-position: -10rem center;
+                    transition: background-position 600ms linear;
                     &::after {
-                        font-size: 2.5rem;
-                        right: 2.5rem;
-                        top: 3.25rem;
+                        font-size: 2rem;
+                        right: 10%;
+                        top: 3.75rem;
+                        transition: right 600ms linear;
+                    }
+                    &:hover {
+                        background-position: 5% center;
+                        &::after {
+                            right: 3%;
+                        }
                     }
                 }
             }
             .producto--cuatro {
+                grid-area: cuatro;
                 margin-bottom: 1.5rem;
                 .btn-ce {
                     height: 10rem;
                     background-size: 45%;
                     background-position: 26rem center;
+                    transition: background-position 600ms linear;
                     &::after {
-                        font-size: 2.5rem;
-                        left: 2.5rem;
-                        top: 3.25rem;
+                        font-size: 2rem;
+                        left: 10%;
+                        top: 3.75rem;
+                        transition: right 600ms linear;
+                    }
+                    &:hover {
+                        background-position: 5% center;
+                        &::after {
+                            right: 3%;
+                        }
                     }
                 }
             }
             .producto--cinco {
+                grid-area: cinco;
                 margin-bottom: 1.5rem;
                 .btn-ce {
                     height: 10rem;
                     background-size: 40%;
                     background-position: -2rem center;
+                    transition: background-position 600ms linear;
                     &::after {
-                        font-size: 2.5rem;
-                        right: 2.5rem;
-                        top: 3.25rem;
+                        font-size: 2rem;
+                        right: 10%;
+                        top: 3.75rem;
+                        transition: right 600ms linear;
+                    }
+                    &:hover {
+                        background-position: 5% center;
+                        &::after {
+                            right: 3%;
+                        }
                     }
                 }
             }
             .producto--seis {
+                grid-area: seis;
                 margin-bottom: 1.5rem;
                 .btn-ce {
                     height: 10rem;
                     background-size: 50%;
                     background-position: 24rem 40%;
+                    transition: background-position 600ms linear;
                     &::after {
-                        font-size: 2.5rem;
-                        left: 2.5rem;
-                        top: 3.25rem;
+                        font-size: 2rem;
+                        left: 10%;
+                        top: 3.75rem;
+                        transition: right 600ms linear;
+                    }
+                    &:hover {
+                        background-position: 5% center;
+                        &::after {
+                            right: 3%;
+                        }
                     }
                 }
             }

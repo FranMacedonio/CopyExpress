@@ -667,7 +667,7 @@ footer .footer__texto .footer__botonera--redes {
   }
   .btn-pedido {
     color: #1d1d1d;
-    margin-top: 0;
+    margin-top: .5rem;
     border-right: 2px solid #5a5a5a90;
     border-bottom: 2px solid #5a5a5a90;
     border-left: 2px solid #ffffff;
@@ -684,8 +684,8 @@ footer .footer__texto .footer__botonera--redes {
   .btn-pedido:hover {
     -webkit-transform: translateY(-0.25rem);
             transform: translateY(-0.25rem);
-    -webkit-box-shadow: 3px 3px 5px #1d1d1d4b;
-            box-shadow: 3px 3px 5px #1d1d1d4b;
+    -webkit-box-shadow: 3px 3px 6px #63064493;
+            box-shadow: 3px 3px 6px #63064493;
   }
   .btn-pedido:active {
     -webkit-transform: translateY(0.25rem);
@@ -822,6 +822,13 @@ body input:focus {
 }
 
 body button {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body button:focus {
   outline: none;
   border: none;
   -webkit-box-shadow: none;
@@ -1413,7 +1420,7 @@ body input[type=number]::-webkit-outer-spin-button {
 }
 
 #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce::after {
-  content: "Cuaderno";
+  content: "Cuadernos";
   font-size: 1.5rem;
   font-weight: 700;
   color: #80ceff;
@@ -2646,6 +2653,7 @@ body input[type=number]::-webkit-outer-spin-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 1.5rem;
   }
   #contenedor__pedido .desktop__pedido--form .titulo {
     color: #1d1d1d;
@@ -2804,90 +2812,187 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column: 1;
     grid-area: prod;
     padding: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
+    z-index: 1;
   }
   #contenedor__pedido .bottom__productos--img {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: productos;
+    background-image: url(../media/mobile/pedido_bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center -1rem;
+    background-size: 11rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "uno uno uno uno . . . . dos dos dos dos" "tres tres tres tres . . . . cuatro cuatro cuatro cuatro" "cinco cinco cinco cinco . . . . seis seis seis seis";
+    margin-top: 0;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: uno;
     margin: 1.5rem 0;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce {
     height: 10rem;
     background-size: 45%;
-    background-position: 2rem center;
+    background-position: -5rem center;
+    -webkit-transition: background-position 600ms linear;
+    transition: background-position 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce::after {
-    font-size: 2.5rem;
-    right: 2.5rem;
-    top: 3.25rem;
+    font-size: 2rem;
+    right: 10%;
+    top: 3.75rem;
+    -webkit-transition: right 600ms linear;
+    transition: right 600ms linear;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce:hover {
+    background-position: 5% center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce:hover::after {
+    right: 3%;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos {
-    margin-bottom: 1.5rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 4;
+    grid-area: dos;
+    margin: 1.5rem 0;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce {
     height: 10rem;
     background-size: 80%;
-    background-position: 22rem center;
+    background-position: 350% center;
+    -webkit-transition: background-position 600ms linear;
+    transition: background-position 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce::after {
-    font-size: 2.5rem;
-    left: 2.5rem;
-    top: 3.25rem;
+    font-size: 2rem;
+    left: 10%;
+    top: 3.75rem;
+    -webkit-transition: left 600ms linear;
+    transition: left 600ms linear;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce:hover {
+    background-position: 225% center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce:hover::after {
+    left: 3%;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: tres;
     margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce {
     height: 10rem;
     background-size: 70%;
     background-position: -10rem center;
+    -webkit-transition: background-position 600ms linear;
+    transition: background-position 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce::after {
-    font-size: 2.5rem;
-    right: 2.5rem;
-    top: 3.25rem;
+    font-size: 2rem;
+    right: 10%;
+    top: 3.75rem;
+    -webkit-transition: right 600ms linear;
+    transition: right 600ms linear;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce:hover {
+    background-position: 5% center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce:hover::after {
+    right: 3%;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro {
+    -ms-grid-row: 2;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 4;
+    grid-area: cuatro;
     margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce {
     height: 10rem;
     background-size: 45%;
     background-position: 26rem center;
+    -webkit-transition: background-position 600ms linear;
+    transition: background-position 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce::after {
-    font-size: 2.5rem;
-    left: 2.5rem;
-    top: 3.25rem;
+    font-size: 2rem;
+    left: 10%;
+    top: 3.75rem;
+    -webkit-transition: right 600ms linear;
+    transition: right 600ms linear;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce:hover {
+    background-position: 5% center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce:hover::after {
+    right: 3%;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: cinco;
     margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce {
     height: 10rem;
     background-size: 40%;
     background-position: -2rem center;
+    -webkit-transition: background-position 600ms linear;
+    transition: background-position 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce::after {
-    font-size: 2.5rem;
-    right: 2.5rem;
-    top: 3.25rem;
+    font-size: 2rem;
+    right: 10%;
+    top: 3.75rem;
+    -webkit-transition: right 600ms linear;
+    transition: right 600ms linear;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce:hover {
+    background-position: 5% center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce:hover::after {
+    right: 3%;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 4;
+    grid-area: seis;
     margin-bottom: 1.5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce {
     height: 10rem;
     background-size: 50%;
     background-position: 24rem 40%;
+    -webkit-transition: background-position 600ms linear;
+    transition: background-position 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce::after {
-    font-size: 2.5rem;
-    left: 2.5rem;
-    top: 3.25rem;
+    font-size: 2rem;
+    left: 10%;
+    top: 3.75rem;
+    -webkit-transition: right 600ms linear;
+    transition: right 600ms linear;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce:hover {
+    background-position: 5% center;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce:hover::after {
+    right: 3%;
   }
   #contenedor__pedido .bottom__productos--mail {
     -ms-grid-row: 2;
