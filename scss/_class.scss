@@ -452,15 +452,19 @@ footer {
     .btn-pedido {
         color: $negro;
         margin-top: 0;
-        border: none;
-        box-shadow: 3px 3px 3px #1d1d1d90;
-        height: 3rem;
-        width: 11rem;
+        border-right: 2px solid #5a5a5a90;
+        border-bottom: 2px solid #5a5a5a90;
+        border-left: 2px solid #ffffff;
+        border-top: 2px solid #ffffff;
+        box-shadow: 3px 3px 3px #1d1d1db3;
+        height: 2.5rem;
+        width: 10rem;
         font-size: 1.1rem;
         transition: all 250ms linear;
+        padding: 0;
         &:hover {
             transform: translateY(-.25rem);
-            box-shadow: 4px 4px 8px #1d1d1d90;
+            box-shadow: 3px 3px 5px #1d1d1d4b;
         }
         &:active {
             transform: translateY(.25rem);

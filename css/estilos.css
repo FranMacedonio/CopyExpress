@@ -668,20 +668,24 @@ footer .footer__texto .footer__botonera--redes {
   .btn-pedido {
     color: #1d1d1d;
     margin-top: 0;
-    border: none;
-    -webkit-box-shadow: 3px 3px 3px #1d1d1d90;
-            box-shadow: 3px 3px 3px #1d1d1d90;
-    height: 3rem;
-    width: 11rem;
+    border-right: 2px solid #5a5a5a90;
+    border-bottom: 2px solid #5a5a5a90;
+    border-left: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    -webkit-box-shadow: 3px 3px 3px #1d1d1db3;
+            box-shadow: 3px 3px 3px #1d1d1db3;
+    height: 2.5rem;
+    width: 10rem;
     font-size: 1.1rem;
     -webkit-transition: all 250ms linear;
     transition: all 250ms linear;
+    padding: 0;
   }
   .btn-pedido:hover {
     -webkit-transform: translateY(-0.25rem);
             transform: translateY(-0.25rem);
-    -webkit-box-shadow: 4px 4px 8px #1d1d1d90;
-            box-shadow: 4px 4px 8px #1d1d1d90;
+    -webkit-box-shadow: 3px 3px 5px #1d1d1d4b;
+            box-shadow: 3px 3px 5px #1d1d1d4b;
   }
   .btn-pedido:active {
     -webkit-transform: translateY(0.25rem);
