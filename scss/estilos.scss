@@ -627,6 +627,7 @@ body {
             transition: background-color 500ms linear;
             &:focus {
                 background-color: $azul;
+                color: $blanco;
             }
         }
         textarea.textareaContacto {
@@ -641,6 +642,7 @@ body {
             transition: background-color 500ms linear;
             &:focus {
                 background-color: $azul;
+                color: $blanco;
             }
         }
         .btn-agregar {
@@ -1667,56 +1669,67 @@ body {
     }
 
     #contenedor__enviar {
-        padding: 1.5rem;
         #principal__enviar {
             grid-area: principal;
-            background-color: $blanco;
-            width: calc(100vw - 3rem);
+            width: calc(100vw - 3.75rem);
             height: calc(100vh - 3rem);
             padding: 1.5rem;
-            background-size: 75%;
+            background-size: 35%;
             margin-bottom: 1.5rem;
             .principal__enviar--info {
                 padding: 1.5rem;
+                top: 0;
             }
         }
     }
 
     #contenedor__contacto {
-        column-gap: 1.5rem;
-        padding: 1.5rem;
         #principal__contacto{
             grid-area: principal;
-            width: calc(100vw - 3rem);
-            height: calc(100vh - 3rem);
-            padding: 1.5rem;
-            background-size: 30rem;
+            position: relative;
+            width: calc(100vw - 3.75rem);
+            background-size: 24rem;
+            background-position: 15% 90%;
             margin-bottom: 1.5rem;
+            .principal__contacto--info {
+                width: 45%;
+                align-items: flex-start;
+                text-align: left;
+                top: 0;
+                left: 8rem;
+            }
         }
         .bottom__contacto--form {
             grid-area: form;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
+            position: absolute;
+            margin: 0;
+            top: 22%;
+            right: 5%;
+            border-radius: 0;
+            box-shadow: none;
+            width: 40%;
             input {
-                height: 3rem;
+                height: 2.5rem;
                 padding: .75rem;
                 border-radius: .5rem;
+                margin: .5rem 0;
             }
             textarea.textareaContacto {
-                height: 7rem;
+                height: 8rem;
                 border-radius: .5rem;
                 padding: .75rem;
-                margin: .25rem 0;
+                margin: .5rem 0;
             }
             .btn-agregar {
                 margin-top: 1rem;
             }
             .texto {
-                margin: 1rem;
-                font-size: 1.5rem;
+                margin: 0;
+                font-size: 1rem;
             }
             .precioProductos {
-                margin: .5rem;
+                margin: 0rem;
+                font-size: 1rem;
             }
         }
         .bottom__contacto--info {
@@ -1753,7 +1766,7 @@ body {
             grid-area: imagen;
             height: 14rem;
             img {
-                width: 70%;
+                width: 40%;
                 top: -4rem;
                 left: calc(50% - 14rem);
             }
@@ -1834,84 +1847,6 @@ body {
                 .videodos {
                     padding: 1.5rem;
                 }
-            }
-        }
-    }
-
-    #contenedor__contacto {
-        column-gap: 1.5rem;
-        padding: 1.5rem;
-        #principal__contacto{
-            grid-area: principal;
-            width: calc(100vw - 3rem);
-            height: calc(100vh - 3rem);
-            padding: 1.5rem;
-            background-size: 30rem;
-            margin-bottom: 1.5rem;
-        }
-        .bottom__contacto--form {
-            grid-area: form;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            input {
-                height: 3rem;
-                padding: .75rem;
-                border-radius: .5rem;
-            }
-            textarea.textareaContacto {
-                height: 7rem;
-                border-radius: .5rem;
-                padding: .75rem;
-                margin: .25rem 0;
-            }
-            .btn-agregar {
-                margin-top: 1rem;
-            }
-            .texto {
-                margin: 1rem;
-                font-size: 1.5rem;
-            }
-            .precioProductos {
-                margin: .5rem;
-            }
-        }
-        .bottom__contacto--info {
-            grid-area: info;
-            display: grid;
-            column-gap: 1.5rem;
-            row-gap: 1.5rem;
-            grid-template-areas:
-            "wpp ubicacion"
-            "mail redes";
-            margin: 1.5rem 0;
-            .wpp {
-                grid-area: wpp;
-            }
-            .ubicacion {
-                grid-area: ubicacion;
-            }
-            .mail {
-                grid-area: mail;
-            }
-            .redes {
-                grid-area: redes;
-            }
-        }
-        .bottom__contacto--mapa {
-            grid-area: mapa;
-            margin: 1.5rem 0;
-            iframe {
-                height: 14rem;
-                border-radius: .75rem;
-            }
-        }
-        .botton__contacto--img {
-            grid-area: imagen;
-            height: 14rem;
-            img {
-                width: 70%;
-                top: -4rem;
-                left: calc(50% - 14rem);
             }
         }
     }

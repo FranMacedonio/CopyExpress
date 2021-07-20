@@ -666,7 +666,7 @@ footer .footer__texto .footer__botonera--redes {
     font-size: 1.25rem;
   }
   .btn-cerrar {
-    font-size: .75rem;
+    font-size: 1rem;
   }
   .btn-agregar {
     font-size: 1rem;
@@ -1614,6 +1614,7 @@ body input[type=number]::-webkit-outer-spin-button {
 
 #contenedor__contacto .bottom__contacto--form input:focus {
   background-color: #80ceff;
+  color: #fbfbfb;
 }
 
 #contenedor__contacto .bottom__contacto--form textarea.textareaContacto {
@@ -1631,6 +1632,7 @@ body input[type=number]::-webkit-outer-spin-button {
 
 #contenedor__contacto .bottom__contacto--form textarea.textareaContacto:focus {
   background-color: #80ceff;
+  color: #fbfbfb;
 }
 
 #contenedor__contacto .bottom__contacto--form .btn-agregar {
@@ -3041,65 +3043,74 @@ body input[type=number]::-webkit-outer-spin-button {
     padding: .75rem;
     border-radius: .5rem;
   }
-  #contenedor__enviar {
-    padding: 1.5rem;
-  }
   #contenedor__enviar #principal__enviar {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: principal;
-    background-color: #fbfbfb;
-    width: calc(100vw - 3rem);
+    width: calc(100vw - 3.75rem);
     height: calc(100vh - 3rem);
     padding: 1.5rem;
-    background-size: 75%;
+    background-size: 35%;
     margin-bottom: 1.5rem;
   }
   #contenedor__enviar #principal__enviar .principal__enviar--info {
     padding: 1.5rem;
-  }
-  #contenedor__contacto {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
-    padding: 1.5rem;
+    top: 0;
   }
   #contenedor__contacto #principal__contacto {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: principal;
-    width: calc(100vw - 3rem);
-    height: calc(100vh - 3rem);
-    padding: 1.5rem;
-    background-size: 30rem;
+    position: relative;
+    width: calc(100vw - 3.75rem);
+    background-size: 24rem;
+    background-position: 15% 90%;
     margin-bottom: 1.5rem;
+  }
+  #contenedor__contacto #principal__contacto .principal__contacto--info {
+    width: 45%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    top: 0;
+    left: 8rem;
   }
   #contenedor__contacto .bottom__contacto--form {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: form;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
+    position: absolute;
+    margin: 0;
+    top: 22%;
+    right: 5%;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 40%;
   }
   #contenedor__contacto .bottom__contacto--form input {
-    height: 3rem;
+    height: 2.5rem;
     padding: .75rem;
     border-radius: .5rem;
+    margin: .5rem 0;
   }
   #contenedor__contacto .bottom__contacto--form textarea.textareaContacto {
-    height: 7rem;
+    height: 8rem;
     border-radius: .5rem;
     padding: .75rem;
-    margin: .25rem 0;
+    margin: .5rem 0;
   }
   #contenedor__contacto .bottom__contacto--form .btn-agregar {
     margin-top: 1rem;
   }
   #contenedor__contacto .bottom__contacto--form .texto {
-    margin: 1rem;
-    font-size: 1.5rem;
+    margin: 0;
+    font-size: 1rem;
   }
   #contenedor__contacto .bottom__contacto--form .precioProductos {
-    margin: .5rem;
+    margin: 0rem;
+    font-size: 1rem;
   }
   #contenedor__contacto .bottom__contacto--info {
     -ms-grid-row: 3;
@@ -3151,7 +3162,7 @@ body input[type=number]::-webkit-outer-spin-button {
     height: 14rem;
   }
   #contenedor__contacto .botton__contacto--img img {
-    width: 70%;
+    width: 40%;
     top: -4rem;
     left: calc(50% - 14rem);
   }
@@ -3244,103 +3255,6 @@ body input[type=number]::-webkit-outer-spin-button {
   }
   #contenedor__zona .respira .respira__videos .videodos {
     padding: 1.5rem;
-  }
-  #contenedor__contacto {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
-    padding: 1.5rem;
-  }
-  #contenedor__contacto #principal__contacto {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: principal;
-    width: calc(100vw - 3rem);
-    height: calc(100vh - 3rem);
-    padding: 1.5rem;
-    background-size: 30rem;
-    margin-bottom: 1.5rem;
-  }
-  #contenedor__contacto .bottom__contacto--form {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: form;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-  }
-  #contenedor__contacto .bottom__contacto--form input {
-    height: 3rem;
-    padding: .75rem;
-    border-radius: .5rem;
-  }
-  #contenedor__contacto .bottom__contacto--form textarea.textareaContacto {
-    height: 7rem;
-    border-radius: .5rem;
-    padding: .75rem;
-    margin: .25rem 0;
-  }
-  #contenedor__contacto .bottom__contacto--form .btn-agregar {
-    margin-top: 1rem;
-  }
-  #contenedor__contacto .bottom__contacto--form .texto {
-    margin: 1rem;
-    font-size: 1.5rem;
-  }
-  #contenedor__contacto .bottom__contacto--form .precioProductos {
-    margin: .5rem;
-  }
-  #contenedor__contacto .bottom__contacto--info {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: info;
-    display: -ms-grid;
-    display: grid;
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
-    row-gap: 1.5rem;
-        grid-template-areas: "wpp ubicacion" "mail redes";
-    margin: 1.5rem 0;
-  }
-  #contenedor__contacto .bottom__contacto--info .wpp {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: wpp;
-  }
-  #contenedor__contacto .bottom__contacto--info .ubicacion {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: ubicacion;
-  }
-  #contenedor__contacto .bottom__contacto--info .mail {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: mail;
-  }
-  #contenedor__contacto .bottom__contacto--info .redes {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: redes;
-  }
-  #contenedor__contacto .bottom__contacto--mapa {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: mapa;
-    margin: 1.5rem 0;
-  }
-  #contenedor__contacto .bottom__contacto--mapa iframe {
-    height: 14rem;
-    border-radius: .75rem;
-  }
-  #contenedor__contacto .botton__contacto--img {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 12;
-    grid-area: imagen;
-    height: 14rem;
-  }
-  #contenedor__contacto .botton__contacto--img img {
-    width: 70%;
-    top: -4rem;
-    left: calc(50% - 14rem);
   }
 }
 /*# sourceMappingURL=estilos.css.map */
