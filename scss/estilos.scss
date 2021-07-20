@@ -1829,22 +1829,24 @@ body {
             grid-area: respira;
             width: calc(100vw - 3.75rem);
             background-image: url(../media/desktop/zona_respira.svg);
+            .zona_titulo {
+                margin-bottom: 1rem;
+            }
             .respira__texto {
                 padding: 1.5rem;
                 margin-bottom: 1.5rem;
             }
             .respira__videos {
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-rows: 100%;
-                grid-template-areas:
-                "vuno vuno . . vdos vdos";
-                column-gap: 1.5rem;
-                .videouno {
-                    grid-area: vuno;
-                }
-                .videodos {
-                    grid-area: vdos;
+                display: none;
+            }
+            .respira__videos--desktop {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-items: center;
+                iframe {
+                    margin-top: 3rem;
+                    opacity: .9;
                 }
             }
         }

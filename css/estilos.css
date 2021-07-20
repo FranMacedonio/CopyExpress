@@ -3240,32 +3240,34 @@ body input[type=number]::-webkit-outer-spin-button {
     width: calc(100vw - 3.75rem);
     background-image: url(../media/desktop/zona_respira.svg);
   }
+  #contenedor__zona .respira .zona_titulo {
+    margin-bottom: 1rem;
+  }
   #contenedor__zona .respira .respira__texto {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
   }
   #contenedor__zona .respira .respira__videos {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: 100%;
-        grid-template-rows: 100%;
-        grid-template-areas: "vuno vuno . . vdos vdos";
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    display: none;
   }
-  #contenedor__zona .respira .respira__videos .videouno {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: vuno;
+  #contenedor__zona .respira .respira__videos--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #contenedor__zona .respira .respira__videos .videodos {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
-    grid-area: vdos;
+  #contenedor__zona .respira .respira__videos--desktop iframe {
+    margin-top: 3rem;
+    opacity: .9;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
