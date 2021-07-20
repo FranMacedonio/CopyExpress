@@ -59,6 +59,7 @@
               </div>
           </div>
       </div>
+      <!-- Formulario Mobile -->
       <div class="bottom__pedido--form">
         <div class="accordion" id="accordionExample">
           <div class="card-ce uno">
@@ -182,7 +183,104 @@
           </div>
         </div>
       </div>
+      <!-- Formulario Mobile -->
+      <!-- Formulario Desktop -->
+      <div class="desktop">
+        <div class="desktop__pedido--form">
+          <div class="pedido__parteuno">
+            <div class="formuno">
+              <input type="text" name="Nombre" placeholder="Nombre Completo" autocomplete="off" required>
+              <input type="email" name="email" placeholder="Correo Electrónico" autocomplete="off" required>
+              <input type="number" name="Celular" placeholder="Celular" min="0" autocomplete="off" required>
+            </div>
+            <div class="formdos">
+              <input type="file" name="pdf">
+              <textarea placeholder="Observasiones a tener en cuenta"></textarea>
+            </div>
+          </div>
+          <div class="formtres">
+            <div>
+              <label for="tipo">Impresión:</label>
+              <select name="tipo" id="tipo">
+                <option value="0"></option>
+                <option value="1">Blanco y negro</option>
+                <option value="2">Color</option>
+                <option value="3">Solo tapa a color</option>
+              </select>
+            </div>
+            <div>
+              <label for="forma">Forma de entrega:</label>
+              <select name="forma" id="forma">
+                <option value="0"></option>
+                <option value="1">Folio</option>
+                <option value="2">Abrochado</option>
+                <option value="3">Anillado</option>
+              </select>
+            </div>
+            <div>
+              <label for="pago">¿Cómo pagás?:</label>
+              <select name="pago" id="pago">
+                <option value="0"></option>
+                <option value="1">Efectivo</option>
+                <option value="2">Mercado pago</option>
+              </select>
+            </div>
+            <div>
+              <label for="retiras">¿Cómo retirás?:</label>
+              <select name="retiras" id="retiras">
+                <option value="0"></option>
+                <option value="1">Venís a buscarlo</option>
+                <option value="2">Delivery</option>
+              </select>
+            </div>
+          </div>
+          <div class="botonEnvio">
+            <button type="button" class="btn-pedido" data-toggle="modal" data-target="#pedidodesktop">
+              Revisá tu pedido
+            </button>
+            <div class="modal fade" id="pedidodesktop" tabindex="-1" aria-labelledby="pedidodesktopLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="pedidodesktopLabel">Confirmá tu pedido</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="tituloModalUno">Datos personales:</p>
+                      <div class="textoModal">
+                        <p>Nombre Completo: ...</p>
+                        <p>Correo electrónico: ...</p>
+                        <p>Celular: ...</p>
+                      </div>
+                    <p class="tituloModalDos">Archivos a imprimir:</p>
+                      <div class="textoModal">
+                        <p>Archivo: ...</p>
+                        <p>Observación: ...</p>
+                      </div>
+                    <p class="tituloModalTres">Datos de la entrega:</p>
+                      <div class="textoModal">
+                        <p>Impresión: ...</p>
+                        <p>Forma de entrega: ...</p>
+                        <p>¿Cómo pagás?: ...</p>
+                        <p>¿Cómo retirás?: ...</p>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-cerrar" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn-hacer"><a href="enviar.html">Hacer el pedido</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Formulario Desktop -->
+      <!-- Imagen Moobile-->
       <div class="bottom__pedido--img"></div>
+      <!-- Imagen Moobile-->
       <div class="bottom__productos">
         <p class="tagline amarillo">¡Próximamente!</p>
         <p>Te vamos a ofrecer algunos productos pensados para que te acompañen en tus horas de estudio.</p>

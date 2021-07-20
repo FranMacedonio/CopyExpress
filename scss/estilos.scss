@@ -1269,6 +1269,12 @@ body {
     header.navbar__mobile {
         display: none;
     }
+    .bottom__pedido--form {
+        display: none;
+    }
+    .bottom__pedido--img {
+        display: none;
+    }
     .desktop {
         display: initial;
     }
@@ -1336,6 +1342,14 @@ body {
     }
 
     #contenedor__pedido {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        "principal"
+        "formulario"
+        "prod"
+        "productos"
+        "mail";
         column-gap: 1.5rem;
         padding: 1.5rem;
         #principal__pedido {
@@ -1357,78 +1371,21 @@ body {
                 margin-left: 4rem;
             }
         }
-        .bottom__pedido--form {
-            grid-area: form;
-            width: 70%;
-            margin: auto;
-            .btn-uno {
-                font-size: 1.5rem;
+        .desktop__pedido--form {
+            grid-area: formulario;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .pedido__parteuno {
+                .formuno {}
+                .formdos {}
             }
-            .btn-dos {
-                font-size: 1.5rem;
-            }
-            .btn-tres {
-                font-size: 1.5rem;
-            }
-            .datosPersonales {
-                text-align: center;
-                input {
-                    width: 80%;
-                    height: 2.75rem;
-                    margin: .5rem 0;
-                    padding: 1rem;
-                    border-radius: .5rem;
-                }
-            }
-            .archivos {
-                text-align: center;
-                input {
-                    width: 80%;
-                }
-                textarea {
-                    width: 80%;
-                    height: 5rem;
-                    margin: .5rem 0;
-                    padding: 1rem;
-                    border-radius: .5rem;
-                    &:focus {
-                        height: 10rem;
-                    }
-                }
-            }
-            .datosEntrega {
-                height: 16rem;
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: space-evenly;
-                align-items: center;
-                label {
-                    font-size: 1.25rem;
-                }
-            }
-            .tituloModalUno {
-                font-size: 2rem;
-            }
-            .tituloModalDos {
-                font-size: 2rem;
-            }
-            .tituloModalTres {
-                font-size: 2rem;
-            }
-            .textoModal {
-                margin: 1.5rem;
-                p {
-                    font-size: 1.25rem;
-                    padding: .25rem;
-                }
-            }
-        }
-        .bottom__pedido--img {
-            grid-area: imagen;
-            height: 35rem;
-            background-size: 10rem;
+            .formtres {}
+            .botonEnvio {}
         }
         .bottom__productos {
+            grid-area: prod;
             padding: 1.5rem;
             margin-top: 1.5rem;
         }
