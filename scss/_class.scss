@@ -297,12 +297,15 @@ footer {
             &:hover {
                 .express__amarillo {
                     color: $amarillo;
+                    transition: color 600ms linear;
                 }
                 .express__rosa {
                     color: $rosa;
+                    transition: color 600ms linear;
                 }
                 .express__azul {
                     color: $azul;
+                    transition: color 600ms linear;
                 }
             }
         }
@@ -319,22 +322,12 @@ footer {
                     color: $rosa;
                 }
             }
-            .pedidoActivo {
-                margin: 0 1rem;
-                color: $rosa;
-                font-weight: $bold;
-            }
             .contacto {
                 margin-right: 1rem;
                 transition: color 400ms linear;
                 &:hover {
                     color: $amarillo;
                 }
-            }
-            .contactoActivo {
-                margin-right: 1rem;
-                color: $amarillo;
-                font-weight: $bold;
             }
             .zona {
                 margin-right: 1.5rem;
@@ -343,11 +336,6 @@ footer {
                     color: $azul;
                 }
             }
-            .zonaActivo {
-                margin-right: 1.5rem;
-                color: $azul;
-                font-weight: $bold;
-            }
         }
         .botonera__desktop--redes {
             display: flex;
@@ -355,6 +343,7 @@ footer {
             justify-content: center;
             align-items: center;
             .instagram {
+                padding: 1.5rem;
                 background-image: url(../media/iconos/ig_black.svg);
                 transition: background-image 400ms linear;
                 &:hover {
@@ -362,6 +351,7 @@ footer {
                 }
             }
             .facebook {
+                padding: 1.5rem;
                 background-image: url(../media/iconos/fb_black.svg);
                 transition: background-image 400ms linear;
                 &:hover {
@@ -443,10 +433,10 @@ footer {
         }
     }
     .modal-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .subtituloProductos {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: .5rem 1rem;
     }
     .precioProductos {
@@ -454,19 +444,30 @@ footer {
         font-size: 1.5rem;
     }
     .btn-cerrar {
-        font-size: 1.25rem
+        font-size: .75rem
     }
     .btn-agregar {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .btn-pedido {
-        margin-top: 2rem;
-        height: 3.5rem;
-        width: 13rem;
-        font-size: 1.25rem;
+        color: $negro;
+        margin-top: 0;
+        border: none;
+        box-shadow: 3px 3px 3px #1d1d1d90;
+        height: 3rem;
+        width: 11rem;
+        font-size: 1.1rem;
+        transition: all 250ms linear;
+        &:hover {
+            transform: translateY(-.25rem);
+            box-shadow: 4px 4px 8px #1d1d1d90;
+        }
+        &:active {
+            transform: translateY(.25rem);
+        }
     }
     .btn-hacer {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .texto {
         margin: .5rem;

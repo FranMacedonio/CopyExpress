@@ -37,10 +37,10 @@
           <div class="desktop">
             <header class="navbar__desktop">
               <div class="copyexpress">
-                <p class="titulo__mobile"><a href="../index.html">CopyExpress</a></p>
+                <p class="titulo__mobile"><a href="../index.html">Copy<span class="express__rosa">Express</span></a></p>
               </div>
               <div class="botonera__desktop">
-                <p><a class="pedidoActivo" href="pedido.html">Hacé tu pedido</a></p>
+                <p><a class="pedido" href="pedido.html">Hacé tu pedido</a></p>
                 <p><a class="contacto" href="contacto.html">Contacto</a></p>
                 <p><a class="zona" href="zona.html">Zona de estudio</a></p>
               </div>
@@ -189,16 +189,19 @@
         <div class="desktop__pedido--form">
           <div class="pedido__parteuno">
             <div class="formuno">
+              <p class="titulo">Datos Personales</p>
               <input type="text" name="Nombre" placeholder="Nombre Completo" autocomplete="off" required>
               <input type="email" name="email" placeholder="Correo Electrónico" autocomplete="off" required>
               <input type="number" name="Celular" placeholder="Celular" min="0" autocomplete="off" required>
             </div>
             <div class="formdos">
+              <p class="titulo">Archivos a entregar</p>
               <input type="file" name="pdf">
               <textarea placeholder="Observasiones a tener en cuenta"></textarea>
             </div>
           </div>
           <div class="formtres">
+            <p class="titulo">Datos de la entrega</p>
             <div>
               <label for="tipo">Impresión:</label>
               <select name="tipo" id="tipo">

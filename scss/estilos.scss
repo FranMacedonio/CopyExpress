@@ -67,26 +67,11 @@ body {
             border: none;
             box-shadow: none;
         }
-        &:active {
-            outline: none;
-            border: none;
-            box-shadow: none;
-        }
     }
     button {
         outline: none;
         border: none;
         box-shadow: none;
-        &:focus {
-            outline: none;
-            border: none;
-            box-shadow: none;
-        }
-        &:active {
-            outline: none;
-            border: none;
-            box-shadow: none;
-        }
     }
     input[type=number]::-webkit-inner-spin-button, 
     input[type=number]::-webkit-outer-spin-button { 
@@ -1373,16 +1358,125 @@ body {
         }
         .desktop__pedido--form {
             grid-area: formulario;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
-            .pedido__parteuno {
-                .formuno {}
-                .formdos {}
+            @include flexCC;
+            .titulo {
+                color: $negro;
+                font-size: 2rem;
+                font-weight: $bold;
+                margin-bottom: 1rem
             }
-            .formtres {}
-            .botonEnvio {}
+            .pedido__parteuno {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                .formuno {
+                    @include cuadros;
+                    box-shadow: 3px 3px 4px #1d1d1d90;
+                    height: 14rem;
+                    width: 100%;
+                    background-color: #FCD380;
+                    margin-right: 1.5rem;
+                    padding: 1rem 2rem;
+                    input {
+                        width: 100%;
+                        height: 2rem;
+                        border: none;
+                        margin: .25rem 0;
+                        background-color: #b8b8b8;
+                        padding: .5rem;
+                        border-radius: .25rem;
+                        font-weight: $medium;
+                        transition: background-color 500ms linear;
+                        &:focus {
+                            background-color: #ffc85a;
+                        }
+                    }
+                }
+                .formdos {
+                    @include cuadros;
+                    box-shadow: 3px 3px 4px #1d1d1d90;
+                    width: 100%;
+                    height: 14rem;
+                    background-color: $rosa;
+                    padding: 1rem 2rem;
+                    input {
+                        width: 80%;
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 3rem;
+                        border: none;
+                        margin: .25rem 0;
+                        background-color: #b8b8b8;
+                        padding: .5rem;
+                        border-radius: .25rem;
+                        font-weight: $medium;
+                        transition: background-color 500ms, height 300ms;
+                        transition-timing-function: linear;
+                        &:focus {
+                            background-color: #ff60aa;
+                            height: 6rem;
+                        }
+                    }
+                }
+            }
+            .formtres {
+                position: relative;
+                .titulo {
+                    position: absolute;
+                    top: 1.5rem;
+                }
+                @include cuadros;
+                box-shadow: 3px 3px 4px #1d1d1d90;
+                width: 100%;
+                height: 10rem;
+                background-color: $azul;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                margin: 1.5rem 0;
+                padding-bottom: 2rem;
+                label {
+                    font-size: 1.1rem;
+                    font-weight: $medium;
+                }
+                select {
+                    color: #2d8fcc;
+                    border-radius: 5px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .botonEnvio {
+                .tituloModalUno {
+                    font-weight: $medium;
+                    font-size: 1.25rem;
+                    color: $amarillo;
+                }
+                .tituloModalDos {
+                    font-weight: $medium;
+                    font-size: 1.25rem;
+                    color: $rosa;
+                }
+                .tituloModalTres {
+                    font-weight: $medium;
+                    font-size: 1.25rem;
+                    color: $azul;
+                }
+                .textoModal {
+                    margin: 1rem;
+                    p {
+                        font-weight: $medium;
+                        font-size: 1rem;
+                        padding: .25rem;
+                        color: $negro;
+                    }
+                }
+            }
         }
         .bottom__productos {
             grid-area: prod;
