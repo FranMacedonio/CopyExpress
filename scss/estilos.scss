@@ -814,15 +814,20 @@ body {
         .respira__videos {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100%;
+            grid-template-areas:
+            "vuno vdos";
             column-gap: 1rem;
             text-align: center;
             .videouno {
+                grid-area: vuno;
                 padding: 1rem;
                 background-color: rgba(0, 0, 0, 0.5);
                 border-radius: 1.25rem;
                 @include flexCC;
             }
             .videodos {
+                grid-area: vdos;
                 padding: 1rem;
                 background-color: rgba(0, 0, 0, 0.5);
                 border-radius: 1.25rem;
@@ -1237,9 +1242,7 @@ body {
                 margin-bottom: 1.5rem;
             }
             .respira__videos {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 1.5rem;
+                column-gap: 3rem;
                 .videouno {
                     padding: 3rem;
                 }
@@ -1774,78 +1777,74 @@ body {
     }
 
     #contenedor__zona {
-        column-gap: 1.5rem;
-        padding: 1.5rem;
+        .resaltador {
+            font-weight: $medium;
+        }
         #principal__zona{
             grid-area: principal;
-            width: calc(100vw - 3rem);
-            height: calc(100vh - 3rem);
-            padding: 1.5rem;
-            background-image: url(../media/tablet/zona_principal.svg);
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_principal.svg);
             margin-bottom: 1.5rem;
             .principal__zona--info {
+                top: 1rem;
                 .subtitulo {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                .tagline {
                     margin-bottom: 1rem;
                 }
             }
         }
         .bottom__zona--canciones {
             grid-area: canciones;
-            width: calc(100vw - 3rem);
-            height: calc(100vh - 3rem);
-            padding: 1.5rem;
-            background-image: url(../media/tablet/zona_canciones.svg);
-            margin: 1.5rem 0;
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_canciones.svg);
             .canciones--info {
                 padding: 1.5rem;
-                justify-content: space-evenly;
-                a {
-                    margin: .5rem 0;
-                }
+                background-color: rgba(0, 0, 0, 0.4);
                 .canciones {
                     p {
-                        font-size: 1.5rem;
-                        padding: .5rem 0;
-                        animation: canciones 1.5s infinite alternate linear;
+                        font-size: 1.25rem;
+                        padding: .25rem 0;
+                        animation: none;
+                        transition: color 200ms linear;
+                        &:hover {
+                            color: $azul;
+                        }
                     }
                 }
             }
         }
         .bottom__zona--podcast {
             grid-area: podcast;
-            width: calc(100vw - 3rem);
-            height: calc(100vh - 3rem);
-            padding: 1.5rem;
-            background-image: url(../media/tablet/zona_podcast.svg);
-            margin: 1.5rem 0;
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_podcast.svg);
             .podcast--info {
                 padding: 1.5rem;
-                justify-content: space-evenly;
+                background-color: rgba(0, 0, 0, 0.4);
             }
         }
         .respira {
             grid-area: respira;
-            width: calc(100vw - 3rem);
-            height: calc(100vh - 3rem);
-            padding: 1.5rem;
-            background-image: url(../media/tablet/zona_meditacion.svg);
-            margin: 1.5rem 0;
-            color: $blanco;
-            display: block;
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_respira.svg);
             .respira__texto {
                 padding: 1.5rem;
                 margin-bottom: 1.5rem;
             }
             .respira__videos {
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: 100%;
+                grid-template-areas:
+                "vuno vuno . . vdos vdos";
                 column-gap: 1.5rem;
                 .videouno {
-                    padding: 3rem;
+                    grid-area: vuno;
                 }
                 .videodos {
-                    padding: 1.5rem;
+                    grid-area: vdos;
                 }
             }
         }

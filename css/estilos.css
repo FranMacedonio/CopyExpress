@@ -586,10 +586,10 @@ footer .footer__texto .footer__botonera--redes {
     margin: .5rem 0;
   }
   .zona_titulo {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .zona_subtitulo {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .zona_lofigirl {
     font-size: 2rem;
@@ -1975,12 +1975,18 @@ body input[type=number]::-webkit-outer-spin-button {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+      grid-template-areas: "vuno vdos";
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   text-align: center;
 }
 
 #contenedor__zona .respira .respira__videos .videouno {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: vuno;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 1.25rem;
@@ -2000,6 +2006,9 @@ body input[type=number]::-webkit-outer-spin-button {
 }
 
 #contenedor__zona .respira .respira__videos .videodos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: vdos;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 1.25rem;
@@ -2493,12 +2502,8 @@ body input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 1.5rem;
   }
   #contenedor__zona .respira .respira__videos {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
   }
   #contenedor__zona .respira .respira__videos .videouno {
     padding: 3rem;
@@ -3174,77 +3179,66 @@ body input[type=number]::-webkit-outer-spin-button {
     top: -4rem;
     left: 30%;
   }
-  #contenedor__zona {
-    -webkit-column-gap: 1.5rem;
-            column-gap: 1.5rem;
-    padding: 1.5rem;
+  #contenedor__zona .resaltador {
+    font-weight: 600;
   }
   #contenedor__zona #principal__zona {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: principal;
-    width: calc(100vw - 3rem);
-    height: calc(100vh - 3rem);
-    padding: 1.5rem;
-    background-image: url(../media/tablet/zona_principal.svg);
+    width: calc(100vw - 3.75rem);
+    background-image: url(../media/desktop/zona_principal.svg);
     margin-bottom: 1.5rem;
   }
+  #contenedor__zona #principal__zona .principal__zona--info {
+    top: 1rem;
+  }
   #contenedor__zona #principal__zona .principal__zona--info .subtitulo {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  #contenedor__zona #principal__zona .principal__zona--info .tagline {
     margin-bottom: 1rem;
   }
   #contenedor__zona .bottom__zona--canciones {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: canciones;
-    width: calc(100vw - 3rem);
-    height: calc(100vh - 3rem);
-    padding: 1.5rem;
-    background-image: url(../media/tablet/zona_canciones.svg);
-    margin: 1.5rem 0;
+    width: calc(100vw - 3.75rem);
+    background-image: url(../media/desktop/zona_canciones.svg);
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info {
     padding: 1.5rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  #contenedor__zona .bottom__zona--canciones .canciones--info a {
-    margin: .5rem 0;
+    background-color: rgba(0, 0, 0, 0.4);
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
-    font-size: 1.5rem;
-    padding: .5rem 0;
-    -webkit-animation: canciones 1.5s infinite alternate linear;
-            animation: canciones 1.5s infinite alternate linear;
+    font-size: 1.25rem;
+    padding: .25rem 0;
+    -webkit-animation: none;
+            animation: none;
+    -webkit-transition: color 200ms linear;
+    transition: color 200ms linear;
+  }
+  #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p:hover {
+    color: #80ceff;
   }
   #contenedor__zona .bottom__zona--podcast {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: podcast;
-    width: calc(100vw - 3rem);
-    height: calc(100vh - 3rem);
-    padding: 1.5rem;
-    background-image: url(../media/tablet/zona_podcast.svg);
-    margin: 1.5rem 0;
+    width: calc(100vw - 3.75rem);
+    background-image: url(../media/desktop/zona_podcast.svg);
   }
   #contenedor__zona .bottom__zona--podcast .podcast--info {
     padding: 1.5rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.4);
   }
   #contenedor__zona .respira {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: respira;
-    width: calc(100vw - 3rem);
-    height: calc(100vh - 3rem);
-    padding: 1.5rem;
-    background-image: url(../media/tablet/zona_meditacion.svg);
-    margin: 1.5rem 0;
-    color: #fbfbfb;
-    display: block;
+    width: calc(100vw - 3.75rem);
+    background-image: url(../media/desktop/zona_respira.svg);
   }
   #contenedor__zona .respira .respira__texto {
     padding: 1.5rem;
@@ -3253,16 +3247,25 @@ body input[type=number]::-webkit-outer-spin-button {
   #contenedor__zona .respira .respira__videos {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas: "vuno vuno . . vdos vdos";
     -webkit-column-gap: 1.5rem;
             column-gap: 1.5rem;
   }
   #contenedor__zona .respira .respira__videos .videouno {
-    padding: 3rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: vuno;
   }
   #contenedor__zona .respira .respira__videos .videodos {
-    padding: 1.5rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: vdos;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
