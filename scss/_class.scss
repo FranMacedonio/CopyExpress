@@ -393,16 +393,6 @@ footer {
         text-shadow: 3px 3px 2px rgb(22, 22, 22);
         margin-bottom: .25rem;
     }
-    .navbar__mobile {
-        .bg-negro {
-            .botonera {
-                span {
-                    font-size: 1.5rem;
-                    padding: .5rem;
-                }
-            }
-        }
-    }
     footer {
         height: 12rem;
         .instagram {
@@ -435,6 +425,89 @@ footer {
                 margin-top: 1rem;
             }
         }
+    }
+    .modal-title {
+        font-size: 2rem;
+    }
+    .subtituloProductos {
+        font-size: 1.5rem;
+        margin: .5rem 1rem;
+    }
+    .precioProductos {
+        margin: 0 .5rem;
+        font-size: 1.25rem;
+    }
+    .btn-cerrar {
+        font-size: 1rem
+    }
+    .btn-agregar {
+        font-size: 1rem;
+    }
+    .btn-pedido {
+        color: $negro;
+        margin-top: .5rem;
+        border-right: 2px solid #000000b6;
+        border-bottom: 2px solid #000000b6;
+        border-left: 2px solid #5a5a5a90;
+        border-top: 2px solid #5a5a5a90;
+        box-shadow: 3px 3px 3px #1d1d1db3;
+        height: 2.5rem;
+        width: 10rem;
+        font-size: 1.1rem;
+        transition: all 250ms linear;
+        padding: 0;
+        &:hover {
+            transform: translateY(-.25rem);
+            box-shadow: 3px 3px 6px #63064493;
+            border-left: 2px solid #cccccc90;
+            border-top: 2px solid #cccccc90;
+        }
+        &:active {
+            transform: translateY(.25rem);
+        }
+    }
+    .btn-hacer {
+        font-size: 1rem;
+    }
+    .texto {
+        margin: .5rem;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    header.navbar__desktop {
+        .botonera__desktop {
+            font-size: 1.5rem;
+        }
+        .botonera__desktop--redes {
+            .instagram {
+                padding: 1.75rem;
+            }
+            .facebook {
+                padding: 1.75rem;
+            }
+        }
+    }
+    .titulo__mobile {
+        font-size: 2.25rem;
+    }
+    .resaltador {
+        font-size: 1.5rem;
+    }
+    .bold {
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+    .zona_titulo {
+        font-size: 2rem;
+    }
+    .zona_subtitulo {
+        font-size: 1.75rem;
+    }
+    .zona_lofigirl {
+        font-size: 2rem;
+        text-shadow: 3px 3px 2px rgb(22, 22, 22);
+        margin-bottom: .25rem;
     }
     .modal-title {
         font-size: 2rem;
