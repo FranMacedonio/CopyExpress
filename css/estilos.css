@@ -677,6 +677,14 @@ footer .footer__texto .footer__botonera--redes {
   footer .footer__texto .footer__botonera .amarillo:hover {
     color: #fcd380;
   }
+  footer .footer__texto .footer__botonera .verde {
+    color: #fbfbfb;
+    -webkit-transition: color 300ms linear;
+    transition: color 300ms linear;
+  }
+  footer .footer__texto .footer__botonera .verde:hover {
+    color: #21c921;
+  }
   footer .footer__texto .footer__botonera--redes {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2632,10 +2640,20 @@ body input[type=number]::-webkit-outer-spin-button {
     width: 12rem;
     height: 3rem;
     margin-top: 1.5rem;
+    -webkit-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
   }
   #contenedor__index #principal__index .principal__index--info .botonPedido a {
     font-size: 1.25rem;
     padding: .75rem;
+    -webkit-transition: color 300ms linear;
+    transition: color 300ms linear;
+  }
+  #contenedor__index #principal__index .principal__index--info .botonPedido a:hover {
+    color: #f0e76d;
+  }
+  #contenedor__index #principal__index .principal__index--info .botonPedido:hover {
+    background-color: #646242;
   }
   #contenedor__index .bottom__index {
     height: 18rem;

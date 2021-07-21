@@ -450,6 +450,13 @@ footer {
                         color: $amarillo;
                     }
                 }
+                .verde {
+                    color: $blanco;
+                    transition: color 300ms linear;
+                    &:hover {
+                        color: rgb(33, 201, 33);
+                    }
+                }
             }
             .footer__botonera--redes {
                 justify-content: center;

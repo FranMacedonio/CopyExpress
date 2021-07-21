@@ -1270,9 +1270,17 @@ body {
                     width: 12rem;
                     height: 3rem;
                     margin-top: 1.5rem;
+                    transition: background-color 300ms linear;
                     a {
                         font-size: 1.25rem;
                         padding: .75rem;
+                        transition: color 300ms linear;
+                        &:hover {
+                            color: #f0e76d;
+                        }
+                    }
+                    &:hover {
+                        background-color: #646242;
                     }
                 }
             }
