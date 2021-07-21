@@ -717,7 +717,7 @@ footer .footer__texto .footer__botonera--redes {
     font-size: 2.25rem;
   }
   .resaltador {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .bold {
     font-size: 1.5rem;
@@ -3738,7 +3738,7 @@ body input[type=number]::-webkit-outer-spin-button {
   #contenedor__index #principal__index {
     width: calc(100vw - 5.75rem);
     height: calc(100vh - 5rem);
-    background-size: 40rem;
+    background-size: 36rem;
   }
   #contenedor__index #principal__index .principal__index--info {
     width: 60%;
@@ -3746,13 +3746,13 @@ body input[type=number]::-webkit-outer-spin-button {
     margin-left: 8rem;
   }
   #contenedor__index #principal__index .principal__index--info .botonPedido {
-    width: 16rem;
-    height: 4rem;
+    width: 14rem;
+    height: 3.5rem;
     margin-top: 2rem;
     text-align: center;
   }
   #contenedor__index #principal__index .principal__index--info .botonPedido a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     width: 100%;
   }
   #contenedor__index .bottom__index {
