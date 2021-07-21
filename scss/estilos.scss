@@ -1276,11 +1276,11 @@ body {
                         padding: .75rem;
                         transition: color 300ms linear;
                         &:hover {
-                            color: #f0e76d;
+                            color: $negro;
                         }
                     }
                     &:hover {
-                        background-color: #646242;
+                        background-color: $azul;
                     }
                 }
             }
