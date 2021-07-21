@@ -2197,6 +2197,7 @@ body {
             width: calc(100vw - 5.75rem);
             height: calc(100vh - 5rem);
             background-size: 36rem;
+            padding: 2.5rem;
             .principal__index--info {
                 width: 60%;
                 top: 20%;
@@ -2214,197 +2215,35 @@ body {
             }
         }
         .bottom__index {
-            height: 22rem;
-            margin: 1.5rem 0;
-            padding: 1rem;
-            box-shadow: 3px 3px 4px #1d1d1d90;
-        }
-        .uno {
-            grid-area: infouno;
-        }
-        .dos {
-            grid-area: infodos;
-        }
-        .tres {
-            grid-area: infotres;
-        }
-        .cuatro {
-            grid-area: infocuatro;
-        }
-        .bottom__index--img {
-            grid-area: imagen;
-            background-image: url(../media/desktop/index_bottom.svg);
             height: 20rem;
-            width: 100%;
-            background-size: 24rem;
-            background-position: calc(50% - 5rem) center;
+            padding: 1rem;
         }
     }
 
     #contenedor__pedido {
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas:
-        "principal"
-        "formulario"
-        "prod"
-        "productos"
-        "mail";
-        column-gap: 1.5rem;
-        padding: 1.5rem;
+        padding: 2.5rem;
         #principal__pedido {
             grid-area: principal;
-            width: calc(100vw - 3.75rem);
-            height: calc(100vh - 3rem);
-            padding: 1.5rem;
-            background-size: 30rem;
-            background-position: 90% 75%;
-            margin-bottom: 1.5rem;
-            .principal__pedido--info {
-                width: 50%;
-                height: 30%;
-                text-align: left;
-                justify-content: center;
-                align-items: flex-start;
-                position: relative;
-                top: 20%;
-                margin-left: 4rem;
-                .resaltador {
-                    margin-top: .5rem;
-                }
-                .tagline {
-                    margin-bottom: .5rem;
-                }
-            }
+            width: calc(100vw - 5.75rem);
+            height: calc(100vh - 5rem);
+            padding: 2.5rem;
+            background-size: 40rem;
         }
         .desktop__pedido--form {
             grid-area: formulario;
             @include flexCC;
-            margin-top: 1.5rem;
-            .titulo {
-                color: $negro;
-                font-size: 2rem;
-                font-weight: $bold;
-                margin-bottom: 1rem
-            }
+            margin: 1.5rem 10rem;
             .pedido__parteuno {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
                 .formuno {
-                    @include cuadros;
-                    box-shadow: 3px 3px 4px #1d1d1d90;
-                    height: 14rem;
-                    width: 100%;
-                    background-color: #FCD380;
-                    margin-right: 1.5rem;
-                    padding: 1rem 2rem;
-                    input {
-                        width: 100%;
-                        height: 2rem;
-                        border: none;
-                        margin: .25rem 0;
-                        background-color: #b8b8b8;
-                        padding: .5rem;
-                        border-radius: .25rem;
-                        font-weight: $medium;
-                        transition: background-color 500ms linear;
-                        &:focus {
-                            background-color: #ffc85a;
-                        }
-                    }
+                    padding: 1.5rem 3rem;
                 }
                 .formdos {
-                    @include cuadros;
-                    box-shadow: 3px 3px 4px #1d1d1d90;
-                    width: 100%;
-                    height: 14rem;
-                    background-color: $rosa;
-                    padding: 1rem 2rem;
+                    padding: 1.5rem 3rem;
                     input {
-                        width: 80%;
-                    }
-                    textarea {
                         width: 100%;
-                        height: 3rem;
-                        border: none;
-                        margin: .25rem 0;
-                        background-color: #b8b8b8;
-                        padding: .5rem;
-                        border-radius: .25rem;
-                        font-weight: $medium;
-                        transition: background-color 500ms, height 300ms;
-                        transition-timing-function: linear;
-                        &:focus {
-                            background-color: #ff60aa;
-                            height: 6rem;
-                        }
                     }
                 }
             }
-            .formtres {
-                position: relative;
-                .titulo {
-                    position: absolute;
-                    top: 1.5rem;
-                }
-                @include cuadros;
-                box-shadow: 3px 3px 4px #1d1d1d90;
-                width: 100%;
-                height: 10rem;
-                background-color: $azul;
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-evenly;
-                align-items: flex-end;
-                margin: 1.5rem 0;
-                padding-bottom: 2rem;
-                label {
-                    font-size: 1.1rem;
-                    font-weight: $medium;
-                }
-                select {
-                    color: #2d8fcc;
-                    border-radius: 5px;
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
-            .botonEnvio {
-                .tituloModalUno {
-                    font-weight: $medium;
-                    font-size: 1.25rem;
-                    color: $amarillo;
-                }
-                .tituloModalDos {
-                    font-weight: $medium;
-                    font-size: 1.25rem;
-                    color: $rosa;
-                }
-                .tituloModalTres {
-                    font-weight: $medium;
-                    font-size: 1.25rem;
-                    color: $azul;
-                }
-                .textoModal {
-                    margin: 1rem;
-                    p {
-                        font-weight: $medium;
-                        font-size: 1rem;
-                        padding: .25rem;
-                        color: $negro;
-                    }
-                }
-            }
-        }
-        .bottom__productos {
-            grid-area: prod;
-            padding: 1.5rem;
-            margin-top: 3rem;
-            z-index: 1;
         }
         .bottom__productos--img {
             grid-area: productos;
@@ -2416,161 +2255,33 @@ body {
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(3, auto);
             grid-template-areas:
-            "uno uno uno uno . . . . dos dos dos dos"
-            "tres tres tres tres . . . . cuatro cuatro cuatro cuatro"
-            "cinco cinco cinco cinco . . . . seis seis seis seis";
-            margin-top: 0;
-            .btn-ce {
-                border-width: 2px;
-                border-style: outset;
-            }
+            ". uno uno uno . . . . dos dos dos ."
+            ". tres tres tres . . . . cuatro cuatro cuatro ."
+            ". cinco cinco cinco . . . . seis seis seis .";
             .producto--uno {
                 grid-area: uno;
-                margin: 1.5rem 0;
-                .btn-ce {
-                    height: 10rem;
-                    background-size: 45%;
-                    background-position: -5rem center;
-                    transition: background-position 600ms linear;
-                    &::after {
-                        font-size: 2rem;
-                        right: 10%;
-                        top: 3.75rem;
-                        transition: right 600ms linear;
-                    }
-                    &:hover {
-                        background-position: 5% center;
-                        &::after {
-                            right: 3%;
-                        }
-                    }
-                }
             }
             .producto--dos {
                 grid-area: dos;
-                margin: 1.5rem 0;
-                .btn-ce {
-                    height: 10rem;
-                    background-size: 80%;
-                    background-position: 350% center;
-                    transition: background-position 600ms linear;
-                    &::after {
-                        font-size: 2rem;
-                        left: 10%;
-                        top: 3.75rem;
-                        transition: left 600ms linear;
-                    }
-                    &:hover {
-                        background-position: 225% center;
-                        &::after {
-                            left: 3%;
-                        }
-                    }
-                }
             }
             .producto--tres {
                 grid-area: tres;
-                margin-bottom: 1.5rem;
-                .btn-ce {
-                    height: 10rem;
-                    background-size: 65%;
-                    background-position: -10rem center;
-                    transition: background-position 600ms linear;
-                    &::after {
-                        font-size: 2rem;
-                        right: 10%;
-                        top: 3.75rem;
-                        transition: right 600ms linear;
-                    }
-                    &:hover {
-                        background-position: -20% center;
-                        &::after {
-                            right: 3%;
-                        }
-                    }
-                }
             }
             .producto--cuatro {
                 grid-area: cuatro;
-                margin-bottom: 1.5rem;
-                .btn-ce {
-                    height: 10rem;
-                    background-size: 65%;
-                    background-position: 18rem center;
-                    transition: background-position 600ms linear;
-                    &::after {
-                        font-size: 2rem;
-                        left: 10%;
-                        top: 3.75rem;
-                        transition: left 600ms linear;
-                    }
-                    &:hover {
-                        background-position: 100% center;
-                        &::after {
-                            left: 3%;
-                        }
-                    }
-                }
             }
             .producto--cinco {
                 grid-area: cinco;
-                margin-bottom: 1.5rem;
-                .btn-ce {
-                    height: 10rem;
-                    background-size: 40%;
-                    background-position: -2rem center;
-                    transition: background-position 600ms linear;
-                    &::after {
-                        font-size: 2rem;
-                        right: 10%;
-                        top: 3.75rem;
-                        transition: right 600ms linear;
-                    }
-                    &:hover {
-                        background-position: 15% center;
-                        &::after {
-                            right: 3%;
-                        }
-                    }
-                }
             }
             .producto--seis {
                 grid-area: seis;
-                margin-bottom: 1.5rem;
-                .btn-ce {
-                    height: 10rem;
-                    background-size: 40%;
-                    background-position: 24rem center;
-                    transition: background-position 600ms linear;
-                    &::after {
-                        font-size: 2rem;
-                        left: 10%;
-                        top: 3.75rem;
-                        transition: left 600ms linear;
-                    }
-                    &:hover {
-                        background-position: 90% center;
-                        &::after {
-                            left: 3%;
-                        }
-                    }
-                }
             }
         }
         .bottom__productos--mail {
             grid-area: mail;
-            padding: 3rem;
-            height: 14rem;
-            margin: auto;
-            margin-bottom: 3rem;
-            margin-top: 3rem;
-            @include flexCC;
-            width: 60%;
-            button {
-                margin: auto;
-            }
+            width: 50%;
             input {
-                width: 95%;
+                width: 75%;
                 height: 2.5rem;
                 margin: 1rem 0;
                 padding: .75rem;
