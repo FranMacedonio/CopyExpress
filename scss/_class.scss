@@ -294,22 +294,20 @@ footer {
         align-items: center;
         .copyexpress {
             flex-grow: 1;
-            .express__amarillo {
-                transition: color 400ms linear;
+            a {
                 &:hover {
-                    color: $amarillo;
-                }
-            }
-            .express__rosa {
-                transition: color 400ms linear;
-                &:hover {
-                    color: $rosa;
-                }
-            }
-            .express__azul {
-                transition: color 400ms linear;
-                &:hover {
-                    color: $azul;
+                    .express__amarillo {
+                        color: $amarillo;
+                        transition: color 400ms linear;
+                    }
+                    .express__rosa {
+                        color: $rosa;
+                        transition: color 400ms linear;
+                    }
+                    .express__azul {
+                        color: $azul;
+                        transition: color 400ms linear;
+                    }
                 }
             }
         }

@@ -473,26 +473,20 @@ footer .footer__texto .footer__botonera--redes {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
-  header.navbar__desktop .copyexpress .express__amarillo {
-    -webkit-transition: color 400ms linear;
-    transition: color 400ms linear;
-  }
-  header.navbar__desktop .copyexpress .express__amarillo:hover {
+  header.navbar__desktop .copyexpress a:hover .express__amarillo {
     color: #fcd380;
-  }
-  header.navbar__desktop .copyexpress .express__rosa {
     -webkit-transition: color 400ms linear;
     transition: color 400ms linear;
   }
-  header.navbar__desktop .copyexpress .express__rosa:hover {
+  header.navbar__desktop .copyexpress a:hover .express__rosa {
     color: #ff82bd;
-  }
-  header.navbar__desktop .copyexpress .express__azul {
     -webkit-transition: color 400ms linear;
     transition: color 400ms linear;
   }
-  header.navbar__desktop .copyexpress .express__azul:hover {
+  header.navbar__desktop .copyexpress a:hover .express__azul {
     color: #80ceff;
+    -webkit-transition: color 400ms linear;
+    transition: color 400ms linear;
   }
   header.navbar__desktop .botonera__desktop {
     display: -webkit-box;
@@ -3658,6 +3652,9 @@ body input[type=number]::-webkit-outer-spin-button {
   #contenedor__zona .bottom__zona--canciones .canciones--info {
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.4);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
     font-size: 1.25rem;
@@ -3678,6 +3675,9 @@ body input[type=number]::-webkit-outer-spin-button {
     background-image: url(../media/desktop/zona_podcast.svg);
   }
   #contenedor__zona .bottom__zona--podcast .podcast--info {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.4);
   }
@@ -3864,7 +3864,7 @@ body input[type=number]::-webkit-outer-spin-button {
     width: calc(100vw - 5.75rem);
     height: calc(100vh - 5rem);
     padding: 2.5rem;
-    background-size: 45%;
+    background-size: 35%;
     margin-bottom: 2.5rem;
   }
   #contenedor__contacto {
@@ -3935,21 +3935,16 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column: 1;
     grid-area: mapa;
     margin: 1.5rem 0;
-    text-align: center;
-  }
-  #contenedor__contacto .bottom__contacto--mapa iframe {
-    width: 75%;
-    height: 14rem;
-    border-radius: .75rem;
   }
   #contenedor__contacto .botton__contacto--img {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: imagen;
     height: 18rem;
+    margin-bottom: 2.5rem;
   }
   #contenedor__contacto .botton__contacto--img img {
-    height: 100%;
+    height: 120%;
     top: -4rem;
     left: 30%;
   }
