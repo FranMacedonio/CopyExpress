@@ -724,26 +724,14 @@ footer .footer__texto .footer__botonera--redes {
     margin: .5rem 0;
   }
   .zona_titulo {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .zona_subtitulo {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
   .zona_lofigirl {
-    font-size: 2rem;
-    text-shadow: 3px 3px 2px #161616;
+    font-size: 2.25rem;
     margin-bottom: .25rem;
-  }
-  .modal-title {
-    font-size: 2rem;
-  }
-  .subtituloProductos {
-    font-size: 1.5rem;
-    margin: .5rem 1rem;
-  }
-  .precioProductos {
-    margin: 0 .5rem;
-    font-size: 1.25rem;
   }
   .btn-cerrar {
     font-size: 1rem;
@@ -3965,76 +3953,68 @@ body input[type=number]::-webkit-outer-spin-button {
     top: -4rem;
     left: 30%;
   }
-  #contenedor__zona .resaltador {
-    font-weight: 600;
+  #contenedor__zona {
+    padding: 2.5rem;
   }
   #contenedor__zona #principal__zona {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: principal;
-    width: calc(100vw - 3.75rem);
-    background-image: url(../media/desktop/zona_principal.svg);
-    margin-bottom: 1.5rem;
+    width: calc(100vw - 5.75rem);
+    height: calc(100vh - 5rem);
+    margin-bottom: 2.5rem;
   }
   #contenedor__zona #principal__zona .principal__zona--info {
-    top: 1rem;
-  }
-  #contenedor__zona #principal__zona .principal__zona--info .subtitulo {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  #contenedor__zona #principal__zona .principal__zona--info .tagline {
-    margin-bottom: 1rem;
+    padding: 1.5rem;
   }
   #contenedor__zona .bottom__zona--canciones {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: canciones;
-    width: calc(100vw - 3.75rem);
-    background-image: url(../media/desktop/zona_canciones.svg);
+    padding: 2.5rem;
+    width: calc(100vw - 5.75rem);
+    height: calc(100vh - 5rem);
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info {
-    padding: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    padding: 3rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
-    font-size: 1.25rem;
-    padding: .25rem 0;
-    -webkit-animation: none;
-            animation: none;
-    -webkit-transition: color 200ms linear;
-    transition: color 200ms linear;
-  }
-  #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p:hover {
-    color: #80ceff;
+    font-size: 1.5rem;
+    padding: .5rem 0;
   }
   #contenedor__zona .bottom__zona--podcast {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: podcast;
-    width: calc(100vw - 3.75rem);
+    padding: 2.5rem;
+    width: calc(100vw - 5.75rem);
+    height: calc(100vh - 5rem);
     background-image: url(../media/desktop/zona_podcast.svg);
   }
   #contenedor__zona .bottom__zona--podcast .podcast--info {
-    padding: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.4);
+    padding: 6rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #contenedor__zona .respira {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: respira;
-    width: calc(100vw - 3.75rem);
+    padding: 2.5rem;
+    width: calc(100vw - 5.75rem);
+    height: calc(100vh - 5rem);
     background-image: url(../media/desktop/zona_respira.svg);
   }
   #contenedor__zona .respira .zona_titulo {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   #contenedor__zona .respira .respira__texto {
-    padding: 1.5rem;
+    padding: 2.5rem;
     margin-bottom: 1.5rem;
-  }
-  #contenedor__zona .respira .respira__videos {
-    display: none;
   }
   #contenedor__zona .respira .respira__videos--desktop {
     display: -webkit-box;
@@ -4052,8 +4032,9 @@ body input[type=number]::-webkit-outer-spin-button {
             align-items: center;
   }
   #contenedor__zona .respira .respira__videos--desktop iframe {
-    margin-top: 3rem;
-    opacity: .9;
+    width: 560px;
+    height: 315px;
+    margin-top: 5rem;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

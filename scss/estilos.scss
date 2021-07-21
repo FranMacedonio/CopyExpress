@@ -2365,67 +2365,55 @@ body {
     }
 
     #contenedor__zona {
-        .resaltador {
-            font-weight: $medium;
-        }
+        padding: 2.5rem;
         #principal__zona{
             grid-area: principal;
-            width: calc(100vw - 3.75rem);
-            background-image: url(../media/desktop/zona_principal.svg);
-            margin-bottom: 1.5rem;
+            width: calc(100vw - 5.75rem);
+            height: calc(100vh - 5rem);
+            margin-bottom: 2.5rem;
             .principal__zona--info {
-                top: 1rem;
-                .subtitulo {
-                    font-size: 1.5rem;
-                    margin-bottom: 1rem;
-                }
-                .tagline {
-                    margin-bottom: 1rem;
-                }
+                padding: 1.5rem;
             }
         }
         .bottom__zona--canciones {
             grid-area: canciones;
-            width: calc(100vw - 3.75rem);
-            background-image: url(../media/desktop/zona_canciones.svg);
+            padding: 2.5rem;
+            width: calc(100vw - 5.75rem);
+            height: calc(100vh - 5rem);
             .canciones--info {
-                padding: 1.5rem;
-                background-color: rgba(0, 0, 0, 0.4);
+                padding: 3rem;
+                justify-content: space-evenly;
                 .canciones {
                     p {
-                        font-size: 1.25rem;
-                        padding: .25rem 0;
-                        animation: none;
-                        transition: color 200ms linear;
-                        &:hover {
-                            color: $azul;
-                        }
+                        font-size: 1.5rem;
+                        padding: .5rem 0;
                     }
                 }
             }
         }
         .bottom__zona--podcast {
             grid-area: podcast;
-            width: calc(100vw - 3.75rem);
+            padding: 2.5rem;
+            width: calc(100vw - 5.75rem);
+            height: calc(100vh - 5rem);
             background-image: url(../media/desktop/zona_podcast.svg);
             .podcast--info {
-                padding: 1.5rem;
-                background-color: rgba(0, 0, 0, 0.4);
+                padding: 6rem;
+                justify-content: space-evenly;
             }
         }
         .respira {
             grid-area: respira;
-            width: calc(100vw - 3.75rem);
+            padding: 2.5rem;
+            width: calc(100vw - 5.75rem);
+            height: calc(100vh - 5rem);
             background-image: url(../media/desktop/zona_respira.svg);
             .zona_titulo {
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
             }
             .respira__texto {
-                padding: 1.5rem;
+                padding: 2.5rem;
                 margin-bottom: 1.5rem;
-            }
-            .respira__videos {
-                display: none;
             }
             .respira__videos--desktop {
                 display: flex;
@@ -2433,8 +2421,9 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 iframe {
-                    margin-top: 3rem;
-                    opacity: .9;
+                    width: 560px;
+                    height: 315px;
+                    margin-top: 5rem;
                 }
             }
         }
