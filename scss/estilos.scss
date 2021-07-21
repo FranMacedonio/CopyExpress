@@ -1256,6 +1256,342 @@ body {
 
 @media all and (min-width: 992px) {
     body {
+        h1, h2, h3, h4, h5 {
+            font-size: 1rem;
+        }
+        font-size: 1rem;
+    }
+    #contenedor__index {
+        #principal__index {
+            width: calc(100vw - 3.75rem);
+            background-size: 16rem;
+            .principal__index--info {
+                .botonPedido {
+                    width: 12rem;
+                    height: 3rem;
+                    margin-top: 1.5rem;
+                    a {
+                        font-size: 1.25rem;
+                        padding: .75rem;
+                    }
+                }
+            }
+        }
+        .bottom__index {
+            height: 18rem;
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+        }
+        .uno {
+            grid-area: infouno;
+        }
+        .dos {
+            grid-area: infodos;
+        }
+        .tres {
+            grid-area: infotres;
+        }
+        .cuatro {
+            grid-area: infocuatro;
+        }
+        .bottom__index--img {
+            grid-area: imagen;
+        }
+    }
+
+    #contenedor__pedido {
+        #principal__pedido {
+            grid-area: principal;
+            width: calc(100vw - 3.75rem);
+            background-size: 26rem;
+            margin-bottom: 1.5rem;
+            .principal__pedido--info {
+                padding: 1.5rem;
+            }
+        }
+        .bottom__pedido--form {
+            grid-area: form;
+            margin-top: 1.5rem;
+            .btn-uno {
+                font-size: 1.5rem;
+            }
+            .btn-dos {
+                font-size: 1.5rem;
+            }
+            .btn-tres {
+                font-size: 1.5rem;
+            }
+            .datosPersonales {
+                input {
+                    height: 2rem;
+                }
+            }
+            .archivos {
+                text-align: center;
+                input {
+                    width: 80%;
+                }
+                textarea {
+                    width: 80%;
+                    height: 5rem;
+                    margin: .5rem 0;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    &:focus {
+                        height: 10rem;
+                    }
+                }
+            }
+            .datosEntrega {
+                height: 16rem;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                label {
+                    font-size: 1.25rem;
+                }
+            }
+            .tituloModalUno {
+                font-size: 2rem;
+            }
+            .tituloModalDos {
+                font-size: 2rem;
+            }
+            .tituloModalTres {
+                font-size: 2rem;
+            }
+            .textoModal {
+                margin: 1.5rem;
+                p {
+                    font-size: 1.25rem;
+                    padding: .25rem;
+                }
+            }
+        }
+        .bottom__pedido--img {
+            grid-area: imagen;
+            height: 28rem;
+            background-size: 8rem;
+        }
+        .bottom__productos {
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .bottom__productos--img {
+            grid-area: productos;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:
+            "uno dos"
+            "tres cuatro"
+            "cinco seis";
+            column-gap: 2rem;
+            .producto--uno {
+                .btn-ce {
+                    grid-area: uno;
+                    background-position: -6rem center;
+                    &::after {
+                        font-size: 2.25rem;
+                        right: 3rem;
+                        top: 3.5rem;
+                    }
+                }
+            }
+            .producto--dos {
+                margin: 1.5rem 0;
+                .btn-ce {
+                    grid-area: dos;
+                    background-position: 18rem center;
+                    &::after {
+                        font-size: 2.25rem;
+                        left: 3rem;
+                        top: 3.5rem;
+                    }
+                }
+            }
+            .producto--tres {
+                .btn-ce {
+                    grid-area: tres;
+                    background-position: -8rem center;
+                    &::after {
+                        font-size: 2.25rem;
+                        right: 3rem;
+                        top: 3.5rem;
+                    }
+                }
+            }
+            .producto--cuatro {
+                .btn-ce {
+                    grid-area: cuatro;
+                    background-size: 60%;
+                    background-position: 18rem center;
+                    &::after {
+                        font-size: 2.25rem;
+                        left: 3rem;
+                        top: 3.5rem;
+                    }
+                }
+            }
+            .producto--cinco {
+                .btn-ce {
+                    grid-area: cinco;
+                    &::after {
+                        font-size: 2.25rem;
+                        right: 3rem;
+                        top: 3.5rem;
+                    }
+                }
+            }
+            .producto--seis {
+                .btn-ce {
+                    grid-area: seis;
+                    background-size: 40%;
+                    background-position: 20rem center;
+                    &::after {
+                        font-size: 2.25rem;
+                        left: 3rem;
+                        top: 3.5rem;
+                    }
+                }
+            }
+        }
+        .bottom__productos--mail {
+            grid-area: mail;
+            height: 14rem;
+            input {
+                height: 2.5rem;
+                margin: 1rem 0;
+                padding: .75rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+
+    #contenedor__enviar {
+        #principal__enviar {
+            grid-area: principal;
+            width: calc(100vw - 3.75rem);
+            background-size: 40%;
+            .principal__enviar--info {
+                top: 0;
+            }
+        }
+    }
+
+    #contenedor__contacto {
+        #principal__contacto{
+            grid-area: principal;
+            width: calc(100vw - 3.75rem);
+            background-size: 22rem;
+            .principal__contacto--info {
+                top: 0;
+            }
+        }
+        .bottom__contacto--form {
+            grid-area: form;
+            input {
+                height: 2.5rem;
+                margin: .5rem 0;
+            }
+            textarea.textareaContacto {
+                height: 6rem;
+            }
+            .btn-agregar {
+                margin-top: 1rem;
+            }
+            .texto {
+                margin: 1rem;
+                font-size: 1.5rem;
+            }
+            .precioProductos {
+                margin: .5rem;
+            }
+        }
+        .bottom__contacto--info {
+            grid-area: info;
+            display: grid;
+            grid-template-areas:
+            "wpp ubicacion"
+            "mail redes";
+            margin: 1.5rem 0;
+            .wpp {
+                grid-area: wpp;
+            }
+            .ubicacion {
+                grid-area: ubicacion;
+            }
+            .mail {
+                grid-area: mail;
+            }
+            .redes {
+                grid-area: redes;
+            }
+        }
+        .bottom__contacto--mapa {
+            grid-area: mapa;
+            margin: 1.5rem 0;
+            iframe {
+                height: 14rem;
+                border-radius: .75rem;
+            }
+        }
+        .botton__contacto--img {
+            grid-area: imagen;
+            height: 14rem;
+            img {
+                width: 50%;
+                top: -4rem;
+                left: calc(50% - 14rem);
+            }
+        }
+    }
+
+    #contenedor__zona {
+        #principal__zona{
+            grid-area: principal;
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_principal.svg);
+            .principal__zona--info {
+                .subtitulo {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+        .bottom__zona--canciones {
+            grid-area: canciones;
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_canciones.svg);
+            .canciones--info {
+                justify-content: space-between;
+                .canciones {
+                    p {
+                        font-size: 1rem;
+                        padding: .5rem 0;
+                        animation: canciones 1.5s infinite alternate linear;
+                    }
+                }
+            }
+        }
+        .bottom__zona--podcast {
+            grid-area: podcast;
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_podcast.svg);
+            .podcast--info {
+                justify-content: space-between;
+            }
+        }
+        .respira {
+            grid-area: respira;
+            width: calc(100vw - 3.75rem);
+            background-image: url(../media/desktop/zona_respira.svg);
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    body {
         font-size: 1rem;
     }
     header.navbar__mobile {
@@ -1699,7 +2035,7 @@ body {
                 align-items: flex-start;
                 text-align: left;
                 top: 0;
-                left: 8rem;
+                left: 5%;
             }
         }
         .bottom__contacto--form {
