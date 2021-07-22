@@ -539,7 +539,7 @@ footer .footer__texto .footer__botonera--redes {
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (orientation: portrait) {
   .titulo__mobile {
     font-size: 2rem;
   }
@@ -2650,6 +2650,9 @@ body input[type=number]::-webkit-outer-spin-button {
     grid-area: canciones;
     background-image: url(../media/desktop/zona_canciones.svg);
   }
+  #contenedor__zona .bottom__zona--canciones .canciones {
+    padding: 0;
+  }
   #contenedor__zona .bottom__zona--canciones .canciones--info {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -2674,7 +2677,7 @@ body input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (orientation: portrait) {
   body {
     font-size: 1.25rem;
   }

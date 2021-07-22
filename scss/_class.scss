@@ -297,7 +297,7 @@ footer {
     }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (orientation: portrait) {
     .titulo__mobile {
         font-size: 2rem;
     }

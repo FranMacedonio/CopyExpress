@@ -1087,6 +1087,9 @@ body {
         .bottom__zona--canciones {
             grid-area: canciones;
             background-image: url(../media/desktop/zona_canciones.svg);
+            .canciones {
+                    padding: 0;
+                }
             .canciones--info {
                 justify-content: space-evenly;
             }
@@ -1105,7 +1108,7 @@ body {
     }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (orientation: portrait) {
     body {
         h1, h2, h3, h4, h5 {
             font-size: 1.25rem;
