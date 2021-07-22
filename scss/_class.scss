@@ -231,7 +231,6 @@ footer {
             align-items: center;
             p {
                 padding: 0 1rem;
-                font-weight: $medium;
             }
             .footer__botonera {
                 flex-flow: row nowrap;
@@ -242,15 +241,6 @@ footer {
                     justify-content: center;
                     align-items: center;
                 }
-            }
-            .footer__botonera--redes {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                width: 50%;
-                margin-top: 1rem;
             }
         }
     }
