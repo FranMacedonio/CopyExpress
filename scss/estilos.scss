@@ -833,6 +833,739 @@ body {
     }
 }
 
+@media only screen and (orientation: landscape) and (max-device-width: 900px) {
+    #contenedor__index {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "principal principal"
+        "infouno infodos"
+        "infotres infocuatro"
+        "imagen imagen";
+        #principal__index {
+            grid-area: principal;
+            background-image: url(../media/mobile/index_principal.svg);
+            background-repeat: no-repeat;
+            background-position: 90% bottom;
+            background-size: 14rem;
+            .principal__index--info {
+                width: 50%;
+                text-align: left;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: flex-start;
+                position: relative;
+                top: 20%;
+                left: 5%;
+                .botonPedido {
+                    width: 10rem;
+                    height: 3rem;
+                    margin-top: 1rem;
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .bottom__index {
+            width: 100%;
+            height: 17rem;
+            margin: 1rem 0;
+            @include cuadros;
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .uno {
+            grid-area: infouno;
+        }
+        .dos {
+            grid-area: infodos;
+        }
+        .tres {
+            grid-area: infotres;
+        }
+        .cuatro {
+            grid-area: infocuatro;
+        }
+        .bottom__index--img {
+            grid-area: imagen;
+            margin: 1rem 0;
+            height: 20rem;
+            width: 100%;
+            background-image: url(../media/mobile/index_bottom.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    
+    #contenedor__pedido {
+        background: linear-gradient(180deg, rgb(255, 130, 188) 0%, rgb(143, 32, 86) 100%);
+        background-attachment: fixed;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        "principal"
+        "form"
+        "imagen"
+        "prod"
+        "productos"
+        "mail";
+        column-gap: 1rem;
+        padding: 1rem;
+        #principal__pedido {
+            grid-area: principal;
+            background-color: $blanco;
+            width: calc(100vw - 2rem);
+            height: calc(100vh - 2rem);
+            padding: 1rem;
+            background-image: url(../media/mobile/pedido_principal.svg);
+            background-repeat: no-repeat;
+            background-position: center 90%;
+            margin-bottom: 1rem;
+            .principal__pedido--info {
+                width: 100%;
+                height: 36%;
+                text-align: center;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 10%;
+            }
+        }
+        .bottom__pedido--form {
+            grid-area: form;
+            margin-top: 1rem;
+            .card-ce {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                word-wrap: break-word;
+                background-clip: border-box;
+                border: 1px solid rgba(0,0,0,.125);
+            }
+            .uno {
+                background-color: $blanco;
+            }
+            .dos {
+                background-color: #f5f5f5;
+            }
+            .tres {
+                background-color: #e8e8e8;
+            }
+            .btn {
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+            }
+            .btn-uno {
+                color: $amarillo;
+                font-size: 1.5rem;
+                font-weight: $medium;
+            }
+            .btn-dos {
+                color: $rosa;
+                font-size: 1.5rem;
+                font-weight: $medium;
+            }
+            .btn-tres {
+                color: $azul;
+                font-size: 1.5rem;
+                font-weight: $medium;
+            }
+            .datosPersonales {
+                background-color: #fcd380dc;
+                input {
+                    width: 100%;
+                    height: 2rem;
+                    border: none;
+                    margin: .25rem 0;
+                    background-color: #b8b8b8;
+                    padding: .5rem;
+                    border-radius: .25rem;
+                    font-weight: $medium;
+                    transition: background-color 500ms linear;
+                    &:focus {
+                        background-color: $amarillo;
+                    }
+                }
+            }
+            .archivos {
+                background-color: #ff82bddc;
+                input {
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                    height: 3rem;
+                    border: none;
+                    margin: .25rem 0;
+                    background-color: #b8b8b8;
+                    padding: .5rem;
+                    border-radius: .25rem;
+                    font-weight: $medium;
+                    transition: background-color 500ms, height 300ms;
+                    transition-timing-function: linear;
+                    &:focus {
+                        background-color: $rosa;
+                        height: 6rem;
+                    }
+                }
+            }
+            .datosEntrega {
+                background-color: #80ceffdc;
+                height: 16rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                label {
+                    color: $blanco;
+                    font-size: 1rem;
+                    font-weight: $medium;
+                }
+                select {
+                    color: $azul;
+                    border-radius: 5px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            .tituloModalUno {
+                font-weight: $medium;
+                font-size: 1.5rem;
+                color: $amarillo;
+            }
+            .tituloModalDos {
+                font-weight: $medium;
+                font-size: 1.5rem;
+                color: $rosa;
+            }
+            .tituloModalTres {
+                font-weight: $medium;
+                font-size: 1.5rem;
+                color: $azul;
+            }
+            .textoModal {
+                margin: 1rem;
+                p {
+                    font-weight: $medium;
+                    font-size: 1.1rem;
+                    padding: .2rem;
+                    color: $negro;
+                }
+            }
+        }
+        .bottom__pedido--img {
+            grid-area: imagen;
+            width: 100%;
+            height: 27rem;
+            background-image: url(../media/mobile/pedido_bottom.svg);
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+        .bottom__productos {
+            grid-area: prod;
+            padding: 1rem;
+            width: 100%;
+            height: 12rem;
+            background-color: $blanco;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            box-shadow: 4px 4px 3px rgb(114, 49, 85);
+        }
+        .bottom__productos--img {
+            grid-area: productos;
+            width: 100%;
+            margin: 1rem 0;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .producto--uno {
+                width: 100%;
+                margin: 1rem 0;
+                .btn-ce {
+                    position: relative;
+                    box-shadow: 4px 4px 3px rgb(114, 49, 85);
+                    width: 100%;
+                    height: 8rem;
+                    background-color: $blanco;
+                    background-image: url(../media/utilesescolares/resaltadores.png);
+                    background-repeat: no-repeat;
+                    background-size: 70%;
+                    background-position: -7rem center;
+                    &::after {
+                        content: "Resaltadores";
+                        font-size: 1.5rem;
+                        font-weight: $bold;
+                        color: $rosa;
+                        position: absolute;
+                        right: .75rem;
+                        top: 3rem;
+                    }
+                }
+            }
+            .producto--dos {
+                width: 100%;
+                margin-bottom: 1rem;
+                .btn-ce {
+                    position: relative;
+                    box-shadow: 4px 4px 3px rgb(114, 49, 85);
+                    width: 100%;
+                    height: 8rem;
+                    background-color: $blanco;
+                    background-image: url(../media/utilesescolares/microfibras.png);
+                    background-repeat: no-repeat;
+                    background-size: 130%;
+                    background-position: 12rem center;
+                    &::after {
+                        content: "Microfibras";
+                        font-size: 1.5rem;
+                        font-weight: $bold;
+                        color: $amarillo;
+                        position: absolute;
+                        left: .75rem;
+                        top: 3rem;
+                    }
+                }
+            }
+            .producto--tres {
+                width: 100%;
+                margin-bottom: 1rem;
+                .btn-ce {
+                    position: relative;
+                    box-shadow: 4px 4px 3px rgb(114, 49, 85);
+                    width: 100%;
+                    height: 8rem;
+                    background-color: $blanco;
+                    background-image: url(../media/utilesescolares/lapiceras.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: -12rem center;
+                    &::after {
+                        content: "Lapiceras";
+                        font-size: 1.5rem;
+                        font-weight: $bold;
+                        color: $azul;
+                        position: absolute;
+                        right: .75rem;
+                        top: 3rem;
+                    }
+                }
+            }
+            .producto--cuatro {
+                width: 100%;
+                margin-bottom: 1rem;
+                .btn-ce {
+                    position: relative;
+                    box-shadow: 4px 4px 3px rgb(114, 49, 85);
+                    width: 100%;
+                    height: 8rem;
+                    background-color: $blanco;
+                    background-image: url(../media/utilesescolares/lapices.png);
+                    background-repeat: no-repeat;
+                    background-size: 70%;
+                    background-position: 13rem center;
+                    &::after {
+                        content: "Lápices";
+                        font-size: 1.5rem;
+                        font-weight: $bold;
+                        color: $rosa;
+                        position: absolute;
+                        left: .75rem;
+                        top: 3rem;
+                    }
+                }
+            }
+            .producto--cinco {
+                width: 100%;
+                margin-bottom: 1rem;
+                .btn-ce {
+                    position: relative;
+                    box-shadow: 4px 4px 3px rgb(114, 49, 85);
+                    width: 100%;
+                    height: 8rem;
+                    background-color: $blanco;
+                    background-image: url(../media/utilesescolares/separadores.png);
+                    background-repeat: no-repeat;
+                    background-size: 50%;
+                    background-position: -5rem center;
+                    &::after {
+                        content: "Separadores";
+                        font-size: 1.5rem;
+                        font-weight: $bold;
+                        color: $amarillo;
+                        position: absolute;
+                        right: .75rem;
+                        top: 3rem;
+                    }
+                }
+            }
+            .producto--seis {
+                width: 100%;
+                margin-bottom: 1rem;
+                .btn-ce {
+                    position: relative;
+                    box-shadow: 4px 4px 3px rgb(114, 49, 85);
+                    width: 100%;
+                    height: 8rem;
+                    background-color: $blanco;
+                    background-image: url(../media/utilesescolares/cuaderno.png);
+                    background-repeat: no-repeat;
+                    background-size: 40%;
+                    background-position: 15rem center;
+                    &::after {
+                        content: "Cuadernos";
+                        font-size: 1.5rem;
+                        font-weight: $bold;
+                        color: $azul;
+                        position: absolute;
+                        left: .75rem;
+                        top: 3rem;
+                    }
+                }
+            }
+        }
+        li {
+            margin: .25rem .25rem .25rem .75rem;
+        }
+        .listaNormal {
+            li {
+                list-style-image: none;
+                list-style-type: circle;
+            }
+        }
+        .bottom__productos--mail {
+            grid-area: mail;
+            @include cuadros;
+            height: 16rem;
+            @include flexCC;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            button {
+                align-self: flex-end;
+            }
+            input {
+                width: 100%;
+                height: 2rem;
+                border: none;
+                margin: .75rem 0;
+                background-color: #b8b8b8;
+                padding: .5rem;
+                border-radius: .25rem;
+                font-weight: $medium;
+                transition: background-color 500ms linear;
+                &:focus {
+                    background-color: $rosa;
+                }
+            }
+        }
+    }
+    
+    #contenedor__enviar {
+        background: linear-gradient(180deg, #74FF51 0%, #388126 100%);
+        background-attachment: fixed;
+        padding: 1rem;
+        #principal__enviar {
+            grid-area: principal;
+            background-color: $blanco;
+            width: calc(100vw - 2rem);
+            height: calc(100vh - 2rem);
+            padding: 1rem;
+            background-image: url(../media/mobile/enviar.svg);
+            background-repeat: no-repeat;
+            background-position: center 90%;
+            background-size: 90%;
+            margin-bottom: 1rem;
+            .principal__enviar--info {
+                width: 100%;
+                height: 36%;
+                text-align: center;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 10%;
+            }
+        }
+    }
+    
+    #contenedor__contacto {
+        background: linear-gradient(180deg, #FCD380 0%, #B98620 100%);
+        background-attachment: fixed;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+        "principal"
+        "form"
+        "info"
+        "mapa"
+        "imagen";
+        column-gap: 1rem;
+        padding: 1rem;
+        #principal__contacto{
+            grid-area: principal;
+            background-color: $blanco;
+            width: calc(100vw - 2rem);
+            height: calc(100vh - 2rem);
+            padding: 1rem;
+            background-image: url(../media/mobile/contacto_principal.svg);
+            background-repeat: no-repeat;
+            background-position: center 85%;
+            margin-bottom: 1rem;
+            .principal__contacto--info {
+                width: 100%;
+                height: 36%;
+                text-align: center;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 10%;
+            }
+        }
+        .bottom__contacto--form {
+            grid-area: form;
+            @include cuadros;
+            margin: 1rem 0;
+            background-color: #e8e8e8;
+            input {
+                width: 100%;
+                height: 2rem;
+                border: none;
+                margin: .25rem 0;
+                background-color: #b8b8b8;
+                padding: .5rem;
+                border-radius: .25rem;
+                font-weight: $medium;
+                transition: background-color 500ms linear;
+                &:focus {
+                    background-color: $azul;
+                    color: $blanco;
+                }
+            }
+            textarea.textareaContacto {
+                width: 100%;
+                height: 5rem;
+                border: none;
+                border-radius: .25rem;
+                background-color: #b8b8b8;
+                font-weight: $medium;
+                padding: .5rem;
+                margin: .25rem 0;
+                transition: background-color 500ms linear;
+                &:focus {
+                    background-color: $azul;
+                    color: $blanco;
+                }
+            }
+            .btn-agregar {
+                float: right;
+            }
+        }
+        .bottom__contacto--info {
+            grid-area: info;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 15rem);
+            column-gap: 1rem;
+            row-gap: 1rem;
+            grid-template-areas:
+            "wpp ubicacion"
+            "mail redes";
+            margin: 1rem 0;
+            text-align: center;
+            .wpp {
+                grid-area: wpp;
+                @include cuadros;
+                @include flexCC;
+            }
+            .ubicacion {
+                grid-area: ubicacion;
+                @include cuadros;
+                @include flexCC;
+            }
+            .mail {
+                grid-area: mail;
+                @include cuadros;
+                @include flexCC;
+            }
+            .redes {
+                grid-area: redes;
+                @include cuadros;
+                @include flexCC;
+            }
+        }
+        .bottom__contacto--mapa {
+            grid-area: mapa;
+            margin: 1rem 0;
+            iframe {
+                width: 100%;
+                height: 12rem;
+                border-radius: .5rem;
+                box-shadow: 5px 5px 4px #1d1d1d90;
+            }
+        }
+        .botton__contacto--img {
+            grid-area: imagen;
+            position: relative;
+            width: 100%;
+            height: 10rem;
+            img {
+                position: absolute;
+                top: -3rem;
+                left: calc(50% - 10rem);
+            }
+        }
+    }
+    
+    #contenedor__zona {
+        background: linear-gradient(180deg, #3f92c5 0%, #003556 100%);
+        background-attachment: fixed;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "principal"
+        "canciones"
+        "podcast"
+        "respira";
+        column-gap: 1rem;
+        padding: 1rem;
+        #principal__zona{
+            grid-area: principal;
+            width: calc(100vw - 2rem);
+            height: calc(100vh - 2rem);
+            padding: 1rem;
+            background-image: url(../media/mobile/zona_principal.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            margin-bottom: 1rem;
+            .principal__zona--info {
+                .subtitulo {
+                    font-size: 1.4rem;
+                    font-weight: $bold;
+                    margin-bottom: .75rem;
+                }
+                width: 100%;
+                height: 36%;
+                text-align: center;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: 10%;
+            }
+        }
+        .bottom__zona--canciones {
+            grid-area: canciones;
+            width: calc(100vw - 2rem);
+            height: calc(100vh - 2rem);
+            padding: 1rem;
+            background-image: url(../media/mobile/zona_canciones.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            margin: 1rem 0;
+            .canciones--info {
+                @include fondoNegro;
+                @include flexCC;
+                justify-content: space-around;
+                text-align: center;
+                a {
+                    margin: .25rem 0;
+                }
+                .canciones {
+                    p {
+                        padding: .25rem 0;
+                        animation: canciones 1.5s infinite alternate linear;
+                    }
+                }
+            }
+        }
+        .bottom__zona--podcast {
+            grid-area: podcast;
+            width: calc(100vw - 2rem);
+            height: calc(100vh - 2rem);
+            padding: 1rem;
+            background-image: url(../media/mobile/zona_podcast.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            margin: 1rem 0;
+            .podcast--info {
+                @include fondoNegro;
+                @include flexCC;
+                justify-content: space-around;
+                text-align: center;
+            }
+        }
+        .respira {
+            grid-area: respira;
+            width: calc(100vw - 2rem);
+            height: calc(100vh - 2rem);
+            padding: 1rem;
+            background-image: url(../media/mobile/zona_respira.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            margin: 1rem 0;
+            color: $blanco;
+            @include flexCC;
+            justify-content: space-evenly;
+            .respira__texto {
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 1.25rem;
+                text-align: center;
+            }
+            .respira__videos {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 100%;
+                grid-template-areas:
+                "vuno vdos";
+                column-gap: 1rem;
+                text-align: center;
+                .videouno {
+                    grid-area: vuno;
+                    padding: 1rem;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 1.25rem;
+                    @include flexCC;
+                }
+                .videodos {
+                    grid-area: vdos;
+                    padding: 1rem;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 1.25rem;
+                    @include flexCC;
+                }
+            }
+        }
+    }
+}
+
 @media all and (min-width: 768px) {
     body {
         h1, h2, h3, h4, h5 {
