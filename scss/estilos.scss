@@ -1024,139 +1024,49 @@ body {
     }
     
     #contenedor__contacto {
-        background: linear-gradient(180deg, #FCD380 0%, #B98620 100%);
-        background-attachment: fixed;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas:
-        "principal"
-        "form"
-        "info"
-        "mapa"
-        "imagen";
-        column-gap: 1rem;
-        padding: 1rem;
         #principal__contacto{
-            grid-area: principal;
-            background-color: $blanco;
-            width: calc(100vw - 2rem);
-            height: calc(100vh - 2rem);
-            padding: 1rem;
-            background-image: url(../media/mobile/contacto_principal.svg);
-            background-repeat: no-repeat;
-            background-position: center 85%;
+            background-position: 10% 70%;
+            background-size: 14rem;
             margin-bottom: 1rem;
             .principal__contacto--info {
-                width: 100%;
+                width: 50%;
                 height: 36%;
-                text-align: center;
+                text-align: left;
                 display: flex;
                 flex-flow: column nowrap;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 position: relative;
-                top: 10%;
-            }
-        }
-        .bottom__contacto--form {
-            grid-area: form;
-            @include cuadros;
-            margin: 1rem 0;
-            background-color: #e8e8e8;
-            input {
-                width: 100%;
-                height: 2rem;
-                border: none;
-                margin: .25rem 0;
-                background-color: #b8b8b8;
-                padding: .5rem;
-                border-radius: .25rem;
-                font-weight: $medium;
-                transition: background-color 500ms linear;
-                &:focus {
-                    background-color: $azul;
-                    color: $blanco;
-                }
-            }
-            textarea.textareaContacto {
-                width: 100%;
-                height: 5rem;
-                border: none;
-                border-radius: .25rem;
-                background-color: #b8b8b8;
-                font-weight: $medium;
-                padding: .5rem;
-                margin: .25rem 0;
-                transition: background-color 500ms linear;
-                &:focus {
-                    background-color: $azul;
-                    color: $blanco;
-                }
-            }
-            .btn-agregar {
-                float: right;
+                top: 20%;
+                left: 50%;
             }
         }
         .bottom__contacto--info {
             grid-area: info;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 15rem);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100%;
             column-gap: 1rem;
             row-gap: 1rem;
             grid-template-areas:
-            "wpp ubicacion"
-            "mail redes";
-            margin: 1rem 0;
-            text-align: center;
+            "wpp ubicacion mail redes";
+            margin: 2rem 0;
             .wpp {
                 grid-area: wpp;
-                @include cuadros;
-                @include flexCC;
             }
             .ubicacion {
                 grid-area: ubicacion;
-                @include cuadros;
-                @include flexCC;
             }
             .mail {
                 grid-area: mail;
-                @include cuadros;
-                @include flexCC;
             }
             .redes {
                 grid-area: redes;
-                @include cuadros;
-                @include flexCC;
-            }
-        }
-        .bottom__contacto--mapa {
-            grid-area: mapa;
-            margin: 1rem 0;
-            iframe {
-                width: 100%;
-                height: 12rem;
-                border-radius: .5rem;
-                box-shadow: 5px 5px 4px #1d1d1d90;
-            }
-        }
-        .botton__contacto--img {
-            grid-area: imagen;
-            position: relative;
-            width: 100%;
-            height: 10rem;
-            img {
-                position: absolute;
-                top: -3rem;
-                left: calc(50% - 10rem);
             }
         }
     }
     
     #contenedor__zona {
-        background: linear-gradient(180deg, #3f92c5 0%, #003556 100%);
-        background-attachment: fixed;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, auto);
@@ -1165,120 +1075,32 @@ body {
         "canciones"
         "podcast"
         "respira";
-        column-gap: 1rem;
-        padding: 1rem;
         #principal__zona{
             grid-area: principal;
-            width: calc(100vw - 2rem);
-            height: calc(100vh - 2rem);
-            padding: 1rem;
-            background-image: url(../media/mobile/zona_principal.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            margin-bottom: 1rem;
+            background-image: url(../media/desktop/zona_principal.svg);
             .principal__zona--info {
-                .subtitulo {
-                    font-size: 1.4rem;
+                p {
                     font-weight: $bold;
-                    margin-bottom: .75rem;
                 }
-                width: 100%;
-                height: 36%;
-                text-align: center;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                top: 10%;
             }
         }
         .bottom__zona--canciones {
             grid-area: canciones;
-            width: calc(100vw - 2rem);
-            height: calc(100vh - 2rem);
-            padding: 1rem;
-            background-image: url(../media/mobile/zona_canciones.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            margin: 1rem 0;
+            background-image: url(../media/desktop/zona_canciones.svg);
             .canciones--info {
-                @include fondoNegro;
-                @include flexCC;
-                justify-content: space-around;
-                text-align: center;
-                a {
-                    margin: .25rem 0;
-                }
-                .canciones {
-                    p {
-                        padding: .25rem 0;
-                        animation: canciones 1.5s infinite alternate linear;
-                    }
-                }
+                justify-content: space-evenly;
             }
         }
         .bottom__zona--podcast {
             grid-area: podcast;
-            width: calc(100vw - 2rem);
-            height: calc(100vh - 2rem);
-            padding: 1rem;
-            background-image: url(../media/mobile/zona_podcast.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            margin: 1rem 0;
+            background-image: url(../media/desktop/zona_podcast.svg);
             .podcast--info {
-                @include fondoNegro;
-                @include flexCC;
-                justify-content: space-around;
-                text-align: center;
+                justify-content: space-evenly;
             }
         }
         .respira {
             grid-area: respira;
-            width: calc(100vw - 2rem);
-            height: calc(100vh - 2rem);
-            padding: 1rem;
-            background-image: url(../media/mobile/zona_respira.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            margin: 1rem 0;
-            color: $blanco;
-            @include flexCC;
-            justify-content: space-evenly;
-            .respira__texto {
-                padding: 1rem;
-                background-color: rgba(0, 0, 0, 0.5);
-                border-radius: 1.25rem;
-                text-align: center;
-            }
-            .respira__videos {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 100%;
-                grid-template-areas:
-                "vuno vdos";
-                column-gap: 1rem;
-                text-align: center;
-                .videouno {
-                    grid-area: vuno;
-                    padding: 1rem;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border-radius: 1.25rem;
-                    @include flexCC;
-                }
-                .videodos {
-                    grid-area: vdos;
-                    padding: 1rem;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border-radius: 1.25rem;
-                    @include flexCC;
-                }
-            }
+            background-image: url(../media/desktop/zona_respira.svg);
         }
     }
 }
