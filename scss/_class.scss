@@ -167,7 +167,7 @@ footer {
     background-color: $blanco;
     color: $azul;
     font-size: 1.1rem;
-    font-weight: $bold;
+    font-weight: $medium;
 }
 .btn-hacer {
     @include botonModalPedido;
@@ -510,6 +510,7 @@ footer {
         height: 2.5rem;
         width: 10rem;
         font-size: 1.1rem;
+        font-weight: $medium;
         transition: all 250ms linear;
         padding: 0;
         &:hover {
@@ -566,42 +567,5 @@ footer {
     .zona_lofigirl {
         font-size: 2.25rem;
         margin-bottom: .25rem;
-    }
-    .btn-cerrar {
-        font-size: 1rem
-    }
-    .btn-agregar {
-        font-size: 1rem;
-    }
-    .btn-pedido {
-        color: $negro;
-        margin-top: .5rem;
-        border-right: 2px solid #000000b6;
-        border-bottom: 2px solid #000000b6;
-        border-left: 2px solid #5a5a5a90;
-        border-top: 2px solid #5a5a5a90;
-        box-shadow: 3px 3px 3px #1d1d1db3;
-        height: 2.5rem;
-        width: 10rem;
-        font-size: 1.1rem;
-        transition: all 250ms linear;
-        padding: 0;
-        &:hover {
-            transform: translateY(-.25rem);
-            box-shadow: 3px 3px 6px #63064493;
-            border-left: 2px solid #cccccc90;
-            border-top: 2px solid #cccccc90;
-            border-right: 2px solid #0000009a;
-        border-bottom: 2px solid #0000009a;
-        }
-        &:active {
-            transform: translateY(.25rem);
-        }
-    }
-    .btn-hacer {
-        font-size: 1rem;
-    }
-    .texto {
-        margin: .5rem;
     }
 }
