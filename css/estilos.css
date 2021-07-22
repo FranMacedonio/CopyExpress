@@ -594,6 +594,11 @@ footer .footer__texto .footer__botonera--redes {
     font-size: 2rem;
     text-shadow: 3px 3px 2px #161616;
     margin-bottom: .25rem;
+    -webkit-transition: color 300ms linear;
+    transition: color 300ms linear;
+  }
+  .zona_lofigirl:hover {
+    color: #fcd380;
   }
   footer {
     height: 12rem;
@@ -3781,7 +3786,7 @@ body input[type=number]::-webkit-outer-spin-button {
     transition: color 200ms linear;
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p:hover {
-    color: #80ceff;
+    color: #fcd380;
   }
   #contenedor__zona .bottom__zona--podcast {
     -ms-grid-row: 3;

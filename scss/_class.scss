@@ -394,6 +394,10 @@ footer {
         font-size: 2rem;
         text-shadow: 3px 3px 2px rgb(22, 22, 22);
         margin-bottom: .25rem;
+        transition: color 300ms linear;
+        &:hover {
+            color: $amarillo;
+        }
     }
     footer {
         height: 12rem;
