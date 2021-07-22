@@ -1765,12 +1765,6 @@ body input[type=number]::-webkit-outer-spin-button {
 
 #contenedor__contacto .bottom__contacto--form .btn-agregar {
   float: right;
-  -webkit-transition: background-color 500ms ease-in-out;
-  transition: background-color 500ms ease-in-out;
-}
-
-#contenedor__contacto .bottom__contacto--form .btn-agregar:hover {
-  background-color: #80ceff;
 }
 
 #contenedor__contacto .bottom__contacto--info {
@@ -3235,6 +3229,9 @@ body input[type=number]::-webkit-outer-spin-button {
     -webkit-transition: background-color 500ms linear;
     transition: background-color 500ms linear;
   }
+  #contenedor__pedido .desktop__pedido--form .pedido__parteuno .formuno input:hover {
+    background-color: #9d9d9d;
+  }
   #contenedor__pedido .desktop__pedido--form .pedido__parteuno .formuno input:focus {
     background-color: #ffc85a;
   }
@@ -3267,6 +3264,9 @@ body input[type=number]::-webkit-outer-spin-button {
     transition: background-color 500ms, height 300ms;
     -webkit-transition-timing-function: linear;
             transition-timing-function: linear;
+  }
+  #contenedor__pedido .desktop__pedido--form .pedido__parteuno .formdos textarea:hover {
+    background-color: #9d9d9d;
   }
   #contenedor__pedido .desktop__pedido--form .pedido__parteuno .formdos textarea:focus {
     background-color: #ff60aa;
@@ -3390,7 +3390,7 @@ body input[type=number]::-webkit-outer-spin-button {
     transition: right 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce:hover {
-    background-position: 5% center;
+    background-position: 0% center;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce:hover::after {
     right: 3%;
@@ -3417,7 +3417,7 @@ body input[type=number]::-webkit-outer-spin-button {
     transition: left 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce:hover {
-    background-position: 225% center;
+    background-position: 250% center;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce:hover::after {
     left: 3%;
@@ -3444,7 +3444,7 @@ body input[type=number]::-webkit-outer-spin-button {
     transition: right 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce:hover {
-    background-position: -20% center;
+    background-position: -30% center;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce:hover::after {
     right: 3%;
@@ -3471,7 +3471,7 @@ body input[type=number]::-webkit-outer-spin-button {
     transition: left 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce:hover {
-    background-position: 100% center;
+    background-position: 110% center;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce:hover::after {
     left: 3%;
@@ -3498,7 +3498,7 @@ body input[type=number]::-webkit-outer-spin-button {
     transition: right 600ms linear;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce:hover {
-    background-position: 15% center;
+    background-position: 5% center;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce:hover::after {
     right: 3%;
@@ -3564,6 +3564,11 @@ body input[type=number]::-webkit-outer-spin-button {
     margin: 1rem 0;
     padding: .75rem;
     border-radius: .5rem;
+    -webkit-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+  }
+  #contenedor__pedido .bottom__productos--mail input:hover {
+    background-color: #9d9d9d;
   }
   #contenedor__enviar #principal__enviar {
     -ms-grid-row: 1;
@@ -3616,15 +3621,31 @@ body input[type=number]::-webkit-outer-spin-button {
     padding: .75rem;
     border-radius: .5rem;
     margin: .5rem 0;
+    -webkit-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+  #contenedor__contacto .bottom__contacto--form input:hover {
+    background-color: #9d9d9d;
   }
   #contenedor__contacto .bottom__contacto--form textarea.textareaContacto {
     height: 8rem;
     border-radius: .5rem;
     padding: .75rem;
     margin: .5rem 0;
+    -webkit-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+  #contenedor__contacto .bottom__contacto--form textarea.textareaContacto:hover {
+    background-color: #9d9d9d;
   }
   #contenedor__contacto .bottom__contacto--form .btn-agregar {
     margin-top: 1rem;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+  }
+  #contenedor__contacto .bottom__contacto--form .btn-agregar:hover {
+    background-color: #80ceff;
+    color: #fbfbfb;
   }
   #contenedor__contacto .bottom__contacto--form .texto {
     margin: 0;
@@ -3655,6 +3676,13 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column-span: 2;
     grid-area: wpp;
   }
+  #contenedor__contacto .bottom__contacto--info .wpp a {
+    -webkit-transition: color 300ms linear;
+    transition: color 300ms linear;
+  }
+  #contenedor__contacto .bottom__contacto--info .wpp a:hover {
+    color: #1fae1f;
+  }
   #contenedor__contacto .bottom__contacto--info .ubicacion {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
@@ -3672,6 +3700,20 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column: 7;
     -ms-grid-column-span: 2;
     grid-area: redes;
+  }
+  #contenedor__contacto .bottom__contacto--info .redes .fb {
+    -webkit-transition: color 300ms linear;
+    transition: color 300ms linear;
+  }
+  #contenedor__contacto .bottom__contacto--info .redes .fb:hover {
+    color: #80ceff;
+  }
+  #contenedor__contacto .bottom__contacto--info .redes .ig {
+    -webkit-transition: color 300ms linear;
+    transition: color 300ms linear;
+  }
+  #contenedor__contacto .bottom__contacto--info .redes .ig:hover {
+    color: #ff82bd;
   }
   #contenedor__contacto .bottom__contacto--mapa {
     -ms-grid-row: 4;
