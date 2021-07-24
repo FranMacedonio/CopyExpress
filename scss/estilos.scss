@@ -1087,6 +1087,8 @@ body {
         .bottom__zona--canciones {
             grid-area: canciones;
             background-image: url(../media/desktop/zona_canciones.svg);
+            height: auto;
+            margin: 1rem 0;
             .canciones {
                     padding: 0;
                 }
@@ -1097,6 +1099,8 @@ body {
         .bottom__zona--podcast {
             grid-area: podcast;
             background-image: url(../media/desktop/zona_podcast.svg);
+            height: auto;
+            margin: 1rem 0;
             .podcast--info {
                 justify-content: space-evenly;
             }
@@ -1104,6 +1108,11 @@ body {
         .respira {
             grid-area: respira;
             background-image: url(../media/desktop/zona_respira.svg);
+            height: auto;
+            margin: 1rem 0;
+            .respira__videos {
+                margin: 1rem;
+            }
         }
     }
 }
@@ -1581,7 +1590,7 @@ body {
     #contenedor__pedido {
         #principal__pedido {
             grid-area: principal;
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
             background-size: 26rem;
             margin-bottom: 1.5rem;
             .principal__pedido--info {

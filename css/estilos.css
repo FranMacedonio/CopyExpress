@@ -2649,6 +2649,8 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column: 1;
     grid-area: canciones;
     background-image: url(../media/desktop/zona_canciones.svg);
+    height: auto;
+    margin: 1rem 0;
   }
   #contenedor__zona .bottom__zona--canciones .canciones {
     padding: 0;
@@ -2663,6 +2665,8 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column: 1;
     grid-area: podcast;
     background-image: url(../media/desktop/zona_podcast.svg);
+    height: auto;
+    margin: 1rem 0;
   }
   #contenedor__zona .bottom__zona--podcast .podcast--info {
     -webkit-box-pack: space-evenly;
@@ -2674,6 +2678,11 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column: 1;
     grid-area: respira;
     background-image: url(../media/desktop/zona_respira.svg);
+    height: auto;
+    margin: 1rem 0;
+  }
+  #contenedor__zona .respira .respira__videos {
+    margin: 1rem;
   }
 }
 
@@ -3227,7 +3236,7 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: principal;
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
     background-size: 26rem;
     margin-bottom: 1.5rem;
   }
