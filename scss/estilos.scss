@@ -758,7 +758,7 @@ body {
         .canciones--info {
             @include fondoNegro;
             @include flexCC;
-            justify-content: space-around;
+            justify-content: space-evenly;
             text-align: center;
             a {
                 margin: .25rem 0;
@@ -784,7 +784,7 @@ body {
         .podcast--info {
             @include fondoNegro;
             @include flexCC;
-            justify-content: space-around;
+            justify-content: space-evenly;
             text-align: center;
         }
     }
@@ -1092,18 +1092,12 @@ body {
             .canciones {
                     padding: 0;
                 }
-            .canciones--info {
-                justify-content: space-evenly;
-            }
         }
         .bottom__zona--podcast {
             grid-area: podcast;
             background-image: url(../media/desktop/zona_podcast.svg);
             height: auto;
             margin: 1rem 0;
-            .podcast--info {
-                justify-content: space-evenly;
-            }
         }
         .respira {
             grid-area: respira;
@@ -1483,7 +1477,6 @@ body {
             margin: 1.5rem 0;
             .canciones--info {
                 padding: 1.5rem;
-                justify-content: space-evenly;
                 a {
                     margin: .5rem 0;
                 }
@@ -1505,7 +1498,6 @@ body {
             margin: 1.5rem 0;
             .podcast--info {
                 padding: 1.5rem;
-                justify-content: space-evenly;
             }
         }
         .respira {
@@ -1542,8 +1534,17 @@ body {
         font-size: 1rem;
     }
     #contenedor__index {
+        padding: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "principal principal"
+        "infouno infodos"
+        "infotres infocuatro"
+        "imagen imagen";
         #principal__index {
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-size: 16rem;
             .principal__index--info {
                 .botonPedido {
@@ -1588,9 +1589,11 @@ body {
     }
 
     #contenedor__pedido {
+        padding: 1.5rem;
         #principal__pedido {
             grid-area: principal;
             width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-size: 26rem;
             margin-bottom: 1.5rem;
             .principal__pedido--info {
@@ -1758,9 +1761,11 @@ body {
     }
 
     #contenedor__enviar {
+        padding: 1.5rem;
         #principal__enviar {
             grid-area: principal;
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-size: 40%;
             .principal__enviar--info {
                 top: 0;
@@ -1769,9 +1774,11 @@ body {
     }
 
     #contenedor__contacto {
+        padding: 1.5rem;
         #principal__contacto{
             grid-area: principal;
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-size: 22rem;
             .principal__contacto--info {
                 top: 0;
@@ -1837,9 +1844,11 @@ body {
     }
 
     #contenedor__zona {
+        padding: 1.5rem;
         #principal__zona{
             grid-area: principal;
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-image: url(../media/desktop/zona_principal.svg);
             .principal__zona--info {
                 .subtitulo {
@@ -1849,10 +1858,10 @@ body {
         }
         .bottom__zona--canciones {
             grid-area: canciones;
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-image: url(../media/desktop/zona_canciones.svg);
             .canciones--info {
-                justify-content: space-between;
                 .canciones {
                     p {
                         font-size: 1rem;
@@ -1864,15 +1873,14 @@ body {
         }
         .bottom__zona--podcast {
             grid-area: podcast;
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-image: url(../media/desktop/zona_podcast.svg);
-            .podcast--info {
-                justify-content: space-between;
-            }
         }
         .respira {
             grid-area: respira;
-            width: calc(100vw - 3.75rem);
+            width: calc(100vw - 3rem);
+            height: calc(100vh - 3rem);
             background-image: url(../media/desktop/zona_respira.svg);
         }
     }
@@ -2468,7 +2476,6 @@ body {
             .canciones--info {
                 padding: 1.5rem;
                 background-color: rgba(0, 0, 0, 0.4);
-                justify-content: space-evenly;
                 .canciones {
                     p {
                         font-size: 1.25rem;
@@ -2487,7 +2494,6 @@ body {
             width: calc(100vw - 3.75rem);
             background-image: url(../media/desktop/zona_podcast.svg);
             .podcast--info {
-                justify-content: space-evenly;
                 padding: 1.5rem;
                 background-color: rgba(0, 0, 0, 0.4);
             }

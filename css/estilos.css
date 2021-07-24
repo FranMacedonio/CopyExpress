@@ -2171,8 +2171,9 @@ body input[type=number]::-webkit-outer-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
 }
 
@@ -2219,8 +2220,9 @@ body input[type=number]::-webkit-outer-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
 }
 
@@ -2655,11 +2657,6 @@ body input[type=number]::-webkit-outer-spin-button {
   #contenedor__zona .bottom__zona--canciones .canciones {
     padding: 0;
   }
-  #contenedor__zona .bottom__zona--canciones .canciones--info {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
   #contenedor__zona .bottom__zona--podcast {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
@@ -2667,11 +2664,6 @@ body input[type=number]::-webkit-outer-spin-button {
     background-image: url(../media/desktop/zona_podcast.svg);
     height: auto;
     margin: 1rem 0;
-  }
-  #contenedor__zona .bottom__zona--podcast .podcast--info {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   #contenedor__zona .respira {
     -ms-grid-row: 4;
@@ -3115,9 +3107,6 @@ body input[type=number]::-webkit-outer-spin-button {
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info {
     padding: 1.5rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info a {
     margin: .5rem 0;
@@ -3140,9 +3129,6 @@ body input[type=number]::-webkit-outer-spin-button {
   }
   #contenedor__zona .bottom__zona--podcast .podcast--info {
     padding: 1.5rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   #contenedor__zona .respira {
     -ms-grid-row: 4;
@@ -3179,8 +3165,17 @@ body input[type=number]::-webkit-outer-spin-button {
   body h1, body h2, body h3, body h4, body h5 {
     font-size: 1rem;
   }
+  #contenedor__index {
+    padding: 1.5rem;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "principal principal" "infouno infodos" "infotres infocuatro" "imagen imagen";
+  }
   #contenedor__index #principal__index {
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-size: 16rem;
   }
   #contenedor__index #principal__index .principal__index--info .botonPedido {
@@ -3213,30 +3208,36 @@ body input[type=number]::-webkit-outer-spin-button {
     grid-area: infouno;
   }
   #contenedor__index .dos {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
     grid-area: infodos;
   }
   #contenedor__index .tres {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: infotres;
   }
   #contenedor__index .cuatro {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: infocuatro;
   }
   #contenedor__index .bottom__index--img {
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: imagen;
+  }
+  #contenedor__pedido {
+    padding: 1.5rem;
   }
   #contenedor__pedido #principal__pedido {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: principal;
     width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-size: 26rem;
     margin-bottom: 1.5rem;
   }
@@ -3313,8 +3314,9 @@ body input[type=number]::-webkit-outer-spin-button {
     padding: .25rem;
   }
   #contenedor__pedido .bottom__pedido--img {
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: imagen;
     height: 28rem;
     background-size: 8rem;
@@ -3419,21 +3421,31 @@ body input[type=number]::-webkit-outer-spin-button {
     padding: .75rem;
     border-radius: .5rem;
   }
+  #contenedor__enviar {
+    padding: 1.5rem;
+  }
   #contenedor__enviar #principal__enviar {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: principal;
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-size: 40%;
   }
   #contenedor__enviar #principal__enviar .principal__enviar--info {
     top: 0;
   }
+  #contenedor__contacto {
+    padding: 1.5rem;
+  }
   #contenedor__contacto #principal__contacto {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: principal;
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-size: 22rem;
   }
   #contenedor__contacto #principal__contacto .principal__contacto--info {
@@ -3501,8 +3513,9 @@ body input[type=number]::-webkit-outer-spin-button {
     border-radius: .75rem;
   }
   #contenedor__contacto .botton__contacto--img {
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: imagen;
     height: 14rem;
   }
@@ -3511,11 +3524,16 @@ body input[type=number]::-webkit-outer-spin-button {
     top: -4rem;
     left: calc(50% - 14rem);
   }
+  #contenedor__zona {
+    padding: 1.5rem;
+  }
   #contenedor__zona #principal__zona {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: principal;
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-image: url(../media/desktop/zona_principal.svg);
   }
   #contenedor__zona #principal__zona .principal__zona--info .subtitulo {
@@ -3525,13 +3543,9 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: canciones;
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-image: url(../media/desktop/zona_canciones.svg);
-  }
-  #contenedor__zona .bottom__zona--canciones .canciones--info {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
     font-size: 1rem;
@@ -3543,19 +3557,16 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: podcast;
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-image: url(../media/desktop/zona_podcast.svg);
-  }
-  #contenedor__zona .bottom__zona--podcast .podcast--info {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   #contenedor__zona .respira {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: respira;
-    width: calc(100vw - 3.75rem);
+    width: calc(100vw - 3rem);
+    height: calc(100vh - 3rem);
     background-image: url(../media/desktop/zona_respira.svg);
   }
 }
@@ -4305,9 +4316,6 @@ body input[type=number]::-webkit-outer-spin-button {
   #contenedor__zona .bottom__zona--canciones .canciones--info {
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.4);
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   #contenedor__zona .bottom__zona--canciones .canciones--info .canciones p {
     font-size: 1.25rem;
@@ -4328,9 +4336,6 @@ body input[type=number]::-webkit-outer-spin-button {
     background-image: url(../media/desktop/zona_podcast.svg);
   }
   #contenedor__zona .bottom__zona--podcast .podcast--info {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
     padding: 1.5rem;
     background-color: rgba(0, 0, 0, 0.4);
   }
