@@ -2959,6 +2959,9 @@ body input[type=number]::-webkit-outer-spin-button {
     padding: .75rem;
     border-radius: .5rem;
   }
+  #contenedor__pedido .bottom__productos--mail .precioProductos {
+    margin: .5rem;
+  }
   #contenedor__enviar {
     padding: 1.5rem;
   }
@@ -3259,8 +3262,24 @@ body input[type=number]::-webkit-outer-spin-button {
   #contenedor__pedido .bottom__pedido--form .btn-tres {
     font-size: 1.5rem;
   }
+  #contenedor__pedido .bottom__pedido--form .datosPersonales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   #contenedor__pedido .bottom__pedido--form .datosPersonales input {
     height: 2rem;
+    width: 80%;
   }
   #contenedor__pedido .bottom__pedido--form .archivos {
     text-align: center;
@@ -3344,11 +3363,12 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-column: 1;
     grid-area: uno;
     background-position: -6rem center;
+    background-size: 16rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--uno .btn-ce::after {
     font-size: 2.25rem;
     right: 3rem;
-    top: 3.5rem;
+    top: 2.75rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos {
     margin: 1.5rem 0;
@@ -3357,23 +3377,25 @@ body input[type=number]::-webkit-outer-spin-button {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: dos;
-    background-position: 18rem center;
+    background-position: 17rem center;
+    background-size: 26rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--dos .btn-ce::after {
     font-size: 2.25rem;
     left: 3rem;
-    top: 3.5rem;
+    top: 2.75rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: tres;
     background-position: -8rem center;
+    background-size: 20rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--tres .btn-ce::after {
     font-size: 2.25rem;
     right: 3rem;
-    top: 3.5rem;
+    top: 2.75rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce {
     -ms-grid-row: 2;
@@ -3381,21 +3403,26 @@ body input[type=number]::-webkit-outer-spin-button {
     grid-area: cuatro;
     background-size: 60%;
     background-position: 18rem center;
+    background-size: 15rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cuatro .btn-ce::after {
     font-size: 2.25rem;
     left: 3rem;
-    top: 3.5rem;
+    top: 2.75rem;
+  }
+  #contenedor__pedido .bottom__productos--img .producto--cinco .subtituloProductos {
+    margin: .5rem .5rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: cinco;
+    background-size: 14rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--cinco .btn-ce::after {
     font-size: 2.25rem;
     right: 3rem;
-    top: 3.5rem;
+    top: 2.75rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce {
     -ms-grid-row: 3;
@@ -3403,11 +3430,12 @@ body input[type=number]::-webkit-outer-spin-button {
     grid-area: seis;
     background-size: 40%;
     background-position: 20rem center;
+    background-size: 10rem;
   }
   #contenedor__pedido .bottom__productos--img .producto--seis .btn-ce::after {
     font-size: 2.25rem;
     left: 3rem;
-    top: 3.5rem;
+    top: 2.75rem;
   }
   #contenedor__pedido .bottom__productos--mail {
     -ms-grid-row: 2;
@@ -4374,6 +4402,9 @@ body input[type=number]::-webkit-outer-spin-button {
   #contenedor__zona .respira .respira__videos--desktop iframe {
     margin-top: 3rem;
     opacity: .9;
+  }
+  #contenedor__zona .respira .desktop {
+    width: 100%;
   }
 }
 

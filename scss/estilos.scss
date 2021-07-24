@@ -1354,6 +1354,9 @@ body {
                 padding: .75rem;
                 border-radius: .5rem;
             }
+            .precioProductos {
+                margin: .5rem;
+            }
         }
     }
 
@@ -1613,8 +1616,10 @@ body {
                 font-size: 1.5rem;
             }
             .datosPersonales {
+                @include flexCC;
                 input {
                     height: 2rem;
+                    width: 80%;
                 }
             }
             .archivos {
@@ -1683,10 +1688,11 @@ body {
                 .btn-ce {
                     grid-area: uno;
                     background-position: -6rem center;
+                    background-size: 16rem;
                     &::after {
                         font-size: 2.25rem;
                         right: 3rem;
-                        top: 3.5rem;
+                        top: 2.75rem;
                     }
                 }
             }
@@ -1694,11 +1700,12 @@ body {
                 margin: 1.5rem 0;
                 .btn-ce {
                     grid-area: dos;
-                    background-position: 18rem center;
+                    background-position: 17rem center;
+                    background-size: 26rem;
                     &::after {
                         font-size: 2.25rem;
                         left: 3rem;
-                        top: 3.5rem;
+                        top: 2.75rem;
                     }
                 }
             }
@@ -1706,10 +1713,11 @@ body {
                 .btn-ce {
                     grid-area: tres;
                     background-position: -8rem center;
+                    background-size: 20rem;
                     &::after {
                         font-size: 2.25rem;
                         right: 3rem;
-                        top: 3.5rem;
+                        top: 2.75rem;
                     }
                 }
             }
@@ -1718,20 +1726,25 @@ body {
                     grid-area: cuatro;
                     background-size: 60%;
                     background-position: 18rem center;
+                    background-size: 15rem;
                     &::after {
                         font-size: 2.25rem;
                         left: 3rem;
-                        top: 3.5rem;
+                        top: 2.75rem;
                     }
                 }
             }
             .producto--cinco {
+                .subtituloProductos {
+                    margin: .5rem .5rem;
+                }
                 .btn-ce {
                     grid-area: cinco;
+                    background-size: 14rem;
                     &::after {
                         font-size: 2.25rem;
                         right: 3rem;
-                        top: 3.5rem;
+                        top: 2.75rem;
                     }
                 }
             }
@@ -1740,10 +1753,11 @@ body {
                     grid-area: seis;
                     background-size: 40%;
                     background-position: 20rem center;
+                    background-size: 10rem;
                     &::after {
                         font-size: 2.25rem;
                         left: 3rem;
-                        top: 3.5rem;
+                        top: 2.75rem;
                     }
                 }
             }
@@ -2521,6 +2535,9 @@ body {
                     margin-top: 3rem;
                     opacity: .9;
                 }
+            }
+            .desktop {
+                width: 100%;
             }
         }
     }
