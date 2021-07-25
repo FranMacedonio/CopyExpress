@@ -147,6 +147,10 @@ body {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+        img {
+            width: 3.75rem;
+            height: 3.75rem;
+        }
     }
     .uno {
         grid-area: infouno;
@@ -330,7 +334,7 @@ body {
                 font-weight: $medium;
                 font-size: 1.1rem;
                 padding: .2rem;
-                color: $negro;
+                color: $blanco;
             }
         }
     }
@@ -2139,7 +2143,7 @@ body {
                         font-weight: $medium;
                         font-size: 1rem;
                         padding: .25rem;
-                        color: $negro;
+                        color: $blanco;
                     }
                 }
             }

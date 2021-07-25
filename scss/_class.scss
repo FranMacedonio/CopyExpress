@@ -132,7 +132,18 @@ footer {
 .modal-title {
     font-weight: bold;
     font-size: 2rem;
-    color: $negro;
+    color: $blanco;
+}
+.modal-header {
+    background-color: $negro;
+    border-color: $negro;
+}
+.modal-body {
+    background-color: #262626;
+}
+.modal-footer {
+    background-color: #2f2f2f;
+    border-color: $negro;
 }
 .subtituloProductos {
     font-weight: $medium;
@@ -163,7 +174,7 @@ footer {
     height: 3rem;
     width: 11rem;
     border-radius: .5rem;
-    border: 2px solid $negro;
+    border: 2px solid #1d1d1db4;
     background-color: $blanco;
     color: $azul;
     font-size: 1.1rem;
@@ -179,41 +190,23 @@ footer {
 }
 .texto {
     margin: .5rem;
+    color: #fbfbfb;
+}
+li {
+    color: #fbfbfb;
 }
 
 @media only screen and (orientation: landscape) and (max-device-width: 900px) {
     .tagline {
         font-size: 1.5rem;
     }
-    .bold {
-        font-size: 1.25rem;
-        font-weight: $bold;
-        margin: .5rem 0;
-    }
-    .zona_titulo {
-        font-size: 1.75rem;
-        font-weight: $bold;
-    }
-    .zona_subtitulo {
-        font-size: 1.25rem;
-        font-weight: $medium;
-    }
-    .zona_lofigirl {
-        font-size: 1.1rem;
-        font-weight: $bold;
-        color: $azul;
-        text-shadow: 3px 3px 2px rgb(22, 22, 22);
-        margin-bottom: .25rem;
-    }
     header.navbar__mobile {
         .bg-negro {
-            background-color: #1d1d1dde;
             .botonera {
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
                 align-items: center;
-                color: $blanco;
                 span {
                     font-size: 1rem;
                     padding: 1rem;
@@ -245,55 +238,7 @@ footer {
         }
     }
     .modal-title {
-        font-weight: bold;
-        font-size: 2rem;
-        color: $negro;
-    }
-    .subtituloProductos {
-        font-weight: $medium;
-        font-size: 1.25rem;
-        color: $azul;
-        margin: .5rem;
-    }
-    .precioProductos {
-        font-weight: $bold;
-        color: $rosa;
-        margin: .5rem;
-    }
-    .btn-cerrar {
-        @include botonModalPedido;
-        background-color: #858585;
-        color: $blanco;
-        font-weight: $medium;
-    }
-    .btn-agregar {
-        @include botonModalPedido;
-        background-color: $amarillo;
-        color: $negro;
-        font-weight: $medium;
-    }
-    .btn-pedido {
-        @include botonModalPedido;
-        margin-top: 2rem;
-        height: 3rem;
-        width: 11rem;
-        border-radius: .5rem;
-        border: 2px solid $negro;
-        background-color: $blanco;
-        color: $azul;
-        font-size: 1.1rem;
-        font-weight: $medium;
-    }
-    .btn-hacer {
-        @include botonModalPedido;
-        background-color: $negro;
-        border: 2px solid $blanco;
-        color: $blanco;
-        font-size: 1.25rem;
-        font-weight: $medium;
-    }
-    .texto {
-        margin: .5rem;
+        font-size: 1.5rem;
     }
 }
 
