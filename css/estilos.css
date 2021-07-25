@@ -110,8 +110,9 @@ header.navbar__mobile nav button:focus {
   outline: none;
 }
 
-header.navbar__mobile nav button .logoMenu {
-  padding: .5rem;
+header.navbar__mobile nav button img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 footer {
@@ -152,8 +153,12 @@ footer .footer__texto {
 }
 
 footer .footer__texto p {
-  padding: 0.21 0.75rem 0;
+  padding: 1rem 0;
   font-weight: 600;
+}
+
+footer .footer__texto p a {
+  padding: 1rem 0;
 }
 
 footer .footer__texto .footer__botonera {

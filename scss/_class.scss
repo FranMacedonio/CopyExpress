@@ -69,9 +69,11 @@ header.navbar__mobile {
             &:focus {
                 outline: none;
             }
-            .logoMenu {
-                padding: .5rem;
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
             }
+            
         }
     }
 }
@@ -91,8 +93,11 @@ footer {
         justify-content: space-between;
         align-items: center;
         p {
-            padding: .21.75rem 0;
+            padding: 1rem 0;
             font-weight: $medium;
+            a {
+                padding: 1rem 0;
+            }
         }
         .footer__botonera {
             display: flex;
